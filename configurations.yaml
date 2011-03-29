@@ -1,0 +1,67 @@
+Default:
+    Active: True
+    Language: en_US.UTF-8
+    Keyboard: us
+    SaveRepos:  True
+    Timezone: America/Los_Angeles
+    RootPass: meego
+    DefaultUser: meego
+    DefaultUserPass: meego
+    PartSize: 1900
+
+N900DE:
+    Part: n900-de
+    BootloaderTimeout: 
+    BootloaderAppend: 
+    StartX: True
+    Groups:
+        - MeeGo Compliance
+        - MeeGo Core
+        - X for Handsets 
+        - MeeGo Handset Desktop
+        - MeeGo Handset Applications
+        - MeeGo Base Development
+        - Minimal MeeGo X Window System
+        - Nokia N900 Support
+        - Nokia N900 Proprietary Support
+    ExtraPackages:
+        - xorg-x11-utils-xev
+    Kernel: kernel-adaptation-n900
+    PostScripts:
+        - cleanup
+        - nocursor
+        - serial-n900
+        - rpm
+        - meegotouch-n900
+        - bootchart
+        - fstab-n900
+        - arch-armv7nhl
+    NoChrootScripts:
+        - buildname
+    Architecture: armv7l
+    Repos:
+        - oss
+        - non-oss
+    Architecture: armv7nhl
+    Desktop: DUI
+    Session: "/usr/bin/mcompositor"
+
+Configurations:
+    -   Name: MeeGo Handset N900 Developer Edition (Sanity)
+        Schedule: "*"
+        Active: True
+        Baseline: "handset"
+        Platform: N900DE
+        Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
+        FileName: handset-armv7l-n900-de-sanity
+        Repos:
+            - de-trunk
+    -   Name: MeeGo Handset N900 Developer Edition (Acceptance)
+        Schedule: "*"
+        Active: True
+        Baseline: "handset"
+        Platform: N900DE
+        Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
+        FileName: handset-armv7l-n900-de-acceptance
+        Repos:
+            - de-testing

@@ -1,0 +1,12 @@
+Install kickstarter from https://meego.gitorious.org/meego-developer-tools/kickstarter
+
+$ git clone git://gitorious.org/meego-developer-tools/kickstarter.git
+$ cd kickstarter
+$ make
+$ sudo python ./setup.py
+
+More information can be found from: https://meego.gitorious.org/meego-developer-tools/kickstarter/blobs/master/README
+
+Updating .ks files
+
+$ kickstarter -c configurations.yaml -r repos.yaml
