@@ -1,3 +1,5 @@
 *~
 # Ignore images made in the configurations directory
 meego-handset-*-*
+# Ignore images directory where the images are made by default
+images/

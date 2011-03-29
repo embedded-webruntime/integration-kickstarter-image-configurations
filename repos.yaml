@@ -1,13 +1,18 @@
 Repositories:
     -   Name: oss
-        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/oss/@ARCH@/packages/
+        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/
     -   Name: non-oss
-        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/non-oss/@ARCH@/packages/
+        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/
+
     -   Name: oss-testing
-        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/oss/@ARCH@/packages/
+        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/
     -   Name: non-oss-testing
-        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/@ARCH@/packages/
+        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/
+
     -   Name: de-trunk
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/
     -   Name: de-testing
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/
+
+    -   Name: trunk-testing-live
+        Url:  http://download.meego.com/live/Trunk:/Testing/standard/

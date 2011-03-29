@@ -2,7 +2,7 @@ Default:
     Active: True
     Language: en_US.UTF-8
     Keyboard: us
-    SaveRepos:  True
+    SaveRepos: True
     Timezone: America/Los_Angeles
     RootPass: meego
     DefaultUser: meego
@@ -17,9 +17,6 @@ N900DE:
     Groups:
         - MeeGo Compliance
         - MeeGo Core
-        - X for Handsets 
-        - MeeGo Handset Desktop
-        - MeeGo Handset Applications
         - MeeGo Base Development
         - Minimal MeeGo X Window System
         - Nokia N900 Support
@@ -38,13 +35,13 @@ N900DE:
         - arch-armv7nhl
     NoChrootScripts:
         - buildname
-    Architecture: armv7l
     Repos:
         - oss
         - non-oss
     Architecture: armv7nhl
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
+    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name  --outdir=images
 
 Configurations:
     -   Name: MeeGo Handset N900 Developer Edition (Sanity)
@@ -52,8 +49,11 @@ Configurations:
         Active: True
         Baseline: "handset"
         Platform: N900DE
-        Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
         FileName: handset-armv7nhl-n900-de-sanity
+        Groups:
+            - X for Handsets 
+            - MeeGo Handset Desktop
+            - MeeGo Handset Applications
         Repos:
             - de-trunk
     -   Name: MeeGo Handset N900 Developer Edition (Acceptance)
@@ -61,7 +61,29 @@ Configurations:
         Active: True
         Baseline: "handset"
         Platform: N900DE
-        Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
         FileName: handset-armv7nhl-n900-de-acceptance
+        Groups:
+            - X for Handsets 
+            - MeeGo Handset Desktop
+            - MeeGo Handset Applications
         Repos:
             - de-testing
+    -   Name: MeeGo Tablet N900
+        Schedule: "*"
+        Active: True
+        Baseline: "tablet"
+        Platform: N900DE
+        FileName: tablet-armv7nhl-n900
+        Groups:
+            - MeeGo Tablet
+            - MeeGo Tablet Applications
+        PostScripts:
+            - n900-tablet-gconf
+        Repos:
+            - oss-testing
+            - non-oss-testing
+            - de-testing
+            - trunk-testing-live
+        ExtraPackages:
+            - "-qmf"
+            - "-acpid"

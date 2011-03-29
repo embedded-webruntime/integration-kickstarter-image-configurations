@@ -24,7 +24,10 @@ user --name meego  --groups audio,video --password meego
 
 repo --name=oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=non-oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=oss-testing --baseurl=http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=non-oss-testing --baseurl=http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=trunk-testing-live --baseurl=http://download.meego.com/live/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
@@ -34,13 +37,14 @@ repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/T
 @Minimal MeeGo X Window System
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
-@X for Handsets
-@MeeGo Handset Desktop
-@MeeGo Handset Applications
+@MeeGo Tablet
+@MeeGo Tablet Applications
 
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-qmf
+-acpid
 %end
 
 %post
@@ -92,6 +96,14 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 # https://bugs.meego.com/show_bug.cgi?id=11484
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
+
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t string /meego/ux/theme 1024-600-10
+
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+  -s -t bool /meego/ux/ShowPanelsAsHome false
 
 
 %end
