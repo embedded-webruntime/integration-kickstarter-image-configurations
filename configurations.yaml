@@ -53,7 +53,7 @@ Configurations:
         Baseline: "handset"
         Platform: N900DE
         Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
-        FileName: handset-armv7l-n900-de-sanity
+        FileName: handset-armv7nhl-n900-de-sanity
         Repos:
             - de-trunk
     -   Name: MeeGo Handset N900 Developer Edition (Acceptance)
@@ -62,6 +62,6 @@ Configurations:
         Baseline: "handset"
         Platform: N900DE
         Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
-        FileName: handset-armv7l-n900-de-acceptance
+        FileName: handset-armv7nhl-n900-de-acceptance
         Repos:
             - de-testing
