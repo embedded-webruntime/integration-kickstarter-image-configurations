@@ -85,5 +85,7 @@ Configurations:
             - de-testing
             - trunk-testing-live
         ExtraPackages:
+            - meego-handset-dialer
+            - meego-handset-sms
             - "-qmf"
             - "-acpid"

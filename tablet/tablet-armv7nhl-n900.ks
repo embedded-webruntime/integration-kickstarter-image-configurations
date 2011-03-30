@@ -43,6 +43,8 @@ repo --name=trunk-testing-live --baseurl=http://download.meego.com/live/Trunk:/T
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+meego-handset-dialer
+meego-handset-sms
 -qmf
 -acpid
 %end
