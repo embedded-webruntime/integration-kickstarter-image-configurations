@@ -22,12 +22,10 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=non-oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=oss-testing --baseurl=http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=non-oss-testing --baseurl=http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=oss-testing-live --baseurl=http://download.meego.com/testing/trunk/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=non-oss-testing-live --baseurl=http://download.meego.com/testing/trunk/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=trunk-testing-live --baseurl=http://download.meego.com/live/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
@@ -47,6 +45,8 @@ meego-handset-dialer
 meego-handset-sms
 -qmf
 -acpid
+-meego-app-browser
+-meego-app-browser-ffmpeg-oss
 %end
 
 %post
@@ -106,6 +106,11 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
+
+# Workaround for BMC#15039 / QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
+# doesn't return sane values on startup
+rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
+
 
 
 %end

@@ -35,9 +35,6 @@ N900DE:
         - arch-armv7nhl
     NoChrootScripts:
         - buildname
-    Repos:
-        - oss
-        - non-oss
     Architecture: armv7nhl
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
@@ -55,6 +52,8 @@ Configurations:
             - MeeGo Handset Desktop
             - MeeGo Handset Applications
         Repos:
+            - oss
+            - non-oss
             - de-trunk
     -   Name: MeeGo Handset N900 Developer Edition (Acceptance)
         Schedule: "*"
@@ -67,6 +66,8 @@ Configurations:
             - MeeGo Handset Desktop
             - MeeGo Handset Applications
         Repos:
+            - oss
+            - non-oss
             - de-testing
     -   Name: MeeGo Tablet N900
         Schedule: "*"
@@ -79,13 +80,17 @@ Configurations:
             - MeeGo Tablet Applications
         PostScripts:
             - n900-tablet-gconf
+            - tablet-sensor-hack
         Repos:
-            - oss-testing
-            - non-oss-testing
+            - oss-testing-live
+            - non-oss-testing-live
             - de-testing
-            - trunk-testing-live
+            - de-tablet-devel
         ExtraPackages:
             - meego-handset-dialer
             - meego-handset-sms
             - "-qmf"
             - "-acpid"
+            - "-meego-app-browser"
+            - "-meego-app-browser-ffmpeg-oss"
+

@@ -9,10 +9,16 @@ Repositories:
     -   Name: non-oss-testing
         Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/
 
+    -   Name: oss-testing-live
+        Url:  http://download.meego.com/testing/trunk/repos/oss/armv7hl/packages/
+    -   Name: non-oss-testing-live
+        Url:  http://download.meego.com/testing/trunk/repos/non-oss/armv7hl/packages/
+
     -   Name: de-trunk
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/
     -   Name: de-testing
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/
 
-    -   Name: trunk-testing-live
-        Url:  http://download.meego.com/live/Trunk:/Testing/standard/
+    -   Name: de-tablet-devel
+        Url:  http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/
+
