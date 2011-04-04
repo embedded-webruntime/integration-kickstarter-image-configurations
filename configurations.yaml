@@ -89,7 +89,6 @@ Configurations:
         ExtraPackages:
             - meego-handset-dialer
             - meego-handset-sms
-            - "-qmf"
             - "-acpid"
             - "-meego-app-browser"
             - "-meego-app-browser-ffmpeg-oss"
