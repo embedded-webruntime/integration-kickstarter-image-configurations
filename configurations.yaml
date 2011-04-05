@@ -87,8 +87,11 @@ Configurations:
             - de-testing
             - de-tablet-devel
         ExtraPackages:
+            # These apps are not in Tablet so we add them from handset
             - meego-handset-dialer
             - meego-handset-sms
+            # Added to enable camera backend
+            - gst-plugins-camera
             - "-acpid"
             - "-meego-app-browser"
             - "-meego-app-browser-ffmpeg-oss"
