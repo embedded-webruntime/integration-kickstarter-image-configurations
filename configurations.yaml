@@ -69,6 +69,32 @@ Configurations:
             - oss
             - non-oss
             - de-testing
+    -   Name: MeeGo Handset N900 With Tablet Apps
+        Schedule: "*"
+        Active: True
+        Baseline: "handset"
+        Platform: N900DE
+        FileName: handset-armv7nhl-n900-tablet-apps
+        Groups:
+            - X for Handsets 
+            - MeeGo Handset Desktop
+            - MeeGo Handset Applications
+            - MeeGo Tablet Applications
+        PostScripts:
+            - n900-tablet-gconf
+            - tablet-sensor-hack
+        Repos:
+            - oss-testing-live
+            - non-oss-testing-live
+            - de-testing
+            - de-tablet-devel
+        ExtraPackages:
+            - "orientation-contextkit-sensor"
+            # Tablet apps do not have proper dependencies to sharing-qml
+            # https://bugs.meego.com/show_bug.cgi?id=15301
+            - "meego-ux-sharing-qml"
+            - "-meego-app-browser"
+            - "-meego-app-browser-ffmpeg-oss"
     -   Name: MeeGo Tablet N900
         Schedule: "*"
         Active: True
@@ -93,6 +119,9 @@ Configurations:
             # Added to enable camera backend
             - gst-plugins-camera
             - "-acpid"
+            # meego-app-browser doesn't compile for ARM currently...
             - "-meego-app-browser"
             - "-meego-app-browser-ffmpeg-oss"
+            # ... using fennec-qt instead
+            - fennec-qt
 

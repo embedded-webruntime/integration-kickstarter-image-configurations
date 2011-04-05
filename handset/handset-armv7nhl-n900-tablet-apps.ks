@@ -35,19 +35,18 @@ repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Dev
 @Minimal MeeGo X Window System
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
-@MeeGo Tablet
+@X for Handsets
+@MeeGo Handset Desktop
+@MeeGo Handset Applications
 @MeeGo Tablet Applications
 
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
-meego-handset-dialer
-meego-handset-sms
-gst-plugins-camera
--acpid
+orientation-contextkit-sensor
+meego-ux-sharing-qml
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
-fennec-qt
 %end
 
 %post
