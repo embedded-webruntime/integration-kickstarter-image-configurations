@@ -48,6 +48,7 @@ gst-plugins-camera
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 fennec-qt
+-contextkit-maemo-battery-rx51-bin
 %end
 
 %post
@@ -76,7 +77,6 @@ rpm --rebuilddb
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N900
-
 
 # Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
 cat > /sbin/bootchartd-long << EOF
@@ -112,6 +112,10 @@ gconftool-2 --direct \
 # doesn't return sane values on startup
 rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 
+
+# On tablet we need to set theme to meego.
+gconftool-2 --direct --config-source $Config_Src \
+  -s -t string /meegotouch/theme/name meego
 
 
 %end

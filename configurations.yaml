@@ -107,6 +107,7 @@ Configurations:
         PostScripts:
             - n900-tablet-gconf
             - tablet-sensor-hack
+            - meegotouch-theme-meego
         Repos:
             - oss-testing-live
             - non-oss-testing-live
@@ -124,4 +125,5 @@ Configurations:
             - "-meego-app-browser-ffmpeg-oss"
             # ... using fennec-qt instead
             - fennec-qt
-
+            # Conflicts with contextkit-meego-battery-upower
+            - "-contextkit-maemo-battery-rx51-bin"

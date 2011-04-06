@@ -70,7 +70,6 @@ Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N900
 
-
 # Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
 cat > /sbin/bootchartd-long << EOF
 #!/bin/sh
