@@ -1,13 +1,13 @@
 Repositories:
     -   Name: oss
-        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/builds/trunk/latest/repos/oss/armv7hl/packages/
     -   Name: non-oss
-        Url:  http://repo.meego.com/MeeGo/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/builds/trunk/latest/repos/non-oss/armv7hl/packages/
 
     -   Name: oss-testing
-        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/oss/armv7hl/packages/
+        Url:  http://download.meego.com/testing-daily/builds/trunk/latest/repos/oss/armv7hl/packages/
     -   Name: non-oss-testing
-        Url:  http://download.meego.com/testing-daily/builds/trunk/@BUILD_ID@/repos/non-oss/armv7hl/packages/
+        Url:  http://download.meego.com/testing-daily/builds/trunk/latest/repos/non-oss/armv7hl/packages/
 
     -   Name: oss-testing-live
         Url:  http://download.meego.com/testing/trunk/repos/oss/armv7hl/packages/
