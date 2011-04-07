@@ -1,5 +1,10 @@
+ExternalConfigs:
+    - configs/handset
+    - configs/tablet
+
 Default:
     Active: True
+    Baseline: kickstarts
     Language: en_US.UTF-8
     Keyboard: us
     SaveRepos: True
@@ -8,6 +13,8 @@ Default:
     DefaultUser: meego
     DefaultUserPass: meego
     PartSize: 1900
+    Schedule: "*"
+    Active: True
 
 N900DE:
     Part: n900-de
@@ -40,90 +47,4 @@ N900DE:
     Session: "/usr/bin/mcompositor"
     Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name  --outdir=images
 
-Configurations:
-    -   Name: MeeGo Handset N900 Developer Edition (Sanity)
-        Schedule: "*"
-        Active: True
-        Baseline: "handset"
-        Platform: N900DE
-        FileName: handset-armv7nhl-n900-de-sanity
-        Groups:
-            - X for Handsets 
-            - MeeGo Handset Desktop
-            - MeeGo Handset Applications
-        Repos:
-            - oss
-            - non-oss
-            - de-trunk
-    -   Name: MeeGo Handset N900 Developer Edition (Acceptance)
-        Schedule: "*"
-        Active: True
-        Baseline: "handset"
-        Platform: N900DE
-        FileName: handset-armv7nhl-n900-de-acceptance
-        Groups:
-            - X for Handsets 
-            - MeeGo Handset Desktop
-            - MeeGo Handset Applications
-        Repos:
-            - oss
-            - non-oss
-            - de-testing
-    -   Name: MeeGo Handset N900 With Tablet Apps
-        Schedule: "*"
-        Active: True
-        Baseline: "handset"
-        Platform: N900DE
-        FileName: handset-armv7nhl-n900-tablet-apps
-        Groups:
-            - X for Handsets 
-            - MeeGo Handset Desktop
-            - MeeGo Handset Applications
-            - MeeGo Tablet Applications
-        PostScripts:
-            - n900-tablet-gconf
-            - tablet-sensor-hack
-        Repos:
-            - oss-testing-live
-            - non-oss-testing-live
-            - de-testing
-            - de-tablet-devel
-        ExtraPackages:
-            - "orientation-contextkit-sensor"
-            # Tablet apps do not have proper dependencies to sharing-qml
-            # https://bugs.meego.com/show_bug.cgi?id=15301
-            - "meego-ux-sharing-qml"
-            - "-meego-app-browser"
-            - "-meego-app-browser-ffmpeg-oss"
-    -   Name: MeeGo Tablet N900
-        Schedule: "*"
-        Active: True
-        Baseline: "tablet"
-        Platform: N900DE
-        FileName: tablet-armv7nhl-n900
-        Groups:
-            - MeeGo Tablet
-            - MeeGo Tablet Applications
-        PostScripts:
-            - n900-tablet-gconf
-            - tablet-sensor-hack
-            - meegotouch-theme-meego
-        Repos:
-            - oss-testing-live
-            - non-oss-testing-live
-            - de-testing
-            - de-tablet-devel
-        ExtraPackages:
-            # These apps are not in Tablet so we add them from handset
-            - meego-handset-dialer
-            - meego-handset-sms
-            # Added to enable camera backend
-            - gst-plugins-camera
-            - "-acpid"
-            # meego-app-browser doesn't compile for ARM currently...
-            - "-meego-app-browser"
-            - "-meego-app-browser-ffmpeg-oss"
-            # ... using fennec-qt instead
-            - fennec-qt
-            # Conflicts with contextkit-meego-battery-upower
-            - "-contextkit-maemo-battery-rx51-bin"
+

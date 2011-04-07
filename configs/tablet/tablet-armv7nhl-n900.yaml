@@ -1,0 +1,29 @@
+Name: MeeGo Tablet N900
+Platform: N900DE
+FileName: tablet-armv7nhl-n900
+Groups:
+    - MeeGo Tablet
+    - MeeGo Tablet Applications
+PostScripts:
+    - n900-tablet-gconf
+    - tablet-sensor-hack
+    - meegotouch-theme-meego
+Repos:
+    - oss-testing-live
+    - non-oss-testing-live
+    - de-testing
+    - de-tablet-devel
+ExtraPackages:
+    # These apps are not in Tablet so we add them from handset
+    - meego-handset-dialer
+    - meego-handset-sms
+    # Added to enable camera backend
+    - gst-plugins-camera
+    - "-acpid"
+    # meego-app-browser doesn't compile for ARM currently...
+    - "-meego-app-browser"
+    - "-meego-app-browser-ffmpeg-oss"
+    # ... using fennec-qt instead
+    - fennec-qt
+    # Conflicts with contextkit-meego-battery-upower
+    - "-contextkit-maemo-battery-rx51-bin"
