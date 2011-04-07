@@ -45,6 +45,6 @@ N900DE:
     Architecture: armv7nhl
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
-    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name  --outdir=images
+    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
 
 
