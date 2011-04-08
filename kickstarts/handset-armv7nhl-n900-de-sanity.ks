@@ -41,6 +41,7 @@ repo --name=de-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/stan
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-pulseaudio-modules-n900-mainvolume
 %end
 
 %post

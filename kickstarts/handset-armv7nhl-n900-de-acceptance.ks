@@ -41,6 +41,7 @@ repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/T
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-pulseaudio-modules-n900-mainvolume
 %end
 
 %post
