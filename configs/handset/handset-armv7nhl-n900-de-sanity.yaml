@@ -9,3 +9,6 @@ Repos:
     - oss
     - non-oss
     - de-trunk
+ExtraPackages:
+    # mainvolume modules isn't in the weekly repos yet
+    - "-pulseaudio-modules-n900-mainvolume"
