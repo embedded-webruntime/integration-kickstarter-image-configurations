@@ -15,9 +15,9 @@ Repos:
     - de-testing
     - de-tablet-devel
 ExtraPackages:
-    - "orientation-contextkit-sensor"
+    - orientation-contextkit-sensor
     # Tablet apps do not have proper dependencies to sharing-qml
     # https://bugs.meego.com/show_bug.cgi?id=15301
-    - "meego-ux-sharing-qml"
-    - "-meego-app-browser"
-    - "-meego-app-browser-ffmpeg-oss"
+    - meego-ux-sharing-qml
+    - -meego-app-browser
+    - -meego-app-browser-ffmpeg-oss

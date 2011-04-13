@@ -18,11 +18,11 @@ ExtraPackages:
     - meego-handset-sms
     # Added to enable camera backend
     - gst-plugins-camera
-    - "-acpid"
+    - -acpid
     # meego-app-browser doesn't compile for ARM currently...
-    - "-meego-app-browser"
-    - "-meego-app-browser-ffmpeg-oss"
+    - -meego-app-browser
+    - -meego-app-browser-ffmpeg-oss
     # ... using fennec-qt instead
     - fennec-qt
     # Conflicts with contextkit-meego-battery-upower
-    - "-contextkit-maemo-battery-rx51-bin"
+    - -contextkit-maemo-battery-rx51-bin

@@ -47,6 +47,7 @@ peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 -pulseaudio-modules-n900-mainvolume
+meegovolume
 %end
 
 %post

@@ -11,5 +11,5 @@ Repos:
     - de-testing
 ExtraPackages:
     # mainvolume modules isn't in the weekly repos yet
-    - "-pulseaudio-modules-n900-mainvolume"
+    - -pulseaudio-modules-n900-mainvolume
     - meegovolume
