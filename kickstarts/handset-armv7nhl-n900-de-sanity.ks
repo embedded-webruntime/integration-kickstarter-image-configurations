@@ -41,6 +41,11 @@ repo --name=de-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/stan
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-phonesim
+meegotouch-theme-n900de
+peregrine-plain-qml
+generic-backgrounds
+plymouth-lite
 -pulseaudio-modules-n900-mainvolume
 %end
 
@@ -85,6 +90,9 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 # https://bugs.meego.com/show_bug.cgi?id=11484
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
+# Fix for https://bugs.meego.com/show_bug.cgi?id=15963
+mkdir -p /usr/share/themes/base/meegotouch/dialer/
+cp -rf /usr/share/themes/meego/meegotouch/dialer/* /usr/share/themes/base/meegotouch/dialer/
 
 %end
 

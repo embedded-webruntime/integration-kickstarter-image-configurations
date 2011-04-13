@@ -2,7 +2,7 @@ Name: MeeGo Handset N900 With Tablet Apps
 Platform: N900DE
 FileName: handset-armv7nhl-n900-tablet-apps
 Groups:
-    - X for Handsets 
+    - X for Handsets
     - MeeGo Handset Desktop
     - MeeGo Handset Applications
     - MeeGo Tablet Applications

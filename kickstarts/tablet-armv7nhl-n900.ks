@@ -41,6 +41,11 @@ repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Dev
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-phonesim
+meegotouch-theme-n900de
+peregrine-plain-qml
+generic-backgrounds
+plymouth-lite
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera
@@ -92,6 +97,9 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 # https://bugs.meego.com/show_bug.cgi?id=11484
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
+# Fix for https://bugs.meego.com/show_bug.cgi?id=15963
+mkdir -p /usr/share/themes/base/meegotouch/dialer/
+cp -rf /usr/share/themes/meego/meegotouch/dialer/* /usr/share/themes/base/meegotouch/dialer/
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10
@@ -103,9 +111,6 @@ gconftool-2 --direct \
 # doesn't return sane values on startup
 rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 
-# On tablet we need to set theme to meego.
-gconftool-2 --direct --config-source $Config_Src \
-  -s -t string /meegotouch/theme/name meego
 
 %end
 

@@ -22,7 +22,10 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+# Because of the broken PulseAudio in MeeGo we need to have our own build in DE repositories. 
+# Also because kickstarter doesn't currently support modifying repo lines https://bugs.meego.com/show_bug.cgi?id=15938
+# These lines have been added here manually.
+repo --name=oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement
 repo --name=non-oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
@@ -41,6 +44,11 @@ repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/T
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
+-phonesim
+meegotouch-theme-n900de
+peregrine-plain-qml
+generic-backgrounds
+plymouth-lite
 -pulseaudio-modules-n900-mainvolume
 %end
 
@@ -85,6 +93,9 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 # https://bugs.meego.com/show_bug.cgi?id=11484
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
+# Fix for https://bugs.meego.com/show_bug.cgi?id=15963
+mkdir -p /usr/share/themes/base/meegotouch/dialer/
+cp -rf /usr/share/themes/meego/meegotouch/dialer/* /usr/share/themes/base/meegotouch/dialer/
 
 %end
 

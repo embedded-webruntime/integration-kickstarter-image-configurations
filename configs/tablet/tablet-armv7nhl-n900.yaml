@@ -7,7 +7,6 @@ Groups:
 PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
-    - meegotouch-theme-meego
 Repos:
     - oss-testing-live
     - non-oss-testing-live

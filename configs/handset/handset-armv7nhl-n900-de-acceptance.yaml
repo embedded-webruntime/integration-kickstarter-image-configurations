@@ -2,7 +2,7 @@ Name: MeeGo Handset N900 Developer Edition (Acceptance)
 Platform: N900DE
 FileName: handset-armv7nhl-n900-de-acceptance
 Groups:
-    - X for Handsets 
+    - X for Handsets
     - MeeGo Handset Desktop
     - MeeGo Handset Applications
 Repos:

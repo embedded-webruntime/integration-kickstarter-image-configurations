@@ -28,6 +28,15 @@ N900DE:
         - Nokia N900 Proprietary Support
     ExtraPackages:
         - xorg-x11-utils-xev
+        # No need to install phonesim on N900 we have real modem.
+        - "-phonesim"
+        # Add theme for N900 DE
+        - meegotouch-theme-n900de
+        # IM application
+        - peregrine-plain-qml
+        # Add splash screen stuff
+        - generic-backgrounds
+        - plymouth-lite
     Kernel: kernel-adaptation-n900
     PostScripts:
         - cleanup
@@ -38,6 +47,7 @@ N900DE:
         - bootchart
         - fstab-n900
         - arch-armv7nhl
+        - handset-dialer-theme
     NoChrootScripts:
         - buildname
     Architecture: armv7nhl
