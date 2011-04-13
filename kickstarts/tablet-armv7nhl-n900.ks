@@ -98,8 +98,13 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
 # Fix for https://bugs.meego.com/show_bug.cgi?id=15963
-mkdir -p /usr/share/themes/base/meegotouch/dialer/
-cp -rf /usr/share/themes/meego/meegotouch/dialer/* /usr/share/themes/base/meegotouch/dialer/
+mkdir -p /usr/share/themes/base/meegotouch/
+cp -rf /usr/share/themes/meego/meegotouch/dialer /usr/share/themes/base/meegotouch/
+
+# Also some other apps need fixes for other themes than meego
+cp -rf /usr/share/themes/meego/meegotouch/meegophotos /usr/share/themes/base/meegotouch/
+cp -rf /usr/share/themes/meego/meegotouch/meegomusic /usr/share/themes/base/meegotouch/
+cp -rf /usr/share/themes/meego/meegotouch/meegovideo /usr/share/themes/base/meegotouch/
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10

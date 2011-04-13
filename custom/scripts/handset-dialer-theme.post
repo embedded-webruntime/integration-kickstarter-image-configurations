@@ -1,3 +1,0 @@
-# Fix for https://bugs.meego.com/show_bug.cgi?id=15963
-mkdir -p /usr/share/themes/base/meegotouch/dialer/
-cp -rf /usr/share/themes/meego/meegotouch/dialer/* /usr/share/themes/base/meegotouch/dialer/

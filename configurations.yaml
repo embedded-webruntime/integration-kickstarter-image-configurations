@@ -47,7 +47,7 @@ N900DE:
         - bootchart
         - fstab-n900
         - arch-armv7nhl
-        - handset-dialer-theme
+        - handset-app-theme-fixes
     NoChrootScripts:
         - buildname
     Architecture: armv7nhl
