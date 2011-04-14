@@ -46,6 +46,7 @@ meegotouch-theme-n900de
 peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
+meegotouch-demos
 -pulseaudio-modules-n900-mainvolume
 meegovolume
 %end

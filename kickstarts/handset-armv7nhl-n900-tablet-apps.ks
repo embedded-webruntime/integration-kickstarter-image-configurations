@@ -48,6 +48,7 @@ meegotouch-theme-n900de
 peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
+meegotouch-demos
 orientation-contextkit-sensor
 meego-ux-sharing-qml
 -meego-app-browser

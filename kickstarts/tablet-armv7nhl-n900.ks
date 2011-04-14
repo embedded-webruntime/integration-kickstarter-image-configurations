@@ -49,6 +49,7 @@ meegotouch-theme-n900de
 peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
+meegotouch-demos
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera
