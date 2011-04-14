@@ -1,6 +1,6 @@
-Name: MeeGo Tablet N900
+Name: MeeGo Tablet N900 DE (Acceptance)
 Platform: N900DE
-FileName: tablet-armv7nhl-n900
+FileName: tablet-armv7nhl-n900-de-acceptance
 Groups:
     - MeeGo Tablet
     - MeeGo Tablet Applications
