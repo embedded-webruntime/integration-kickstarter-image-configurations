@@ -48,6 +48,7 @@ N900DE:
         - fstab-n900
         - arch-armv7nhl
         - handset-app-theme-fixes
+        - plymouth-lite-n900
     NoChrootScripts:
         - buildname
     Architecture: armv7nhl

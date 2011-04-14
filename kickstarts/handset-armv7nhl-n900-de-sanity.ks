@@ -99,6 +99,14 @@ cp -rf /usr/share/themes/meego/meegotouch/dialer /usr/share/themes/base/meegotou
 cp -rf /usr/share/themes/meego/meegotouch/meegophotos /usr/share/themes/base/meegotouch/
 cp -rf /usr/share/themes/meego/meegotouch/meegomusic /usr/share/themes/base/meegotouch/
 cp -rf /usr/share/themes/meego/meegotouch/meegovideo /usr/share/themes/base/meegotouch/
+# Hack to fix the plymouth based splash screen on N900
+mv /usr/bin/ply-image /usr/bin/ply-image-real
+cat > /usr/bin/ply-image << EOF
+#!/bin/sh
+echo 32 > /sys/class/graphics/fb0/bits_per_pixel
+exec /usr/bin/ply-image-real $@
+EOF
+chmod +x /usr/bin/ply-image
 
 %end
 
