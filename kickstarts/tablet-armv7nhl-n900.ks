@@ -25,8 +25,8 @@ user --name meego  --groups audio,video --password meego
 # Because of the broken PulseAudio in MeeGo we need to have our own build in DE repositories. 
 # Also because kickstarter doesn't currently support modifying repo lines https://bugs.meego.com/show_bug.cgi?id=15938
 # These lines have been added here manually.
-repo --name=oss-testing-live --baseurl=http://download.meego.com/testing/trunk/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement
-repo --name=non-oss-testing-live --baseurl=http://download.meego.com/testing/trunk/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*
+repo --name=non-oss --baseurl=http://repo.meego.com/MeeGo/builds/trunk/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
@@ -52,7 +52,6 @@ plymouth-lite
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera
--acpid
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 fennec-qt

@@ -8,8 +8,8 @@ PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
 Repos:
-    - oss-testing-live
-    - non-oss-testing-live
+    - oss
+    - non-oss
     - de-testing
     - de-tablet-devel
 ExtraPackages:
@@ -18,7 +18,6 @@ ExtraPackages:
     - meego-handset-sms
     # Added to enable camera backend
     - gst-plugins-camera
-    - -acpid
     # meego-app-browser doesn't compile for ARM currently...
     - -meego-app-browser
     - -meego-app-browser-ffmpeg-oss
