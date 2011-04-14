@@ -7,6 +7,7 @@ Groups:
 PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
+    - meego-ux-daemon-n900-homekey
 Repos:
     - oss
     - non-oss

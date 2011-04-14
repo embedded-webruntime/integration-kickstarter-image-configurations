@@ -118,6 +118,9 @@ gconftool-2 --direct \
 # doesn't return sane values on startup
 rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 
+# Set the homekey for N900 through the gconf.
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t string /meego/ux/HomeKey XF86WebCam
 
 %end
 
