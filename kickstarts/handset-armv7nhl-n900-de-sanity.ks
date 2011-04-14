@@ -47,6 +47,7 @@ peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 meegotouch-demos
+-corewatcher
 -pulseaudio-modules-n900-mainvolume
 meegovolume
 %end

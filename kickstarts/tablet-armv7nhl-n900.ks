@@ -50,6 +50,7 @@ peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 meegotouch-demos
+-corewatcher
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera

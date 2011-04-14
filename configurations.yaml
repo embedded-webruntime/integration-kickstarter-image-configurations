@@ -39,6 +39,9 @@ N900DE:
         - plymouth-lite
         # Adding widgetsgallery
         - meegotouch-demos
+        # Removing corewatcher because that is consuming way too much disk
+        # space currently with unstable apps.
+        - -corewatcher
     Kernel: kernel-adaptation-n900
     PostScripts:
         - cleanup
