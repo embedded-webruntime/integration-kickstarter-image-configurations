@@ -113,6 +113,9 @@ exec /usr/bin/ply-image-real $@
 EOF
 chmod +x /usr/bin/ply-image
 
+# Remove some unwanted "engineering english" translations.
+rm -f /usr/share/l10n/meegotouch/recovery*
+
 %end
 
 %post --nochroot
