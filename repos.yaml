@@ -1,8 +1,13 @@
 Repositories:
-    -   Name: oss
+    -   Name: oss-weekly
         Url:  http://repo.meego.com/MeeGo/builds/trunk/latest/repos/oss/armv7hl/packages/
-    -   Name: non-oss
+    -   Name: non-oss-weekly
         Url:  http://repo.meego.com/MeeGo/builds/trunk/latest/repos/non-oss/armv7hl/packages/
+
+    -   Name: oss-trunk-daily
+        Url:  http://download.meego.com/trunk-daily/builds/trunk/latest/repos/oss/armv7hl/packages/
+    -   Name: non-oss-trunk-daily
+        Url:  http://download.meego.com/trunk-daily/builds/trunk/latest/repos/non-oss/armv7hl/packages/
 
     -   Name: oss-testing-daily
         Url:  http://download.meego.com/testing-daily/builds/trunk/latest/repos/oss/armv7hl/packages/

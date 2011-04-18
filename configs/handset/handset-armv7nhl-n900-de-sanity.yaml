@@ -6,8 +6,8 @@ Groups:
     - MeeGo Handset Desktop
     - MeeGo Handset Applications
 Repos:
-    - oss
-    - non-oss
+    - oss-trunk-daily
+    - non-oss-trunk-daily
     - de-trunk
 ExtraPackages:
     # mainvolume modules isn't in the weekly repos yet
