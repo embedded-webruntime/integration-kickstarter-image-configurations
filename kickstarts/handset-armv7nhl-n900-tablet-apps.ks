@@ -55,9 +55,9 @@ meegotouch-demos
 -corewatcher
 mce
 orientation-contextkit-sensor
-meego-ux-sharing-qml
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
+meego-ux-theme
 %end
 
 %post
