@@ -42,6 +42,8 @@ N900DE:
         # Removing corewatcher because that is consuming way too much disk
         # space currently with unstable apps.
         - -corewatcher
+        # Install mce to enable screen blanking
+        - mce
     Kernel: kernel-adaptation-n900
     PostScripts:
         - cleanup

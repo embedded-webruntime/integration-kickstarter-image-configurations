@@ -53,6 +53,7 @@ generic-backgrounds
 plymouth-lite
 meegotouch-demos
 -corewatcher
+mce
 orientation-contextkit-sensor
 meego-ux-sharing-qml
 -meego-app-browser

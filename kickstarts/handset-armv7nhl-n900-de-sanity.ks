@@ -51,6 +51,7 @@ generic-backgrounds
 plymouth-lite
 meegotouch-demos
 -corewatcher
+mce
 -pulseaudio-modules-n900-mainvolume
 meegovolume
 %end
