@@ -54,6 +54,7 @@ N900DE:
         - arch-armv7nhl
         - handset-app-theme-fixes
         - plymouth-lite-n900
+        - meegotouch-translations
     NoChrootScripts:
         - buildname
     Architecture: armv7nhl

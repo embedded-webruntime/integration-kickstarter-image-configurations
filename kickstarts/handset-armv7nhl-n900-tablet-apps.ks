@@ -116,6 +116,8 @@ echo 32 > /sys/class/graphics/fb0/bits_per_pixel
 exec /usr/bin/ply-image-real $@
 EOF
 chmod +x /usr/bin/ply-image
+# Remove some unwanted "engineering english" translations.
+rm -f /usr/share/l10n/meegotouch/recovery*
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10

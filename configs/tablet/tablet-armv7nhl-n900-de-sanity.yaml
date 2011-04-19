@@ -1,6 +1,6 @@
-Name: MeeGo Tablet N900 DE (Acceptance)
+Name: MeeGo Tablet N900 DE (Sanity)
 Platform: N900DE
-FileName: tablet-armv7nhl-n900-de-acceptance
+FileName: tablet-armv7nhl-n900-de-sanity
 Groups:
     - MeeGo Tablet
     - MeeGo Tablet Applications
@@ -11,7 +11,7 @@ PostScripts:
 Repos:
     - oss-trunk-daily
     - non-oss-trunk-daily
-    - de-testing
+    - de-trunk
     - de-tablet-devel
 ExtraPackages:
     # These apps are not in Tablet so we add them from handset

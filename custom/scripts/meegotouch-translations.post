@@ -1,0 +1,2 @@
+# Remove some unwanted "engineering english" translations.
+rm -f /usr/share/l10n/meegotouch/recovery*
