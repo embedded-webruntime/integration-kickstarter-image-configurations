@@ -44,6 +44,8 @@ N900DE:
         - -corewatcher
         # Install mce to enable screen blanking
         - mce
+        # Make sure we have meego-ux-components in the images for developers
+        - meego-ux-components
     Kernel: kernel-adaptation-n900
     PostScripts:
         - cleanup

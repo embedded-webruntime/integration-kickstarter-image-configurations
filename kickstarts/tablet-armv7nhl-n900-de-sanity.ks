@@ -52,6 +52,7 @@ plymouth-lite
 meegotouch-demos
 -corewatcher
 mce
+meego-ux-components
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera

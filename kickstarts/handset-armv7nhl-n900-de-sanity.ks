@@ -52,6 +52,7 @@ plymouth-lite
 meegotouch-demos
 -corewatcher
 mce
+meego-ux-components
 -pulseaudio-modules-n900-mainvolume
 meegovolume
 %end

@@ -54,6 +54,7 @@ plymouth-lite
 meegotouch-demos
 -corewatcher
 mce
+meego-ux-components
 orientation-contextkit-sensor
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
