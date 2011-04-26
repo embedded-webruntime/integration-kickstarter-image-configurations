@@ -1,6 +1,10 @@
 Install kickstarter from https://meego.gitorious.org/meego-developer-tools/kickstarter
 
-$ git clone git://gitorious.org/meego-developer-tools/kickstarter.git
+NOTE: There are some patches needed to upstream kickstarter to update the .ks files properly
+updated kickstarter can be found from https://meego.gitorious.org/~sage/meego-developer-tools/sages-kickstarter
+and the MR against upstream kickstarter from https://meego.gitorious.org/meego-developer-tools/kickstarter/merge_requests/4
+
+$ git clone git://gitorious.org/~sage/meego-developer-tools/sages-kickstarter.git
 $ cd kickstarter
 $ make
 $ sudo python ./setup.py

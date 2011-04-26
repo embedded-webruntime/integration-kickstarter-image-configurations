@@ -6,6 +6,8 @@ Repositories:
 
     -   Name: oss-trunk-daily
         Url:  http://download.meego.com/trunk-daily/builds/trunk/latest/repos/oss/armv7hl/packages/
+        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900
+
     -   Name: non-oss-trunk-daily
         Url:  http://download.meego.com/trunk-daily/builds/trunk/latest/repos/non-oss/armv7hl/packages/
 
