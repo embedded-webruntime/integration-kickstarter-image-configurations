@@ -7,7 +7,7 @@ and the MR against upstream kickstarter from https://meego.gitorious.org/meego-d
 $ git clone git://gitorious.org/~sage/meego-developer-tools/sages-kickstarter.git
 $ cd kickstarter
 $ make
-$ sudo python ./setup.py
+$ sudo python ./setup.py install
 
 More information can be found from: https://meego.gitorious.org/meego-developer-tools/kickstarter/blobs/master/README
 
