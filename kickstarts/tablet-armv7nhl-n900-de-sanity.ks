@@ -22,7 +22,7 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss-trunk-daily --baseurl=http://download.meego.com/trunk-daily/builds/trunk/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900
+repo --name=oss-trunk-daily --baseurl=http://download.meego.com/trunk-daily/builds/trunk/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900,prelink
 repo --name=non-oss-trunk-daily --baseurl=http://download.meego.com/trunk-daily/builds/trunk/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
@@ -117,6 +117,20 @@ EOF
 chmod +x /usr/bin/ply-image
 # Remove some unwanted "engineering english" translations.
 rm -f /usr/share/l10n/meegotouch/recovery*
+# We can run the prelink only with qemu version 0.14 and newer.
+qemu-arm-static -version | grep "0\.14"
+
+if [ "x$?" == "x0" ]; then
+    echo "QEMU version 0.14 running prelink."
+    # Prelink can reduce boot time
+    if [ -x /usr/sbin/prelink ]; then
+        /usr/sbin/prelink -aRqm
+    fi
+else
+    echo "QEMU version is not 0.14 so not running prelink."
+fi
+
+
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10
