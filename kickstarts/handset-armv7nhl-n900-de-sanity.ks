@@ -41,17 +41,16 @@ repo --name=de-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/stan
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
--phonesim
 meegotouch-theme-n900de
 peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 meegotouch-demos
--corewatcher
 mce
 meego-ux-components
--pulseaudio-modules-n900-mainvolume
 meegovolume
+-phonesim
+-corewatcher
 %end
 
 %post

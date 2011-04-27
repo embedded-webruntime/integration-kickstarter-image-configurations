@@ -41,21 +41,21 @@ repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Dev
 kernel-adaptation-n900
 
 xorg-x11-utils-xev
--phonesim
 meegotouch-theme-n900de
 peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 meegotouch-demos
--corewatcher
 mce
 meego-ux-components
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera
+fennec-qt
+-phonesim
+-corewatcher
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
-fennec-qt
 %end
 
 %post

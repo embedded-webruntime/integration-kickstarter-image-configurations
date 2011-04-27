@@ -16,8 +16,9 @@ Repos:
     - de-tablet-devel
 ExtraPackages:
     - orientation-contextkit-sensor
-    # The meego-app-browser doesn't compile for ARM currently so disabling it
-    - -meego-app-browser
-    - -meego-app-browser-ffmpeg-oss
     # Adding the MeeGo ux theme
     - meego-ux-theme
+RemovePackages:
+    # The meego-app-browser doesn't compile for ARM currently so disabling it
+    - meego-app-browser
+    - meego-app-browser-ffmpeg-oss

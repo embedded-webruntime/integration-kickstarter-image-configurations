@@ -19,8 +19,9 @@ ExtraPackages:
     - meego-handset-sms
     # Added to enable camera backend
     - gst-plugins-camera
-    # meego-app-browser doesn't compile for ARM currently...
-    - -meego-app-browser
-    - -meego-app-browser-ffmpeg-oss
-    # ... using fennec-qt instead
+    # Install fennec-qt because meego-app-browser doesn't compile for arm.
     - fennec-qt
+RemovePackages:
+    # meego-app-browser doesn't compile for ARM currently so we can't install it.
+    - meego-app-browser
+    - meego-app-browser-ffmpeg-oss
