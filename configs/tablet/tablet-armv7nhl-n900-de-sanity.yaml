@@ -9,8 +9,8 @@ PostScripts:
     - tablet-sensor-hack
     - meego-ux-daemon-n900-homekey
 Repos:
-    - oss-trunk-daily
-    - non-oss-trunk-daily
+    - oss-1.2-daily
+    - non-oss-1.2-daily
     - de-trunk
     - de-tablet-devel
 ExtraPackages:

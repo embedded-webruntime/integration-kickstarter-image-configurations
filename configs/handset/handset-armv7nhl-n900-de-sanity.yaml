@@ -6,8 +6,8 @@ Groups:
     - MeeGo Handset Desktop
     - MeeGo Handset Applications
 Repos:
-    - oss-trunk-daily
-    - non-oss-trunk-daily
+    - oss-1.2-daily
+    - non-oss-1.2-daily
     - de-trunk
 ExtraPackages:
     - meegovolume

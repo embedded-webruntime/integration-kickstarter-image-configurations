@@ -10,8 +10,8 @@ PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
 Repos:
-    - oss-trunk-daily
-    - non-oss-trunk-daily
+    - oss-1.2-daily
+    - non-oss-1.2-daily
     - de-testing
     - de-tablet-devel
 ExtraPackages:
