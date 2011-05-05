@@ -50,6 +50,7 @@ plymouth-lite
 meegotouch-demos
 mce
 meego-ux-components
+meegovolume
 orientation-contextkit-sensor
 meego-ux-theme
 -phonesim

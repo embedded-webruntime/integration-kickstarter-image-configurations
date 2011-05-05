@@ -1,13 +1,5 @@
 Name: MeeGo Handset N900 Developer Edition (Sanity)
-Platform: N900DE
+Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-sanity
-Groups:
-    - X for Handsets
-    - MeeGo Handset Desktop
-    - MeeGo Handset Applications
 Repos:
-    - oss-1.2-daily
-    - non-oss-1.2-daily
     - de-trunk
-ExtraPackages:
-    - meegovolume

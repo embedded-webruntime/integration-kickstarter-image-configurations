@@ -15,10 +15,12 @@ Default:
     PartSize: 1900
     Schedule: "*"
     Active: True
-
-N900DE:
-    Part: n900-de
+    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
+    Architecture: armv7nhl
+    Desktop: DUI
+    Session: "/usr/bin/mcompositor"
     StartX: True
+    Kernel: kernel-adaptation-n900
     Groups:
         - MeeGo Compliance
         - MeeGo Core
@@ -47,7 +49,6 @@ N900DE:
         # Removing corewatcher because that is consuming way too much disk
         # space currently with unstable apps.
         - corewatcher
-    Kernel: kernel-adaptation-n900
     PostScripts:
         - cleanup
         - nocursor
@@ -63,9 +64,35 @@ N900DE:
         - prelink
     NoChrootScripts:
         - buildname
-    Architecture: armv7nhl
-    Desktop: DUI
-    Session: "/usr/bin/mcompositor"
-    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
+    Repos:
+        - oss-1.2-daily
+        - non-oss-1.2-daily
 
+N900DEHANDSET:
+    Part: n900-de
+    Groups:
+        - X for Handsets
+        - MeeGo Handset Desktop
+        - MeeGo Handset Applications
+    ExtraPackages:
+        # Add separate volume app so we have at least some volume control in the images.
+        - meegovolume
+    RemovePackages:
+        # Removing corewatcher because that is consuming way too much disk
+        # space currently with unstable apps.
+        - corewatcher
 
+N900DETABLET:
+    Part: n900-de
+    ExtraPackages:
+        # These apps are not in Tablet so we add them from handset
+        - meego-handset-dialer
+        - meego-handset-sms
+        # Added to enable camera backend
+        - gst-plugins-camera
+        # Install fennec-qt because meego-app-browser doesn't compile for arm.
+        - fennec-qt
+    RemovePackages:
+        # meego-app-browser doesn't compile for ARM currently so we can't install it.
+        - meego-app-browser
+        - meego-app-browser-ffmpeg-oss

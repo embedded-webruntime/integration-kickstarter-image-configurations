@@ -49,8 +49,11 @@ meegotouch-demos
 mce
 meego-ux-components
 meegovolume
+usb-moded
 -phonesim
 -corewatcher
+-nokia-usb-networking
+-meegotouch-qt-style
 %end
 
 %post

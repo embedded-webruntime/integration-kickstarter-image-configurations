@@ -1,5 +1,5 @@
 Name: MeeGo Tablet N900 DE (Sanity)
-Platform: N900DE
+Platform: N900DETABLET
 FileName: tablet-armv7nhl-n900-de-sanity
 Groups:
     - MeeGo Tablet
@@ -9,19 +9,5 @@ PostScripts:
     - tablet-sensor-hack
     - meego-ux-daemon-n900-homekey
 Repos:
-    - oss-1.2-daily
-    - non-oss-1.2-daily
     - de-trunk
     - de-tablet-devel
-ExtraPackages:
-    # These apps are not in Tablet so we add them from handset
-    - meego-handset-dialer
-    - meego-handset-sms
-    # Added to enable camera backend
-    - gst-plugins-camera
-    # Install fennec-qt because meego-app-browser doesn't compile for arm.
-    - fennec-qt
-RemovePackages:
-    # meego-app-browser doesn't compile for ARM currently so we can't install it.
-    - meego-app-browser
-    - meego-app-browser-ffmpeg-oss

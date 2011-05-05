@@ -1,17 +1,12 @@
 Name: MeeGo Handset N900 With Tablet Apps
-Platform: N900DE
+Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-tablet-apps
 Groups:
-    - X for Handsets
-    - MeeGo Handset Desktop
-    - MeeGo Handset Applications
     - MeeGo Tablet Applications
 PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
 Repos:
-    - oss-1.2-daily
-    - non-oss-1.2-daily
     - de-testing
     - de-tablet-devel
 ExtraPackages:

@@ -1,5 +1,5 @@
 Name: MeeGo Tablet N900 DE (Acceptance)
-Platform: N900DE
+Platform: N900DETABLET
 FileName: tablet-armv7nhl-n900-de-acceptance
 Groups:
     - MeeGo Tablet
@@ -9,8 +9,6 @@ PostScripts:
     - tablet-sensor-hack
     - meego-ux-daemon-n900-homekey
 Repos:
-    - oss-1.2-daily
-    - non-oss-1.2-daily
     - de-testing
     - de-tablet-devel
 ExtraPackages:

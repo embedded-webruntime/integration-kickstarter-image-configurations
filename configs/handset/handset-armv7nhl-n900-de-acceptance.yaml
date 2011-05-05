@@ -1,13 +1,15 @@
 Name: MeeGo Handset N900 Developer Edition (Acceptance)
-Platform: N900DE
+Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-acceptance
-Groups:
-    - X for Handsets
-    - MeeGo Handset Desktop
-    - MeeGo Handset Applications
 Repos:
-    - oss-1.2-daily
-    - non-oss-1.2-daily
     - de-testing
 ExtraPackages:
-    - meegovolume
+    # Adding usb-moded to the images, this will give us possibility to
+    # choose between PC Suite mode and Mass storage mode.
+    - usb-moded
+RemovePackages:
+    # Remove nokia-usb-networking because it conflicts with usb-moded
+    - nokia-usb-networking
+    # Style causing a lot of crashes so removing for now.
+    # https://bugs.meego.com/show_bug.cgi?id=16894
+    - meegotouch-qt-style
