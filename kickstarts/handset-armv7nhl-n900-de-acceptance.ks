@@ -49,6 +49,7 @@ meegotouch-demos
 mce
 meego-ux-components
 meegovolume
+mad-developer
 -phonesim
 -corewatcher
 -meegotouch-qt-style
