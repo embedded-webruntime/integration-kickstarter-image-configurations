@@ -43,12 +43,17 @@ Default:
         - mce
         # Make sure we have meego-ux-components in the images for developers
         - meego-ux-components
+        # Install mad-developer for SDK usage
+        - mad-developer
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim
         # Removing corewatcher because that is consuming way too much disk
         # space currently with unstable apps.
         - corewatcher
+        # Style causing a lot of crashes so removing for now.
+        # https://bugs.meego.com/show_bug.cgi?id=16894
+        - meegotouch-qt-style
     PostScripts:
         - cleanup
         - nocursor

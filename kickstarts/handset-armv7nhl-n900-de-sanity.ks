@@ -48,9 +48,11 @@ plymouth-lite
 meegotouch-demos
 mce
 meego-ux-components
+mad-developer
 meegovolume
 -phonesim
 -corewatcher
+-meegotouch-qt-style
 %end
 
 %post

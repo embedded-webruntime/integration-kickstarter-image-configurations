@@ -48,12 +48,14 @@ plymouth-lite
 meegotouch-demos
 mce
 meego-ux-components
+mad-developer
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera
 fennec-qt
 -phonesim
 -corewatcher
+-meegotouch-qt-style
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end

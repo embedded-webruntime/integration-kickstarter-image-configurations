@@ -7,11 +7,6 @@ ExtraPackages:
     # Adding usb-moded to the images, this will give us possibility to
     # choose between PC Suite mode and Mass storage mode.
     #- usb-moded
-    # Install mad-developer by default
-    - mad-developer
 RemovePackages:
     # Remove nokia-usb-networking because it conflicts with usb-moded
     #- nokia-usb-networking
-    # Style causing a lot of crashes so removing for now.
-    # https://bugs.meego.com/show_bug.cgi?id=16894
-    - meegotouch-qt-style

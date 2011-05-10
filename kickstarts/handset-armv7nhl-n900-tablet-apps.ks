@@ -50,11 +50,13 @@ plymouth-lite
 meegotouch-demos
 mce
 meego-ux-components
+mad-developer
 meegovolume
 orientation-contextkit-sensor
 meego-ux-theme
 -phonesim
 -corewatcher
+-meegotouch-qt-style
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end
