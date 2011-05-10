@@ -22,8 +22,8 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss-1.2-daily --baseurl=http://download.meego.com/trunk-daily/builds/1.1.99/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900,prelink
-repo --name=non-oss-1.2-daily --baseurl=http://download.meego.com/trunk-daily/builds/1.1.99/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.1.99/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900,prelink
+repo --name=non-oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.1.99/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=de-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
