@@ -1,13 +1,6 @@
 Name: MeeGo Tablet N900 DE (Sanity)
 Platform: N900DETABLET
 FileName: tablet-armv7nhl-n900-de-sanity
-Groups:
-    - MeeGo Tablet
-    - MeeGo Tablet Applications
-PostScripts:
-    - n900-tablet-gconf
-    - tablet-sensor-hack
-    - meego-ux-daemon-n900-homekey
 Repos:
     - de-trunk
     - de-tablet-devel

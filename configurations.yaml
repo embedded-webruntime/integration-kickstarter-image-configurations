@@ -82,13 +82,12 @@ N900DEHANDSET:
     ExtraPackages:
         # Add separate volume app so we have at least some volume control in the images.
         - meegovolume
-    RemovePackages:
-        # Removing corewatcher because that is consuming way too much disk
-        # space currently with unstable apps.
-        - corewatcher
 
 N900DETABLET:
     Part: n900-de
+    Groups:
+        - MeeGo Tablet
+        - MeeGo Tablet Applications
     ExtraPackages:
         # These apps are not in Tablet so we add them from handset
         - meego-handset-dialer
@@ -101,3 +100,7 @@ N900DETABLET:
         # meego-app-browser doesn't compile for ARM currently so we can't install it.
         - meego-app-browser
         - meego-app-browser-ffmpeg-oss
+    PostScripts:
+        - n900-tablet-gconf
+        - tablet-sensor-hack
+        - meego-ux-daemon-n900-homekey
