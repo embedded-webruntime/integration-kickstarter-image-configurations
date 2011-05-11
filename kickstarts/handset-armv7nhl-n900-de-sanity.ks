@@ -90,11 +90,11 @@ chmod +x /sbin/bootchartd-long
 sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
 
 # Without this line the rpm don't get the architecture right.
-echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
+echo -n 'armv7nhl-meego-linux' > /etc/rpm/platform
  
 # Also libzypp has problems in autodetecting the architecture so we force tha as well.
 # https://bugs.meego.com/show_bug.cgi?id=11484
-echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
+echo 'arch = armv7nhl' >> /etc/zypp/zypp.conf
 
 # Fix for https://bugs.meego.com/show_bug.cgi?id=15963
 mkdir -p /usr/share/themes/base/meegotouch/
