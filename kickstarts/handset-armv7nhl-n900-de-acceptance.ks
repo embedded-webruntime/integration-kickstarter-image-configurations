@@ -50,6 +50,7 @@ mce
 meego-ux-components
 mad-developer
 meegovolume
+meego-pinquery
 -phonesim
 -corewatcher
 -meegotouch-qt-style
