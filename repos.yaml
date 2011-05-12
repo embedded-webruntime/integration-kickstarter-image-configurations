@@ -1,7 +1,7 @@
 Repositories:
     -   Name: oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.1.99/latest/repos/oss/armv7hl/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio,pulseaudio-module-x11,pulseaudio-startup,pulseaudio-policy-enforcement,pulseaudio-modules-*,kernel-adaptation-n900,prelink
+        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-policy-enforcement,pulseaudio-modules-n900,kernel-adaptation-n900,prelink
 
     -   Name: non-oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.1.99/latest/repos/non-oss/armv7hl/packages/
