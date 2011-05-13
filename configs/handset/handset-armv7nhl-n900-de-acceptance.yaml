@@ -4,6 +4,8 @@ FileName: handset-armv7nhl-n900-de-acceptance
 Repos:
     - de-testing
 ExtraPackages:
+    # Add volume control.
+    - meego-volume-control
     # Adding usb-moded to the images, this will give us possibility to
     # choose between PC Suite mode and Mass storage mode.
     #- usb-moded

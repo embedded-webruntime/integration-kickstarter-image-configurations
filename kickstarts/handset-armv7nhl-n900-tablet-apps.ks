@@ -51,8 +51,8 @@ meegotouch-demos
 mce
 meego-ux-components
 mad-developer
-meegovolume
 meego-pinquery
+meegovolume
 orientation-contextkit-sensor
 meego-ux-theme
 -phonesim

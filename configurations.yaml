@@ -80,8 +80,6 @@ N900DEHANDSET:
         - MeeGo Handset Desktop
         - MeeGo Handset Applications
     ExtraPackages:
-        # Add separate volume app so we have at least some volume control in the images.
-        - meegovolume
         # Add meego-pinquery package to add support for SIM cards with PIN code.
         - meego-pinquery
 

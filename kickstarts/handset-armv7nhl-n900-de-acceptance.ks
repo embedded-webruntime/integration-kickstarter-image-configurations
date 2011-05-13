@@ -49,8 +49,8 @@ meegotouch-demos
 mce
 meego-ux-components
 mad-developer
-meegovolume
 meego-pinquery
+meego-volume-control
 -phonesim
 -corewatcher
 -meegotouch-qt-style
