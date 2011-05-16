@@ -8,7 +8,7 @@ ExtraPackages:
     - meego-volume-control
     # Adding usb-moded to the images, this will give us possibility to
     # choose between PC Suite mode and Mass storage mode.
-    #- usb-moded
+    - usb-moded
 RemovePackages:
     # Remove nokia-usb-networking because it conflicts with usb-moded
-    #- nokia-usb-networking
+    - nokia-usb-networking

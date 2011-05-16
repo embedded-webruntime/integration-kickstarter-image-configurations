@@ -51,9 +51,11 @@ meego-ux-components
 mad-developer
 meego-pinquery
 meego-volume-control
+usb-moded
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-nokia-usb-networking
 %end
 
 %post
