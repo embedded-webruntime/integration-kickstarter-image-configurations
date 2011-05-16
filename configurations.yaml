@@ -62,7 +62,7 @@ Default:
         - meegotouch-n900
         - bootchart
         - fstab-n900
-        - arch-armv7nhl
+        - arch-armv7hl
         - handset-app-theme-fixes
         - plymouth-lite-n900
         - meegotouch-translations
