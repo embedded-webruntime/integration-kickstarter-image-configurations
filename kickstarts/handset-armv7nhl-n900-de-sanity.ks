@@ -50,10 +50,12 @@ mce
 meego-ux-components
 mad-developer
 meego-pinquery
+usb-moded
 meegovolume
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-nokia-usb-networking
 %end
 
 %post

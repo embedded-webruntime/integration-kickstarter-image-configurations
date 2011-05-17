@@ -82,6 +82,12 @@ N900DEHANDSET:
     ExtraPackages:
         # Add meego-pinquery package to add support for SIM cards with PIN code.
         - meego-pinquery
+        # Adding usb-moded to the images, this will give us possibility to
+        # choose between PC Suite mode and Mass storage mode.
+        - usb-moded
+    RemovePackages:
+        # Remove nokia-usb-networking because it conflicts with usb-moded
+        - nokia-usb-networking
 
 N900DETABLET:
     Part: n900-de

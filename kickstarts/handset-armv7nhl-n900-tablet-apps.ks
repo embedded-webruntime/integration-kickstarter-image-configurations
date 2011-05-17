@@ -52,12 +52,14 @@ mce
 meego-ux-components
 mad-developer
 meego-pinquery
+usb-moded
 meegovolume
 orientation-contextkit-sensor
 meego-ux-theme
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-nokia-usb-networking
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end

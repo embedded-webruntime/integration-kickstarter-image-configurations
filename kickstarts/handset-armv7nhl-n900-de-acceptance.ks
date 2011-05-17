@@ -50,12 +50,15 @@ mce
 meego-ux-components
 mad-developer
 meego-pinquery
-meego-volume-control
 usb-moded
+meego-volume-control
+meego-handset-camera
 -phonesim
 -corewatcher
 -meegotouch-qt-style
 -nokia-usb-networking
+-meegocamera
+-meego-handset-icon-theme
 %end
 
 %post
