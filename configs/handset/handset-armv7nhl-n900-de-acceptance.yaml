@@ -3,7 +3,3 @@ Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-acceptance
 Repos:
     - de-testing
-RemovePackages:
-    # Just to make sure we don't have problems with 
-    # https://bugs.meego.com/show_bug.cgi?id=17695
-    - meego-handset-icon-theme

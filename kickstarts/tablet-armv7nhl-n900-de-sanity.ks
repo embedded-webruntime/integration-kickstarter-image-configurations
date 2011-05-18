@@ -59,6 +59,7 @@ fennec-qt
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-meego-handset-icon-theme
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end

@@ -59,9 +59,9 @@ meego-volume-control
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-meego-handset-icon-theme
 -nokia-usb-networking
 -meegocamera
--meego-handset-icon-theme
 %end
 
 %post

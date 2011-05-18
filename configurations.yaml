@@ -59,6 +59,9 @@ Default:
         # Style causing a lot of crashes so removing for now.
         # https://bugs.meego.com/show_bug.cgi?id=16894
         - meegotouch-qt-style
+        # Just to make sure we don't have problems with 
+        # https://bugs.meego.com/show_bug.cgi?id=17695
+        - meego-handset-icon-theme
     PostScripts:
         - cleanup
         - nocursor

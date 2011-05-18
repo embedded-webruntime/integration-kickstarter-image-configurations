@@ -56,10 +56,10 @@ meego-pinquery
 usb-moded
 meego-handset-camera
 meego-volume-control
-meegovolume
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-meego-handset-icon-theme
 -nokia-usb-networking
 -meegocamera
 %end

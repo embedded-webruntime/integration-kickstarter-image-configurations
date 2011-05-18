@@ -64,6 +64,7 @@ meego-ux-theme
 -phonesim
 -corewatcher
 -meegotouch-qt-style
+-meego-handset-icon-theme
 -nokia-usb-networking
 -meegocamera
 -meego-app-browser

@@ -3,6 +3,3 @@ Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-sanity
 Repos:
     - de-trunk
-ExtraPackages:
-    # Add separate volume app so we have at least some volume control in the images.
-    - meegovolume
