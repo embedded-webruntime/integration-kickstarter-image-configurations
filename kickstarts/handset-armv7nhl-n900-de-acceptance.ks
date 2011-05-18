@@ -54,8 +54,8 @@ libqtwebkit-qmlwebkitplugin
 libresource-client
 meego-pinquery
 usb-moded
-meego-volume-control
 meego-handset-camera
+meego-volume-control
 -phonesim
 -corewatcher
 -meegotouch-qt-style

@@ -6,11 +6,7 @@ Repos:
 ExtraPackages:
     # Add volume control.
     - meego-volume-control
-    # replacement for meegocamera
-    - meego-handset-camera
 RemovePackages:
-    # Remove meegocamera replaced by meego-handset-camera
-    - meegocamera
     # Just to make sure we don't have problems with 
     # https://bugs.meego.com/show_bug.cgi?id=17695
     - meego-handset-icon-theme

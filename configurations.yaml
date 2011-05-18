@@ -90,9 +90,13 @@ N900DEHANDSET:
         # Adding usb-moded to the images, this will give us possibility to
         # choose between PC Suite mode and Mass storage mode.
         - usb-moded
+        # replacement for meegocamera
+        - meego-handset-camera
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
+        # Remove meegocamera replaced by meego-handset-camera
+        - meegocamera
 
 N900DETABLET:
     Part: n900-de

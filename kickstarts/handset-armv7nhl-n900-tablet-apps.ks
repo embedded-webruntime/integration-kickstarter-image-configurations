@@ -56,6 +56,7 @@ libqtwebkit-qmlwebkitplugin
 libresource-client
 meego-pinquery
 usb-moded
+meego-handset-camera
 meegovolume
 orientation-contextkit-sensor
 meego-ux-theme
@@ -63,6 +64,7 @@ meego-ux-theme
 -corewatcher
 -meegotouch-qt-style
 -nokia-usb-networking
+-meegocamera
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end

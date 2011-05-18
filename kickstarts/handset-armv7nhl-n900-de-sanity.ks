@@ -54,11 +54,13 @@ libqtwebkit-qmlwebkitplugin
 libresource-client
 meego-pinquery
 usb-moded
+meego-handset-camera
 meegovolume
 -phonesim
 -corewatcher
 -meegotouch-qt-style
 -nokia-usb-networking
+-meegocamera
 %end
 
 %post
