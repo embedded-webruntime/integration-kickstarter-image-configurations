@@ -3,9 +3,6 @@ Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-acceptance
 Repos:
     - de-testing
-ExtraPackages:
-    # Add volume control.
-    - meego-volume-control
 RemovePackages:
     # Just to make sure we don't have problems with 
     # https://bugs.meego.com/show_bug.cgi?id=17695

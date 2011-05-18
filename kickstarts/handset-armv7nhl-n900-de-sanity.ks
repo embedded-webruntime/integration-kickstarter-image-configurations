@@ -55,6 +55,7 @@ libresource-client
 meego-pinquery
 usb-moded
 meego-handset-camera
+meego-volume-control
 meegovolume
 -phonesim
 -corewatcher

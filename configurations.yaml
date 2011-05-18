@@ -92,6 +92,8 @@ N900DEHANDSET:
         - usb-moded
         # replacement for meegocamera
         - meego-handset-camera
+        # Add volume control.
+        - meego-volume-control
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
