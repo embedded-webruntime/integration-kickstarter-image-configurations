@@ -49,6 +49,9 @@ meegotouch-demos
 mce
 meego-ux-components
 mad-developer
+libqtwebkit4
+libqtwebkit-qmlwebkitplugin
+libresource-client
 meego-handset-dialer
 meego-handset-sms
 gst-plugins-camera

@@ -45,6 +45,11 @@ Default:
         - meego-ux-components
         # Install mad-developer for SDK usage
         - mad-developer
+        # Qt Webkit is missing from the images
+        - libqtwebkit4 
+        - libqtwebkit-qmlwebkitplugin
+        # Add resource policy client for debugging resource rules
+        - libresource-client
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

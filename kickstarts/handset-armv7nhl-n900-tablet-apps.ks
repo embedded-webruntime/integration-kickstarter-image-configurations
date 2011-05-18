@@ -51,6 +51,9 @@ meegotouch-demos
 mce
 meego-ux-components
 mad-developer
+libqtwebkit4
+libqtwebkit-qmlwebkitplugin
+libresource-client
 meego-pinquery
 usb-moded
 meegovolume
