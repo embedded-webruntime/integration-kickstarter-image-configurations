@@ -8,7 +8,7 @@
 lang en_US.UTF-8
 keyboard us
 timezone --utc America/Los_Angeles
-part / --size=3600  --ondisk mmcblk0p --fstype=ext3
+part / --size=3600  --ondisk mmcblk0p --fstype=ext4
 
 # This is not used currently. It is here because the /boot partition
 # needs to be the partition number 3 for the u-boot usage.
