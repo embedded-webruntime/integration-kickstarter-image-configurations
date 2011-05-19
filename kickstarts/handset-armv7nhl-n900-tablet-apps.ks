@@ -44,7 +44,6 @@ kernel-adaptation-n900
 
 xorg-x11-utils-xev
 meegotouch-theme-n900de
-peregrine-plain-qml
 generic-backgrounds
 plymouth-lite
 meegotouch-demos
@@ -54,6 +53,10 @@ mad-developer
 libqtwebkit4
 libqtwebkit-qmlwebkitplugin
 libresource-client
+peregrine-plain-qml
+info.vivainio.qatbowling
+info.vivainio.qmlreddit
+com.substanceofcode.kasvopus
 meego-pinquery
 usb-moded
 meego-handset-camera

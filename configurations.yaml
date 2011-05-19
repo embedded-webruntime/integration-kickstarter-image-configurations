@@ -32,8 +32,6 @@ Default:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
         - meegotouch-theme-n900de
-        # IM application
-        - peregrine-plain-qml
         # Add splash screen stuff
         - generic-backgrounds
         - plymouth-lite
@@ -50,6 +48,15 @@ Default:
         - libqtwebkit-qmlwebkitplugin
         # Add resource policy client for debugging resource rules
         - libresource-client
+        ### Community apps ###
+        # IM application
+        - peregrine-plain-qml
+        # Cat related game
+        - info.vivainio.qatbowling
+        # Reddit reader
+        - info.vivainio.qmlreddit
+        # Facebook client
+        - com.substanceofcode.kasvopus
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim
