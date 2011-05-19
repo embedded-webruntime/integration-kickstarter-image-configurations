@@ -57,6 +57,7 @@ peregrine-plain-qml
 info.vivainio.qatbowling
 info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
+gst-nokia-camera
 meego-pinquery
 usb-moded
 meego-handset-camera

@@ -55,9 +55,9 @@ peregrine-plain-qml
 info.vivainio.qatbowling
 info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
+gst-nokia-camera
 meego-handset-dialer
 meego-handset-sms
-gst-plugins-camera
 fennec-qt
 -phonesim
 -corewatcher

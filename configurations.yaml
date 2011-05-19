@@ -57,6 +57,8 @@ Default:
         - info.vivainio.qmlreddit
         # Facebook client
         - com.substanceofcode.kasvopus
+        # Non-oss part of N900 camera for focus etc.
+        - gst-nokia-camera
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim
@@ -124,8 +126,6 @@ N900DETABLET:
         # These apps are not in Tablet so we add them from handset
         - meego-handset-dialer
         - meego-handset-sms
-        # Added to enable camera backend
-        - gst-plugins-camera
         # Install fennec-qt because meego-app-browser doesn't compile for arm.
         - fennec-qt
     RemovePackages:
