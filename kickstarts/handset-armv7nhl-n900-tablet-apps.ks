@@ -58,6 +58,7 @@ meego-pinquery
 usb-moded
 meego-handset-camera
 meego-volume-control
+meegotouchcp-usb
 meegovolume
 orientation-contextkit-sensor
 meego-ux-theme

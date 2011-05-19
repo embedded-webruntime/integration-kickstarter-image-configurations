@@ -56,6 +56,7 @@ meego-pinquery
 usb-moded
 meego-handset-camera
 meego-volume-control
+meegotouchcp-usb
 -phonesim
 -corewatcher
 -meegotouch-qt-style
