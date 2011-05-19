@@ -77,12 +77,12 @@ Default:
         - prelink
     NoChrootScripts:
         - buildname
-    Repos:
-        - oss-1.2-daily
-        - non-oss-1.2-daily
 
 N900DEHANDSET:
     Part: n900-de
+    Repos:
+        - oss-1.2-daily
+        - non-oss-1.2-daily
     Groups:
         - X for Handsets
         - MeeGo Handset Desktop
@@ -107,6 +107,9 @@ N900DEHANDSET:
 
 N900DETABLET:
     Part: n900-de
+    Repos:
+        - oss-1.2-daily-tablet
+        - non-oss-1.2-daily
     Groups:
         - MeeGo Tablet
         - MeeGo Tablet Applications
