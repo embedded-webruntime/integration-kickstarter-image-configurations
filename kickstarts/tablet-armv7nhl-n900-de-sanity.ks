@@ -51,11 +51,14 @@ mad-developer
 libqtwebkit4
 libqtwebkit-qmlwebkitplugin
 libresource-client
+python-qtmobility
+shiboken
 peregrine-plain-qml
 info.vivainio.qatbowling
 info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
 gst-nokia-camera
+gpe-mini-browser2
 meego-handset-dialer
 meego-handset-sms
 fennec-qt

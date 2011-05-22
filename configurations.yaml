@@ -48,6 +48,9 @@ Default:
         - libqtwebkit-qmlwebkitplugin
         # Add resource policy client for debugging resource rules
         - libresource-client
+        ### pyside ###
+        - python-qtmobility
+        - shiboken
         ### Community apps ###
         # IM application
         - peregrine-plain-qml
@@ -59,6 +62,8 @@ Default:
         - com.substanceofcode.kasvopus
         # Non-oss part of N900 camera for focus etc.
         - gst-nokia-camera
+        # GPE mini browser
+        - gpe-mini-browser2
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim
