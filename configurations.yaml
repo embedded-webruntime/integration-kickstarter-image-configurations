@@ -89,6 +89,7 @@ Default:
         - plymouth-lite-n900
         - meegotouch-translations
         - prelink
+        - disable-unused-daemons
     NoChrootScripts:
         - buildname
 
@@ -118,6 +119,9 @@ N900DEHANDSET:
         - nokia-usb-networking
         # Remove meegocamera replaced by meego-handset-camera
         - meegocamera
+        # Removing social web as we are not using it.
+        - meegotouchcp-socialweb 
+        - meego-handset-socialweb
 
 N900DETABLET:
     Part: n900-de

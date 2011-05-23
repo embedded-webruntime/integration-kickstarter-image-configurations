@@ -75,6 +75,8 @@ meego-ux-theme
 -meego-handset-icon-theme
 -nokia-usb-networking
 -meegocamera
+-meegotouchcp-socialweb
+-meego-handset-socialweb
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
 %end
@@ -151,6 +153,10 @@ else
     echo "QEMU version is not 0.14 so not running prelink."
 fi
 
+
+# We have some daemons that we do not need so lets disable them for now.
+mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
+mv /usr/lib/applauncherd/libqtbooster.so /root/
 
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \

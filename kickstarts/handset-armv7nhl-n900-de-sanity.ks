@@ -70,6 +70,8 @@ meegotouchcp-usb
 -meego-handset-icon-theme
 -nokia-usb-networking
 -meegocamera
+-meegotouchcp-socialweb
+-meego-handset-socialweb
 %end
 
 %post
@@ -144,6 +146,10 @@ else
     echo "QEMU version is not 0.14 so not running prelink."
 fi
 
+
+# We have some daemons that we do not need so lets disable them for now.
+mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
+mv /usr/lib/applauncherd/libqtbooster.so /root/
 
 
 %end
