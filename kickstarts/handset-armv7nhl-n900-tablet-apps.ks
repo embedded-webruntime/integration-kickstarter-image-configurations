@@ -68,6 +68,7 @@ usb-moded
 meego-handset-camera
 meego-volume-control
 meegotouchcp-usb
+meegotouchcp-gprs
 meegovolume
 orientation-contextkit-sensor
 meego-ux-theme

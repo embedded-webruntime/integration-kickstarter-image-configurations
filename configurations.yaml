@@ -116,6 +116,8 @@ N900DEHANDSET:
         - meego-volume-control
         # Control panel applet to control usb-moded
         - meegotouchcp-usb
+        # Control panel applet for gprs
+        - meegotouchcp-gprs
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
