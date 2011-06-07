@@ -141,6 +141,9 @@ N900DETABLET:
         # meego-app-browser doesn't compile for ARM currently so we can't install it.
         - meego-app-browser
         - meego-app-browser-ffmpeg-oss
+        # Workaround for https://bugs.meego.com/show_bug.cgi?id=18662
+        - pulseaudio-modules-tablet-common
+        - pulseaudio-modules-tablet-mainvolume
     PostScripts:
         - n900-tablet-gconf
         - tablet-sensor-hack

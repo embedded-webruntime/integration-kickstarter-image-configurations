@@ -19,6 +19,7 @@ part /boot --size=32 --ondisk mmcblk0p --fstype=vfat
 
 rootpw meego 
 xconfig --startxonboot
+
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
@@ -68,6 +69,8 @@ fennec-qt
 -meego-handset-icon-theme
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
+-pulseaudio-modules-tablet-common
+-pulseaudio-modules-tablet-mainvolume
 %end
 
 %post
