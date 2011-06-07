@@ -64,6 +64,8 @@ Default:
         - gst-nokia-camera
         # GPE mini browser
         - gpe-mini-browser2
+        # QML Based package manager
+        - mg-package-manager
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

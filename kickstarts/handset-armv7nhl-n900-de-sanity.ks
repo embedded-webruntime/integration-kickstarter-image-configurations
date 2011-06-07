@@ -60,6 +60,7 @@ info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
 gst-nokia-camera
 gpe-mini-browser2
+mg-package-manager
 meego-pinquery
 usb-moded
 meego-handset-camera
