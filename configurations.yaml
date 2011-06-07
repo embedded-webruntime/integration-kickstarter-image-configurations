@@ -144,6 +144,8 @@ N900DETABLET:
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18662
         - pulseaudio-modules-tablet-common
         - pulseaudio-modules-tablet-mainvolume
+        # Workaround for https://bugs.meego.com/show_bug.cgi?id=18667
+        - policy-settings-tablet
     PostScripts:
         - n900-tablet-gconf
         - tablet-sensor-hack

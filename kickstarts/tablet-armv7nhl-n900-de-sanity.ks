@@ -71,6 +71,7 @@ fennec-qt
 -meego-app-browser-ffmpeg-oss
 -pulseaudio-modules-tablet-common
 -pulseaudio-modules-tablet-mainvolume
+-policy-settings-tablet
 %end
 
 %post
