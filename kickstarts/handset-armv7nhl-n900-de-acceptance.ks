@@ -61,6 +61,7 @@ com.substanceofcode.kasvopus
 gst-nokia-camera
 gpe-mini-browser2
 mg-package-manager
+meego-terminal
 meego-pinquery
 usb-moded
 meego-handset-camera

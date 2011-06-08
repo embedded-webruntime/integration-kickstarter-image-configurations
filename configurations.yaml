@@ -66,6 +66,8 @@ Default:
         - gpe-mini-browser2
         # QML Based package manager
         - mg-package-manager
+        # Include new terminal
+        - meego-terminal
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim
@@ -92,6 +94,8 @@ Default:
         - meegotouch-translations
         - prelink
         - disable-unused-daemons
+        # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
+        #- create-tracker-cache
     NoChrootScripts:
         - buildname
 
