@@ -1,0 +1,6 @@
+Name: MeeGo Tablet N900 DE (Testing)
+Platform: N900DETABLET
+FileName: tablet-armv7nhl-n900-de-testing
+Repos:
+    - de-testing
+    - de-tablet-devel

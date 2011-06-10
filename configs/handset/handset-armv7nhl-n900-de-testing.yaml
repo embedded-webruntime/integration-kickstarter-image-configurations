@@ -1,0 +1,5 @@
+Name: MeeGo Handset N900 Developer Edition (Testing)
+Platform: N900DEHANDSET
+FileName: handset-armv7nhl-n900-de-testing
+Repos:
+    - de-testing

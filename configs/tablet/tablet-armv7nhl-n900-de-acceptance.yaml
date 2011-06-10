@@ -1,6 +1,0 @@
-Name: MeeGo Tablet N900 DE (Acceptance)
-Platform: N900DETABLET
-FileName: tablet-armv7nhl-n900-de-acceptance
-Repos:
-    - de-testing
-    - de-tablet-devel

@@ -1,0 +1,6 @@
+Name: MeeGo Tablet N900 DE (Stable)
+Platform: N900DETABLET
+FileName: tablet-armv7nhl-n900-de-stable
+Repos:
+    - de-trunk
+    - de-tablet-devel
