@@ -3,5 +3,3 @@ Platform: N900DEHANDSET
 FileName: handset-armv7nhl-n900-de-acceptance
 Repos:
     - de-testing
-PostScripts:
-    - swap-configurations

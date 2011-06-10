@@ -155,8 +155,6 @@ fi
 mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
 mv /usr/lib/applauncherd/libqtbooster.so /root/
 
-# Doing some swap configurations.
-echo 'vm.swappiness = 80' >> /etc/sysctl.conf
 
 %end
 
