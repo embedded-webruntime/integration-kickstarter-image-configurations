@@ -1,0 +1,5 @@
+Name: MeeGo Handset N900 Community Edition (Testing)
+Platform: N900CEHANDSET
+FileName: handset-armv7nhl-n900-ce-testing
+Repos:
+    - ce-testing

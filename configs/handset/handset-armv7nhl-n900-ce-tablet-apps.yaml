@@ -1,14 +1,14 @@
-Name: MeeGo Handset N900 With Tablet Apps
-Platform: N900DEHANDSET
-FileName: handset-armv7nhl-n900-tablet-apps
+Name: MeeGo Handset N900 CE with Tablet Apps
+Platform: N900CEHANDSET
+FileName: handset-armv7nhl-n900-ce-tablet-apps
 Groups:
     - MeeGo Tablet Applications
 PostScripts:
     - n900-tablet-gconf
     - tablet-sensor-hack
 Repos:
-    - de-testing
-    - de-tablet-devel
+    - ce-testing
+    - ce-tablet-devel
 ExtraPackages:
     # Add separate volume app so we have at least some volume control in the images.
     - meegovolume

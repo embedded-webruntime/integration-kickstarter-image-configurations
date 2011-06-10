@@ -1,0 +1,6 @@
+Name: MeeGo Tablet N900 CE (Testing)
+Platform: N900CETABLET
+FileName: tablet-armv7nhl-n900-ce-testing
+Repos:
+    - ce-testing
+    - ce-tablet-devel

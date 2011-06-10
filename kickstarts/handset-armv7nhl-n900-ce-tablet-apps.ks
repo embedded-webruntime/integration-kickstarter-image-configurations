@@ -23,10 +23,10 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss-1.2-daily-tablet --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,meego-qml-launcher,meego-ux-settings
+repo --name=oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
 repo --name=non-oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=de-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
@@ -36,7 +36,9 @@ repo --name=de-tablet-devel --baseurl=http://repo.pub.meego.com/Project:/DE:/Dev
 @Minimal MeeGo X Window System
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
-@MeeGo Tablet
+@X for Handsets
+@MeeGo Handset Desktop
+@MeeGo Handset Applications
 @MeeGo Tablet Applications
 
 kernel-adaptation-n900
@@ -62,18 +64,25 @@ gst-nokia-camera
 gpe-mini-browser2
 mg-package-manager
 meego-terminal
-meego-handset-dialer
-meego-handset-sms
-fennec-qt
+meego-pinquery
+usb-moded
+meego-handset-camera
+meego-volume-control
+meegotouchcp-usb
+meegotouchcp-gprs
+meegovolume
+orientation-contextkit-sensor
+meego-ux-theme
 -phonesim
 -corewatcher
 -meegotouch-qt-style
 -meego-handset-icon-theme
+-nokia-usb-networking
+-meegocamera
+-meegotouchcp-socialweb
+-meego-handset-socialweb
 -meego-app-browser
 -meego-app-browser-ffmpeg-oss
--pulseaudio-modules-tablet-common
--pulseaudio-modules-tablet-mainvolume
--policy-settings-tablet
 %end
 
 %post
@@ -164,9 +173,6 @@ gconftool-2 --direct \
 # doesn't return sane values on startup
 rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
 
-# Set the homekey for N900 through the gconf.
-gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
-  -s -t string /meego/ux/HomeKey XF86WebCam
 
 %end
 

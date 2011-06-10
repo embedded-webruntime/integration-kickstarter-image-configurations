@@ -1,0 +1,5 @@
+Name: MeeGo Handset N900 Community Edition (Stable)
+Platform: N900CEHANDSET
+FileName: handset-armv7nhl-n900-ce-stable
+Repos:
+    - ce-trunk

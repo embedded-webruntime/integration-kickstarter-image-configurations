@@ -99,8 +99,8 @@ Default:
     NoChrootScripts:
         - buildname
 
-N900DEHANDSET:
-    Part: n900-de
+N900CEHANDSET:
+    Part: n900-ce
     Repos:
         - oss-1.2-daily
         - non-oss-1.2-daily
@@ -131,8 +131,8 @@ N900DEHANDSET:
         - meegotouchcp-socialweb 
         - meego-handset-socialweb
 
-N900DETABLET:
-    Part: n900-de
+N900CETABLET:
+    Part: n900-ce
     Repos:
         - oss-1.2-daily-tablet
         - non-oss-1.2-daily

@@ -30,11 +30,11 @@ Repositories:
     -   Name: non-oss-testing-live
         Url:  http://download.meego.com/testing/trunk/repos/non-oss/armv7hl/packages/
 
-    -   Name: de-trunk
+    -   Name: ce-trunk
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/
-    -   Name: de-testing
+    -   Name: ce-testing
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/
 
-    -   Name: de-tablet-devel
+    -   Name: ce-tablet-devel
         Url:  http://repo.pub.meego.com/Project:/DE:/Devel:/Tablet/standard/
 
