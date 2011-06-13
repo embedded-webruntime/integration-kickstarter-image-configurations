@@ -158,7 +158,8 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
-# Workaround for BMC#15039 / QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
+# Workaround for https://bugs.meego.com/show_bug.cgi?id=15039 
+# and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
 # doesn't return sane values on startup
 mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
 
