@@ -4,7 +4,6 @@ FileName: handset-armv7nhl-n900-ce-tablet-apps
 Groups:
     - MeeGo Tablet Applications
 PostScripts:
-    - n900-tablet-gconf
     - tablet-sensor-hack
 Repos:
     - ce-testing

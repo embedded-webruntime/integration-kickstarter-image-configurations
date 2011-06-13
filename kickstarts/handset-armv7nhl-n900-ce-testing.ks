@@ -23,8 +23,8 @@ xconfig --startxonboot
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
-repo --name=oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
-repo --name=non-oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/1.2.0.90.3.20110609.2/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
+repo --name=non-oss-1.2-daily --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/1.2.0.90.3.20110609.2/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
@@ -38,6 +38,7 @@ repo --name=ce-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/T
 @X for Handsets
 @MeeGo Handset Desktop
 @MeeGo Handset Applications
+@MeeGo Tablet Applications
 
 kernel-adaptation-n900
 
@@ -156,6 +157,13 @@ fi
 mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
 mv /usr/lib/applauncherd/libqtbooster.so /root/
 
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t string /meego/ux/theme 1024-600-10
+
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+  -s -t bool /meego/ux/ShowPanelsAsHome false
 
 %end
 

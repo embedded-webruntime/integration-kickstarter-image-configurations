@@ -96,6 +96,8 @@ Default:
         - disable-unused-daemons
         # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
         #- create-tracker-cache
+        # We in order to get MeeGo UX apps launch properly we need this
+        - n900-tablet-gconf
     NoChrootScripts:
         - buildname
 
@@ -155,6 +157,5 @@ N900CETABLET:
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18667
         - policy-settings-tablet
     PostScripts:
-        - n900-tablet-gconf
         - tablet-sensor-hack
         - meego-ux-daemon-n900-homekey

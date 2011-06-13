@@ -155,6 +155,13 @@ fi
 mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
 mv /usr/lib/applauncherd/libqtbooster.so /root/
 
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t string /meego/ux/theme 1024-600-10
+
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+  -s -t bool /meego/ux/ShowPanelsAsHome false
 
 %end
 
