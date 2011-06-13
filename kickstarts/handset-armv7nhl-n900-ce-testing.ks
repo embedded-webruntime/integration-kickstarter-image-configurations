@@ -72,6 +72,7 @@ meegotouchcp-gprs
 profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
+meego-ux-appgrid
 -phonesim
 -corewatcher
 -meegotouch-qt-style
@@ -170,6 +171,11 @@ gconftool-2 --direct \
 # and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
 # doesn't return sane values on startup
 mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
+
+# Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
+# In some systems cp is alias to "cp -i" by default, workaround for that.
+unalias cp
+cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
 
 
 %end

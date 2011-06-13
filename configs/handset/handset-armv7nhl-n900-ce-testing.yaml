@@ -16,6 +16,11 @@ ExtraPackages:
     - meego-ux-sharing-qml-ui
     # Orientation with MeeGo UX apps do not work without this
     - orientation-contextkit-sensor
+    # Workaround for https://bugs.meego.com/show_bug.cgi?id=16394
+    # Copy the .desktop files from this to the right places as temp solution.
+    - meego-ux-appgrid
 PostScripts:
     # Workaround for https://bugs.meego.com/show_bug.cgi?id=15039
     - tablet-sensor-hack
+    # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
+    - meego-ux-desktop-file-fix
