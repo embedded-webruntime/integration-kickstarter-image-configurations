@@ -68,6 +68,7 @@ meego-handset-camera
 meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
+profiled
 -phonesim
 -corewatcher
 -meegotouch-qt-style

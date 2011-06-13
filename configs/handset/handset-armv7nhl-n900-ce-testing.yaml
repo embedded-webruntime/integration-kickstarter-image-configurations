@@ -3,3 +3,6 @@ Platform: N900CEHANDSET
 FileName: handset-armv7nhl-n900-ce-testing
 Repos:
     - ce-testing
+ExtraPackages:
+    # We need this so we can select between silent and general profiles
+    - profiled
