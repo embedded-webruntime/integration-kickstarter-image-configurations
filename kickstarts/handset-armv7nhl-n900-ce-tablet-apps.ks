@@ -167,7 +167,7 @@ gconftool-2 --direct \
   -s -t bool /meego/ux/ShowPanelsAsHome false
 # Workaround for BMC#15039 / QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
 # doesn't return sane values on startup
-rm /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so
+mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
 
 
 %end
