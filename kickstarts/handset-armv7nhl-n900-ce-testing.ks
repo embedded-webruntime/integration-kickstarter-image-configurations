@@ -81,6 +81,7 @@ meego-ux-appgrid
 -meegocamera
 -meegotouchcp-socialweb
 -meego-handset-socialweb
+-meegotouch-applifed
 %end
 
 %post
