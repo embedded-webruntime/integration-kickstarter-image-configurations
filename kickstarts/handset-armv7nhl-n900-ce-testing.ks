@@ -70,6 +70,7 @@ meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
 profiled
+meego-ux-sharing-qml-ui
 -phonesim
 -corewatcher
 -meegotouch-qt-style

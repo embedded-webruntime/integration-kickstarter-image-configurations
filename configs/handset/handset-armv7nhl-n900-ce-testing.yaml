@@ -9,3 +9,8 @@ Groups:
 ExtraPackages:
     # We need this so we can select between silent and general profiles
     - profiled
+    # Because of following bugs we need to install the package manually:
+    # https://bugs.meego.com/show_bug.cgi?id=19010
+    # https://bugs.meego.com/show_bug.cgi?id=19011
+    # https://bugs.meego.com/show_bug.cgi?id=19013
+    - meego-ux-sharing-qml-ui
