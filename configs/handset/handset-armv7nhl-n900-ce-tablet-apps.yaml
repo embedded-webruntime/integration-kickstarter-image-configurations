@@ -9,6 +9,4 @@ Repos:
     - ce-testing
     - ce-tablet-devel
 ExtraPackages:
-    # Add separate volume app so we have at least some volume control in the images.
-    - meegovolume
     - orientation-contextkit-sensor
