@@ -145,12 +145,9 @@ N900CETABLET:
         # These apps are not in Tablet so we add them from handset
         - meego-handset-dialer
         - meego-handset-sms
-        # Install fennec-qt because meego-app-browser doesn't compile for arm.
+        # Install fennec-qt because meego-app-browser doesn't work properly.
         - fennec-qt
     RemovePackages:
-        # meego-app-browser doesn't compile for ARM currently so we can't install it.
-        - meego-app-browser
-        - meego-app-browser-ffmpeg-oss
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18662
         - pulseaudio-modules-tablet-common
         - pulseaudio-modules-tablet-mainvolume

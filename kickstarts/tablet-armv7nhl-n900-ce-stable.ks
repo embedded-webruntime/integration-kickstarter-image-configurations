@@ -69,8 +69,6 @@ fennec-qt
 -corewatcher
 -meegotouch-qt-style
 -meego-handset-icon-theme
--meego-app-browser
--meego-app-browser-ffmpeg-oss
 -pulseaudio-modules-tablet-common
 -pulseaudio-modules-tablet-mainvolume
 -policy-settings-tablet

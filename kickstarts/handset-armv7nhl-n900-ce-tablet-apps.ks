@@ -72,7 +72,6 @@ meegotouchcp-usb
 meegotouchcp-gprs
 meegovolume
 orientation-contextkit-sensor
-meego-ux-theme
 -phonesim
 -corewatcher
 -meegotouch-qt-style
@@ -81,8 +80,6 @@ meego-ux-theme
 -meegocamera
 -meegotouchcp-socialweb
 -meego-handset-socialweb
--meego-app-browser
--meego-app-browser-ffmpeg-oss
 %end
 
 %post
