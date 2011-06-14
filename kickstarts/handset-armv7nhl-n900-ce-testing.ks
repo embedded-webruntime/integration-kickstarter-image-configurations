@@ -77,11 +77,11 @@ meego-ux-appgrid
 -corewatcher
 -meegotouch-qt-style
 -meego-handset-icon-theme
+-meegotouch-applifed
 -nokia-usb-networking
 -meegocamera
 -meegotouchcp-socialweb
 -meego-handset-socialweb
--meegotouch-applifed
 %end
 
 %post
@@ -178,8 +178,10 @@ mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
 unalias cp
 # The desktop files from meego-ux-appgrid...
 cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
+cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/
 # ... and the icons from meego-ux-theme.
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
+
 
 %end
 

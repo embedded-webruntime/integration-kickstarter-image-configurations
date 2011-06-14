@@ -80,6 +80,8 @@ Default:
         # Just to make sure we don't have problems with 
         # https://bugs.meego.com/show_bug.cgi?id=17695
         - meego-handset-icon-theme
+        # Save some more memory by removing applifed as well.
+        - meegotouch-applifed
     PostScripts:
         - cleanup
         - nocursor
@@ -124,6 +126,8 @@ N900CEHANDSET:
         - meegotouchcp-usb
         # Control panel applet for gprs
         - meegotouchcp-gprs
+        # We need this so we can select between silent and general profiles
+        - profiled
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking

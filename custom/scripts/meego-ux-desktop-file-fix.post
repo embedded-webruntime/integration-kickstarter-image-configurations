@@ -3,5 +3,6 @@
 unalias cp
 # The desktop files from meego-ux-appgrid...
 cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
+cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/
 # ... and the icons from meego-ux-theme.
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/

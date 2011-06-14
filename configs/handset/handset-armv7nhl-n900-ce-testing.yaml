@@ -7,8 +7,6 @@ Groups:
     # Adding the MeeGo UX applications.
     - MeeGo Tablet Applications
 ExtraPackages:
-    # We need this so we can select between silent and general profiles
-    - profiled
     # Because of following bugs we need to install the package manually:
     # https://bugs.meego.com/show_bug.cgi?id=19010
     # https://bugs.meego.com/show_bug.cgi?id=19011
@@ -19,9 +17,6 @@ ExtraPackages:
     # Workaround for https://bugs.meego.com/show_bug.cgi?id=16394
     # Copy the .desktop files from this to the right places as temp solution.
     - meego-ux-appgrid
-RemovePackages:
-    # Save some more memory by removing applifed as well.
-    - meegotouch-applifed
 PostScripts:
     # Workaround for https://bugs.meego.com/show_bug.cgi?id=15039
     - tablet-sensor-hack

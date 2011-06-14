@@ -68,10 +68,12 @@ meego-handset-camera
 meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
+profiled
 -phonesim
 -corewatcher
 -meegotouch-qt-style
 -meego-handset-icon-theme
+-meegotouch-applifed
 -nokia-usb-networking
 -meegocamera
 -meegotouchcp-socialweb
