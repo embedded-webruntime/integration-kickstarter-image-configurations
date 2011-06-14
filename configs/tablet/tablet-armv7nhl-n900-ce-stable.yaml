@@ -3,4 +3,3 @@ Platform: N900CETABLET
 FileName: tablet-armv7nhl-n900-ce-stable
 Repos:
     - ce-trunk
-    - ce-tablet-devel
