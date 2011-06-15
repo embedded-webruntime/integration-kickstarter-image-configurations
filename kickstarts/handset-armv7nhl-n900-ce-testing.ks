@@ -33,11 +33,11 @@ repo --name=ce-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/T
 @MeeGo Core
 @MeeGo Base Development
 @Minimal MeeGo X Window System
-@Nokia N900 Support
-@Nokia N900 Proprietary Support
 @X for Handsets
 @MeeGo Handset Desktop
 @MeeGo Handset Applications
+@Nokia N900 Support
+@Nokia N900 Proprietary Support
 @MeeGo Tablet Applications
 
 kernel-adaptation-n900
@@ -95,28 +95,16 @@ rm -f /core*
 # Remove cursor from showing during startup BMC#14991
 echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
 
-# open serial line console for embedded system
-echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
-
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
-# Set up proper target for libmeegotouch
-Config_Src=`gconftool-2 --get-default-source`
-gconftool-2 --direct --config-source $Config_Src \
-  -s -t string /meegotouch/target/name N900
 # Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
 cat > /sbin/bootchartd-long << EOF
 #!/bin/sh
 exec /sbin/bootchartd -n 4000
 EOF
 chmod +x /sbin/bootchartd-long
-
-# Use eMMC swap partition as MeeGo swap as well.
-# Because of the 2nd partition is swap for the partition numbering
-# we can just change the current fstab entry to match the eMMC partition.
-sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
 
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
@@ -168,6 +156,18 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
+# Use eMMC swap partition as MeeGo swap as well.
+# Because of the 2nd partition is swap for the partition numbering
+# we can just change the current fstab entry to match the eMMC partition.
+sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
+
+# open serial line console for embedded system
+echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
+
+# Set up proper target for libmeegotouch
+Config_Src=`gconftool-2 --get-default-source`
+gconftool-2 --direct --config-source $Config_Src \
+  -s -t string /meegotouch/target/name N900
 # Workaround for https://bugs.meego.com/show_bug.cgi?id=15039 
 # and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
 # doesn't return sane values on startup

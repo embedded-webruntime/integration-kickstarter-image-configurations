@@ -15,19 +15,14 @@ Default:
     PartSize: 1900
     Schedule: "*"
     Active: True
-    Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
-    Architecture: armv7nhl
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
     StartX: True
-    Kernel: kernel-adaptation-n900
     Groups:
         - MeeGo Compliance
         - MeeGo Core
         - MeeGo Base Development
         - Minimal MeeGo X Window System
-        - Nokia N900 Support
-        - Nokia N900 Proprietary Support
     ExtraPackages:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
@@ -85,26 +80,22 @@ Default:
     PostScripts:
         - cleanup
         - nocursor
-        - serial-n900
         - rpm
-        - meegotouch-n900
         - bootchart
-        - fstab-n900
         - arch-armv7hl
         - handset-app-theme-fixes
-        - plymouth-lite-n900
+        - plymouth-lite-ce
         - meegotouch-translations
         - prelink
         - disable-unused-daemons
         # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
         #- create-tracker-cache
         # We in order to get MeeGo UX apps launch properly we need this
-        - n900-tablet-gconf
+        - meego-ux-ce-gconf
     NoChrootScripts:
         - buildname
 
-N900CEHANDSET:
-    Part: n900-ce
+CEHANDSET:
     Repos:
         - oss-1.2-daily
         - non-oss-1.2-daily
@@ -137,8 +128,7 @@ N900CEHANDSET:
         - meegotouchcp-socialweb 
         - meego-handset-socialweb
 
-N900CETABLET:
-    Part: n900-ce
+CETABLET:
     Repos:
         - oss-1.2-daily-tablet
         - non-oss-1.2-daily
@@ -159,4 +149,3 @@ N900CETABLET:
         - policy-settings-tablet
     PostScripts:
         - tablet-sensor-hack
-        - meego-ux-daemon-n900-homekey
