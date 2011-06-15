@@ -57,13 +57,13 @@ peregrine-plain-qml
 info.vivainio.qatbowling
 info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
-gst-nokia-camera
 gpe-mini-browser2
 mg-package-manager
 meego-terminal
 meego-handset-dialer
 meego-handset-sms
 fennec-qt
+gst-nokia-camera
 -phonesim
 -corewatcher
 -meegotouch-qt-style

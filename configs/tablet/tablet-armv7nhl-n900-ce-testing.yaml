@@ -10,6 +10,9 @@ Repos:
 Groups:
     - Nokia N900 Support
     - Nokia N900 Proprietary Support
+ExtraPackages:
+    # Non-oss part of N900 camera for focus etc.
+    - gst-nokia-camera
 PostScripts:
     - fstab-n900
     - serial-n900

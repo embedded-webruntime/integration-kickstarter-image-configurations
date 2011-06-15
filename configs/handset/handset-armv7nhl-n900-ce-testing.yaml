@@ -13,6 +13,8 @@ Groups:
     # Adding the MeeGo UX applications.
     - MeeGo Tablet Applications
 ExtraPackages:
+    # Non-oss part of N900 camera for focus etc.
+    - gst-nokia-camera
     # Because of following bugs we need to install the package manually:
     # https://bugs.meego.com/show_bug.cgi?id=19010
     # https://bugs.meego.com/show_bug.cgi?id=19011
