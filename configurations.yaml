@@ -101,6 +101,8 @@ CEHANDSET:
         - X for Handsets
         - MeeGo Handset Desktop
         - MeeGo Handset Applications
+        # Adding the MeeGo UX applications.
+        - MeeGo Tablet Applications
     ExtraPackages:
         # Add meego-pinquery package to add support for SIM cards with PIN code.
         - meego-pinquery
@@ -119,6 +121,16 @@ CEHANDSET:
         - meegotouchcp-profiles
         # We need this so we can select between silent and general profiles
         - profiled
+        # Because of following bugs we need to install the package manually:
+        # https://bugs.meego.com/show_bug.cgi?id=19010
+        # https://bugs.meego.com/show_bug.cgi?id=19011
+        # https://bugs.meego.com/show_bug.cgi?id=19013
+        - meego-ux-sharing-qml-ui
+        # Orientation with MeeGo UX apps do not work without this
+        - orientation-contextkit-sensor
+        # Workaround for https://bugs.meego.com/show_bug.cgi?id=16394
+        # Copy the .desktop files from this to the right places as temp solution.
+        - meego-ux-appgrid
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
@@ -127,6 +139,11 @@ CEHANDSET:
         # Removing social web as we are not using it.
         - meegotouchcp-socialweb 
         - meego-handset-socialweb
+    PostScripts:
+        # Workaround for https://bugs.meego.com/show_bug.cgi?id=15039
+        - tablet-sensor-hack
+        # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
+        - meego-ux-desktop-file-fix
 
 CETABLET:
     Repos:

@@ -36,6 +36,7 @@ repo --name=ce-trunk --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/stan
 @X for Handsets
 @MeeGo Handset Desktop
 @MeeGo Handset Applications
+@MeeGo Tablet Applications
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
 
@@ -69,6 +70,9 @@ meegotouchcp-usb
 meegotouchcp-gprs
 meegotouchcp-profiles
 profiled
+meego-ux-sharing-qml-ui
+orientation-contextkit-sensor
+meego-ux-appgrid
 gst-nokia-camera
 -phonesim
 -corewatcher
@@ -153,6 +157,20 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
+# Workaround for https://bugs.meego.com/show_bug.cgi?id=15039 
+# and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
+# doesn't return sane values on startup
+mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
+
+# Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
+# In some systems cp is alias to "cp -i" by default, workaround for that.
+unalias cp
+# The desktop files from meego-ux-appgrid...
+cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
+cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/
+# ... and the icons from meego-ux-theme.
+cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
+
 # Use eMMC swap partition as MeeGo swap as well.
 # Because of the 2nd partition is swap for the partition numbering
 # we can just change the current fstab entry to match the eMMC partition.
