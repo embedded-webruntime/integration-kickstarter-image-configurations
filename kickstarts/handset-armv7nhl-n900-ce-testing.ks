@@ -68,6 +68,7 @@ meego-handset-camera
 meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
+meegotouchcp-profiles
 profiled
 gst-nokia-camera
 meego-ux-sharing-qml-ui

@@ -115,6 +115,8 @@ CEHANDSET:
         - meegotouchcp-usb
         # Control panel applet for gprs
         - meegotouchcp-gprs
+        # Control panel applet for profiles
+        - meegotouchcp-profiles
         # We need this so we can select between silent and general profiles
         - profiled
     RemovePackages:
