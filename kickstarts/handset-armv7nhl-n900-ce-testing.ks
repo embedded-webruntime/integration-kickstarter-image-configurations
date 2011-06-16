@@ -74,6 +74,8 @@ meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
 gst-nokia-camera
+perf-adaptation-n900
+iotop
 -phonesim
 -corewatcher
 -meegotouch-qt-style
@@ -183,6 +185,20 @@ echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N900
+XDG_ORIG=/etc/xdg/autostart/
+DELAY_DEST=/etc/xdg/autostart-dui/
+
+mkdir ${DELAY_DEST}
+mv ${XDG_ORIG}/meego-im-uiserver.desktop ${DELAY_DEST}/002_meego-im-uiserver.desktop
+mv ${XDG_ORIG}/dialer-prestart.desktop ${DELAY_DEST}/005_dialer-prestart.desktop
+mv ${XDG_ORIG}/smsinit.desktop ${DELAY_DEST}/007_smsinit.desktop
+mv ${XDG_ORIG}/meego-volume-control.desktop ${DELAY_DEST}/010_meego-volume-control.desktop
+mv ${XDG_ORIG}/messageserver.desktop ${DELAY_DEST}/011_messageserver.desktop
+mv ${XDG_ORIG}/sample-media-install.desktop ${DELAY_DEST}/020_sample-media-install.desktop
+mv ${XDG_ORIG}/peregrine-n900-force-ring-account.desktop ${DELAY_DEST}/025_peregrine-n900-force-ring-account.desktop
+mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server.desktop
+mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
+mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
 
 %end
 

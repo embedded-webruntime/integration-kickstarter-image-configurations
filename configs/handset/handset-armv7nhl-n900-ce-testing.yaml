@@ -13,7 +13,13 @@ Groups:
 ExtraPackages:
     # Non-oss part of N900 camera for focus etc.
     - gst-nokia-camera
+    # Tools for testing purposes
+    - perf-adaptation-n900
+    - iotop
 PostScripts:
     - fstab-n900
     - serial-n900
     - meegotouch-n900
+    # Lets delay some of the apps after the home so the home screen 
+    # is available earlier.
+    - meegotouch-home-delay-app-startup
