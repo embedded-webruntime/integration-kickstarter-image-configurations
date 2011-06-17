@@ -62,6 +62,7 @@ com.substanceofcode.kasvopus
 gpe-mini-browser2
 mg-package-manager
 meego-terminal
+iotop
 meego-pinquery
 usb-moded
 meego-handset-camera
@@ -74,6 +75,7 @@ meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
 gst-nokia-camera
+perf-adaptation-n900
 -phonesim
 -corewatcher
 -meegotouch-qt-style

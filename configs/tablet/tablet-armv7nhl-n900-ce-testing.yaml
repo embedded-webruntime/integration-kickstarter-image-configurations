@@ -13,6 +13,8 @@ Groups:
 ExtraPackages:
     # Non-oss part of N900 camera for focus etc.
     - gst-nokia-camera
+    # Adding n900 specific perf
+    - perf-adaptation-n900
 PostScripts:
     - fstab-n900
     - serial-n900

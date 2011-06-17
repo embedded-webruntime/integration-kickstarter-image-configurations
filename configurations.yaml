@@ -62,6 +62,8 @@ Default:
         - mg-package-manager
         # Include new terminal
         - meego-terminal
+        # Adding iotop for testing purposes
+        - iotop
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

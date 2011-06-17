@@ -60,10 +60,12 @@ com.substanceofcode.kasvopus
 gpe-mini-browser2
 mg-package-manager
 meego-terminal
+iotop
 meego-handset-dialer
 meego-handset-sms
 fennec-qt
 gst-nokia-camera
+perf-adaptation-n900
 -phonesim
 -corewatcher
 -meegotouch-qt-style
