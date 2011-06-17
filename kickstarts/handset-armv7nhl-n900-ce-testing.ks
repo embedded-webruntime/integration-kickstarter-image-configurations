@@ -77,6 +77,7 @@ meego-ux-appgrid
 gst-nokia-camera
 perf-adaptation-n900
 lynx
+maemo-contacts-import
 -phonesim
 -corewatcher
 -meegotouch-qt-style

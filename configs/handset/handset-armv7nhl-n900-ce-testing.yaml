@@ -17,6 +17,8 @@ ExtraPackages:
     - perf-adaptation-n900
     # Add text based browser
     - lynx
+    # Add contact import package for retrieval of Maemo contacts.
+    - maemo-contacts-import
 PostScripts:
     - fstab-n900
     - serial-n900
