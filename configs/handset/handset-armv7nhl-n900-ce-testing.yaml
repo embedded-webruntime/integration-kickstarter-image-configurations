@@ -21,8 +21,5 @@ PostScripts:
     - fstab-n900
     - serial-n900
     - meegotouch-n900
-    # Lets delay some of the apps after the home so the home screen 
-    # is available earlier.
-    - meegotouch-home-delay-app-startup
     # Reduce the amount of memory given for GLESv2 apps
     - n900-powervr-ini

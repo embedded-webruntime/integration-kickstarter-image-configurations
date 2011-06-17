@@ -147,6 +147,9 @@ CEHANDSET:
         - tablet-sensor-hack
         # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
         - meego-ux-desktop-file-fix
+        # Lets delay some of the apps after the home so the home screen 
+        # is available earlier.
+        - meegotouch-home-delay-app-startup
 
 CETABLET:
     Repos:

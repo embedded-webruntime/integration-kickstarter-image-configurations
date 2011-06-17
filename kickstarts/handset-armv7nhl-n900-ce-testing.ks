@@ -175,18 +175,6 @@ cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applicatio
 # ... and the icons from meego-ux-theme.
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
 
-# Use eMMC swap partition as MeeGo swap as well.
-# Because of the 2nd partition is swap for the partition numbering
-# we can just change the current fstab entry to match the eMMC partition.
-sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
-
-# open serial line console for embedded system
-echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
-
-# Set up proper target for libmeegotouch
-Config_Src=`gconftool-2 --get-default-source`
-gconftool-2 --direct --config-source $Config_Src \
-  -s -t string /meegotouch/target/name N900
 XDG_ORIG=/etc/xdg/autostart/
 DELAY_DEST=/etc/xdg/autostart-dui/
 
@@ -204,6 +192,18 @@ mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
 mv ${XDG_ORIG}/applauncherd.desktop ${DELAY_DEST}/050_applauncherd.desktop
 mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
 
+# Use eMMC swap partition as MeeGo swap as well.
+# Because of the 2nd partition is swap for the partition numbering
+# we can just change the current fstab entry to match the eMMC partition.
+sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
+
+# open serial line console for embedded system
+echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
+
+# Set up proper target for libmeegotouch
+Config_Src=`gconftool-2 --get-default-source`
+gconftool-2 --direct --config-source $Config_Src \
+  -s -t string /meegotouch/target/name N900
 cat > /etc/powervr.ini << EOF
 [default]
 WSEGL_UseHWSync=1
