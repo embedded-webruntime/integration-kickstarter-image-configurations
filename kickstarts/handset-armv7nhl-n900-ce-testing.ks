@@ -44,7 +44,7 @@ kernel-adaptation-n900
 
 xorg-x11-utils-xev
 meegotouch-theme-n900de
-generic-backgrounds
+ce-backgrounds
 plymouth-lite
 meegotouch-demos
 mce
@@ -197,6 +197,7 @@ mv ${XDG_ORIG}/messageserver.desktop ${DELAY_DEST}/011_messageserver.desktop
 mv ${XDG_ORIG}/sample-media-install.desktop ${DELAY_DEST}/020_sample-media-install.desktop
 mv ${XDG_ORIG}/peregrine-n900-force-ring-account.desktop ${DELAY_DEST}/025_peregrine-n900-force-ring-account.desktop
 mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server.desktop
+mv ${XDG_ORIG}/msyncd.desktop ${DELAY_DEST}/35_msyncd.desktop
 mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
 mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
 

@@ -27,8 +27,9 @@ Default:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
         - meegotouch-theme-n900de
-        # Add splash screen stuff
-        - generic-backgrounds
+        # Add splash screen images
+        - ce-backgrounds
+        # Splash screen are shown with this
         - plymouth-lite
         # Adding widgetsgallery
         - meegotouch-demos

@@ -44,7 +44,7 @@ kernel-adaptation-n900
 
 xorg-x11-utils-xev
 meegotouch-theme-n900de
-generic-backgrounds
+ce-backgrounds
 plymouth-lite
 meegotouch-demos
 mce
