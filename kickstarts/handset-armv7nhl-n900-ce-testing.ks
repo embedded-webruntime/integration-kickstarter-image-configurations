@@ -151,7 +151,8 @@ fi
 # We have some daemons that we do not need so lets disable them for now.
 mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
 mv /usr/lib/applauncherd/libqtbooster.so /root/
-
+# Lets not start msyncd either.
+mv /etc/xdg/autostart/msyncd.desktop /root/
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10
@@ -197,9 +198,25 @@ mv ${XDG_ORIG}/messageserver.desktop ${DELAY_DEST}/011_messageserver.desktop
 mv ${XDG_ORIG}/sample-media-install.desktop ${DELAY_DEST}/020_sample-media-install.desktop
 mv ${XDG_ORIG}/peregrine-n900-force-ring-account.desktop ${DELAY_DEST}/025_peregrine-n900-force-ring-account.desktop
 mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server.desktop
-mv ${XDG_ORIG}/msyncd.desktop ${DELAY_DEST}/35_msyncd.desktop
 mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
 mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
+mv ${XDG_ORIG}/applauncherd.desktop ${DELAY_DEST}/050_applauncherd.desktop
+mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
+
+cat > /etc/powervr.ini << EOF
+[default]
+WSEGL_UseHWSync=1
+ExternalZBufferMode=4
+ParamBufferSize=1048576
+[conform]
+ExternalZBufferMode=2
+
+[conform-cl]
+ExternalZBufferMode=2
+
+[GTF]
+ExternalZBufferMode=2
+EOF
 
 %end
 

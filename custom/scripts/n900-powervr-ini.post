@@ -1,0 +1,14 @@
+cat > /etc/powervr.ini << EOF
+[default]
+WSEGL_UseHWSync=1
+ExternalZBufferMode=4
+ParamBufferSize=1048576
+[conform]
+ExternalZBufferMode=2
+
+[conform-cl]
+ExternalZBufferMode=2
+
+[GTF]
+ExternalZBufferMode=2
+EOF
