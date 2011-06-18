@@ -151,11 +151,6 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
-# Workaround for https://bugs.meego.com/show_bug.cgi?id=15039 
-# and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
-# doesn't return sane values on startup
-mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
-
 # Use eMMC swap partition as MeeGo swap as well.
 # Because of the 2nd partition is swap for the partition numbering
 # we can just change the current fstab entry to match the eMMC partition.

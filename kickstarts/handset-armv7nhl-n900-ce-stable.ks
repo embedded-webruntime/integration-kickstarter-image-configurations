@@ -162,11 +162,6 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
-# Workaround for https://bugs.meego.com/show_bug.cgi?id=15039 
-# and QTMOBILITY-1385, MeeGo/Maemo6 sensor plugin
-# doesn't return sane values on startup
-mv /usr/lib/qt4/plugins/sensors/libqtsensors_meego.so /root/
-
 # Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
 # In some systems cp is alias to "cp -i" by default, workaround for that.
 unalias cp
