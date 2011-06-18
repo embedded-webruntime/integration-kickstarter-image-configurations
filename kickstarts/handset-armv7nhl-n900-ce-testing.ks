@@ -63,6 +63,8 @@ gpe-mini-browser2
 mg-package-manager
 meego-terminal
 iotop
+lynx
+maemo-contacts-import
 meego-pinquery
 usb-moded
 meego-handset-camera
@@ -76,8 +78,6 @@ orientation-contextkit-sensor
 meego-ux-appgrid
 gst-nokia-camera
 perf-adaptation-n900
-lynx
-maemo-contacts-import
 -phonesim
 -corewatcher
 -meegotouch-qt-style

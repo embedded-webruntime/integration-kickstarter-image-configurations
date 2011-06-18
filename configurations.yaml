@@ -64,6 +64,10 @@ Default:
         - meego-terminal
         # Adding iotop for testing purposes
         - iotop
+        # Add text based browser
+        - lynx
+        # Add contact import package for retrieval of Maemo contacts.
+        - maemo-contacts-import
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

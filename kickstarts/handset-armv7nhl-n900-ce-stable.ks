@@ -63,6 +63,8 @@ gpe-mini-browser2
 mg-package-manager
 meego-terminal
 iotop
+lynx
+maemo-contacts-import
 meego-pinquery
 usb-moded
 meego-handset-camera
