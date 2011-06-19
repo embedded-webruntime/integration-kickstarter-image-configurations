@@ -78,6 +78,7 @@ orientation-contextkit-sensor
 meego-ux-appgrid
 gst-nokia-camera
 perf-adaptation-n900
+meego-appsclient-handset
 -phonesim
 -corewatcher
 -meegotouch-qt-style
