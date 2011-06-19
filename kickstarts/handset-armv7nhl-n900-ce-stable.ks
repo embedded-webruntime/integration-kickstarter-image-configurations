@@ -87,6 +87,7 @@ perf-adaptation-n900
 -meegocamera
 -meegotouchcp-socialweb
 -meego-handset-socialweb
+-meegotouch-applauncherd
 %end
 
 %post

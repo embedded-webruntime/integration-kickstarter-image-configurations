@@ -146,6 +146,8 @@ CEHANDSET:
         # Removing social web as we are not using it.
         - meegotouchcp-socialweb 
         - meego-handset-socialweb
+        # Save some more memory by removing the applauncherd
+        - meegotouch-applauncherd
     PostScripts:
         # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
         - meego-ux-desktop-file-fix
