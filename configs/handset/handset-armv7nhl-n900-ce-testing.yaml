@@ -16,7 +16,7 @@ ExtraPackages:
     # Adding n900 specific perf
     - perf-adaptation-n900
     # MeeGo community Apps client
-    - meego-appsclient-handset
+    - appsclient-handset
 PostScripts:
     - fstab-n900
     - serial-n900
