@@ -118,8 +118,6 @@ CEHANDSET:
         - usb-moded
         # replacement for meegocamera
         - meego-handset-camera
-        # Add volume control.
-        - meego-volume-control
         # Control panel applet to control usb-moded
         - meegotouchcp-usb
         # Control panel applet for gprs

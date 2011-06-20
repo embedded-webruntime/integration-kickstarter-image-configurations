@@ -68,7 +68,6 @@ maemo-contacts-import
 meego-pinquery
 usb-moded
 meego-handset-camera
-meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
 meegotouchcp-profiles
@@ -78,6 +77,7 @@ orientation-contextkit-sensor
 meego-ux-appgrid
 gst-nokia-camera
 perf-adaptation-n900
+meego-volume-control
 -phonesim
 -corewatcher
 -meegotouch-qt-style

@@ -68,7 +68,6 @@ maemo-contacts-import
 meego-pinquery
 usb-moded
 meego-handset-camera
-meego-volume-control
 meegotouchcp-usb
 meegotouchcp-gprs
 meegotouchcp-profiles
