@@ -145,6 +145,9 @@ CEHANDSET:
         # Removing social web as we are not using it.
         - meegotouchcp-socialweb 
         - meego-handset-socialweb
+        # Remove unworking handset chat application
+        - meego-handset-chat 
+        - meegotouchcp-chat
         # Save some more memory by removing the applauncherd
         - meegotouch-applauncherd
     PostScripts:
