@@ -20,7 +20,6 @@ Default:
     StartX: True
     Repos:
         - oss-1.2-daily
-        - non-oss-1.2-daily
     Groups:
         - MeeGo Compliance
         - MeeGo Core
