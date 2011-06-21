@@ -18,6 +18,9 @@ Default:
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
     StartX: True
+    Repos:
+        - oss-1.2-daily
+        - non-oss-1.2-daily
     Groups:
         - MeeGo Compliance
         - MeeGo Core
@@ -101,9 +104,6 @@ Default:
         - buildname
 
 CEHANDSET:
-    Repos:
-        - oss-1.2-daily
-        - non-oss-1.2-daily
     Groups:
         - X for Handsets
         - MeeGo Handset Desktop
@@ -154,9 +154,6 @@ CEHANDSET:
         - meegotouch-home-delay-app-startup
 
 CETABLET:
-    Repos:
-        - oss-1.2-daily-tablet
-        - non-oss-1.2-daily
     Groups:
         - MeeGo Tablet
         - MeeGo Tablet Applications
