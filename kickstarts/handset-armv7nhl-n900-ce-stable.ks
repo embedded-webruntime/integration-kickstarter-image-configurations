@@ -75,9 +75,9 @@ profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
+appsclient-handset
 gst-nokia-camera
 perf-adaptation-n900
-meego-volume-control
 -phonesim
 -corewatcher
 -meegotouch-qt-style
@@ -201,6 +201,20 @@ echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N900
+cat > /etc/powervr.ini << EOF
+[default]
+WSEGL_UseHWSync=1
+ExternalZBufferMode=4
+ParamBufferSize=1048576
+[conform]
+ExternalZBufferMode=2
+
+[conform-cl]
+ExternalZBufferMode=2
+
+[GTF]
+ExternalZBufferMode=2
+EOF
 
 %end
 

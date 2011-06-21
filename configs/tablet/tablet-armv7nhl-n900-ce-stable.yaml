@@ -19,4 +19,6 @@ PostScripts:
     - fstab-n900
     - serial-n900
     - meegotouch-n900
+    # Reduce the amount of memory given for GLESv2 apps
+    - n900-powervr-ini
     - meego-ux-daemon-n900-homekey

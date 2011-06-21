@@ -75,9 +75,9 @@ profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
+appsclient-handset
 gst-nokia-camera
 perf-adaptation-n900
-appsclient-handset
 -phonesim
 -corewatcher
 -meegotouch-qt-style

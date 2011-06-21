@@ -15,10 +15,9 @@ ExtraPackages:
     - gst-nokia-camera
     # Adding n900 specific perf
     - perf-adaptation-n900
-    # Add volume control, will be removed when systemui solution comes.
-    - meego-volume-control
 PostScripts:
     - fstab-n900
     - serial-n900
     - meegotouch-n900
-
+    # Reduce the amount of memory given for GLESv2 apps
+    - n900-powervr-ini
