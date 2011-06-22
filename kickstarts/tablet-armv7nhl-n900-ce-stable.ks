@@ -63,6 +63,8 @@ meego-terminal
 iotop
 lynx
 maemo-contacts-import
+f-irc
+qtflyingbus
 meego-handset-dialer
 meego-handset-sms
 fennec-qt

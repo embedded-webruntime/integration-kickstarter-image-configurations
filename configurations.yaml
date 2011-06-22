@@ -70,6 +70,10 @@ Default:
         - lynx
         # Add contact import package for retrieval of Maemo contacts.
         - maemo-contacts-import
+        # IRC client
+        - f-irc
+        # Qt based game
+        - qtflyingbus
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

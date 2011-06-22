@@ -65,6 +65,8 @@ meego-terminal
 iotop
 lynx
 maemo-contacts-import
+f-irc
+qtflyingbus
 meego-pinquery
 usb-moded
 meego-handset-camera
