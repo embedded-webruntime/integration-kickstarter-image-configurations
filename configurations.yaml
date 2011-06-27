@@ -88,6 +88,8 @@ Default:
         - meego-handset-icon-theme
         # Save some more memory by removing applifed as well.
         - meegotouch-applifed
+        # Sreadahead only slows us down as we don't have any spinning platters
+        - sreadahead
     PostScripts:
         - cleanup
         - nocursor
