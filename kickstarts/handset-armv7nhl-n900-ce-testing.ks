@@ -80,6 +80,7 @@ meego-ux-appgrid
 appsclient-handset
 gst-nokia-camera
 perf-adaptation-n900
+meegotouchcp-cellular
 -phonesim
 -corewatcher
 -meegotouch-qt-style
