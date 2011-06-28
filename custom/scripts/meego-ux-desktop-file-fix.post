@@ -1,6 +1,6 @@
 # Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
 # In some systems cp is alias to "cp -i" by default, workaround for that.
-unalias cp
+unalias cp &> /dev/null
 # The desktop files from meego-ux-appgrid...
 cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
 cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/

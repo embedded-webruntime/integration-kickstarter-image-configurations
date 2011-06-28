@@ -142,9 +142,6 @@ fi
 
 
 # We have some daemons that we do not need so lets disable them for now.
-mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
-mv /usr/lib/applauncherd/libqtbooster.so /root/
-# Lets not start msyncd either.
 mv /etc/xdg/autostart/msyncd.desktop /root/
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \

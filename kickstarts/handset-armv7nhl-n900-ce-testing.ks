@@ -156,9 +156,6 @@ fi
 
 
 # We have some daemons that we do not need so lets disable them for now.
-mv /usr/lib/applauncherd/libqdeclarativebooster.so /root/
-mv /usr/lib/applauncherd/libqtbooster.so /root/
-# Lets not start msyncd either.
 mv /etc/xdg/autostart/msyncd.desktop /root/
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
@@ -169,13 +166,12 @@ gconftool-2 --direct \
   -s -t bool /meego/ux/ShowPanelsAsHome false
 # Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
 # In some systems cp is alias to "cp -i" by default, workaround for that.
-unalias cp
+unalias cp &> /dev/null
 # The desktop files from meego-ux-appgrid...
 cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
 cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/
 # ... and the icons from meego-ux-theme.
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
-
 XDG_ORIG=/etc/xdg/autostart/
 DELAY_DEST=/etc/xdg/autostart-dui/
 
@@ -183,16 +179,13 @@ mkdir ${DELAY_DEST}
 mv ${XDG_ORIG}/meego-im-uiserver.desktop ${DELAY_DEST}/002_meego-im-uiserver.desktop
 mv ${XDG_ORIG}/dialer-prestart.desktop ${DELAY_DEST}/005_dialer-prestart.desktop
 mv ${XDG_ORIG}/smsinit.desktop ${DELAY_DEST}/007_smsinit.desktop
-mv ${XDG_ORIG}/meego-volume-control.desktop ${DELAY_DEST}/010_meego-volume-control.desktop
 mv ${XDG_ORIG}/messageserver.desktop ${DELAY_DEST}/011_messageserver.desktop
 mv ${XDG_ORIG}/sample-media-install.desktop ${DELAY_DEST}/020_sample-media-install.desktop
 mv ${XDG_ORIG}/peregrine-n900-force-ring-account.desktop ${DELAY_DEST}/025_peregrine-n900-force-ring-account.desktop
 mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server.desktop
 mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
 mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
-mv ${XDG_ORIG}/applauncherd.desktop ${DELAY_DEST}/050_applauncherd.desktop
 mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
-
 # Use eMMC swap partition as MeeGo swap as well.
 # Because of the 2nd partition is swap for the partition numbering
 # we can just change the current fstab entry to match the eMMC partition.
