@@ -73,6 +73,7 @@ meego-handset-camera
 meegotouchcp-usb
 meegotouchcp-gprs
 meegotouchcp-profiles
+meegotouchcp-cellular
 profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
@@ -80,7 +81,6 @@ meego-ux-appgrid
 appsclient-handset
 gst-nokia-camera
 perf-adaptation-n900
-meegotouchcp-cellular
 -phonesim
 -corewatcher
 -meegotouch-qt-style

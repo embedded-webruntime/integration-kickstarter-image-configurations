@@ -73,6 +73,7 @@ meego-handset-camera
 meegotouchcp-usb
 meegotouchcp-gprs
 meegotouchcp-profiles
+meegotouchcp-cellular
 profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor

@@ -129,6 +129,8 @@ CEHANDSET:
         - meegotouchcp-gprs
         # Control panel applet for profiles
         - meegotouchcp-profiles
+        # Control panel applet for cellular
+        - meegotouchcp-cellular
         # We need this so we can select between silent and general profiles
         - profiled
         # Because of following bugs we need to install the package manually:
