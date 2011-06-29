@@ -19,7 +19,6 @@ part /boot --size=32 --ondisk mmcblk0p --fstype=vfat
 
 rootpw meego 
 xconfig --startxonboot
-
 desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
@@ -86,6 +85,7 @@ meegotouchcp-cellular
 -meegotouch-qt-style
 -meego-handset-icon-theme
 -meegotouch-applifed
+-sreadahead
 -nokia-usb-networking
 -meegocamera
 -meegotouchcp-socialweb
