@@ -58,8 +58,8 @@ Default:
         - info.vivainio.qmlreddit
         # Facebook client
         - com.substanceofcode.kasvopus
-        # GPE mini browser
-        - gpe-mini-browser2
+        # Helium Mobile Browser
+        - mobilebrowser
         # QML Based package manager
         - mg-package-manager
         # Include new terminal

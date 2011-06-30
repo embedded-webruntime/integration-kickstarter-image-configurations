@@ -57,7 +57,7 @@ peregrine-plain-qml
 info.vivainio.qatbowling
 info.vivainio.qmlreddit
 com.substanceofcode.kasvopus
-gpe-mini-browser2
+mobilebrowser
 mg-package-manager
 meego-terminal
 iotop
