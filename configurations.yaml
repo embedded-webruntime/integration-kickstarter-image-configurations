@@ -95,7 +95,6 @@ Default:
         - nocursor
         - rpm
         - bootchart
-        - arch-armv7hl
         - handset-app-theme-fixes
         - plymouth-lite-ce
         - meegotouch-translations

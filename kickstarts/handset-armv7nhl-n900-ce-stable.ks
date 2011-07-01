@@ -118,13 +118,6 @@ exec /sbin/bootchartd -n 4000
 EOF
 chmod +x /sbin/bootchartd-long
 
-# Without this line the rpm don't get the architecture right.
-echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
- 
-# Also libzypp has problems in autodetecting the architecture so we force tha as well.
-# https://bugs.meego.com/show_bug.cgi?id=11484
-echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
-
 # Fix for https://bugs.meego.com/show_bug.cgi?id=15963
 mkdir -p /usr/share/themes/base/meegotouch/
 cp -rf /usr/share/themes/meego/meegotouch/dialer /usr/share/themes/base/meegotouch/
@@ -188,6 +181,13 @@ mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server
 mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
 mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
 mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
+# Without this line the rpm don't get the architecture right.
+echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
+ 
+# Also libzypp has problems in autodetecting the architecture so we force tha as well.
+# https://bugs.meego.com/show_bug.cgi?id=11484
+echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
+
 # Use eMMC swap partition as MeeGo swap as well.
 # Because of the 2nd partition is swap for the partition numbering
 # we can just change the current fstab entry to match the eMMC partition.

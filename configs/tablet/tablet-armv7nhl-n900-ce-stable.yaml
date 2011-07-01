@@ -17,6 +17,9 @@ ExtraPackages:
     # Adding n900 specific perf
     - perf-adaptation-n900
 PostScripts:
+    # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+    # we can't use the armv7nhl here
+    - arch-armv7hl
     - fstab-n900
     - serial-n900
     - meegotouch-n900
