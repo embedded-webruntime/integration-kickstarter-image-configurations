@@ -159,13 +159,8 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
-# Workaround for dependecies of bug https://bugs.meego.com/show_bug.cgi?id=16394
-# In some systems cp is alias to "cp -i" by default, workaround for that.
-unalias cp &> /dev/null
-# The desktop files from meego-ux-appgrid...
-cp -f /usr/share/meego-ux-appgrid/applications/meego-app-* /usr/share/applications/
-cp  -f /usr/share/meego-ux-appgrid/applications/meego-ux-* /usr/share/applications/
-# ... and the icons from meego-ux-theme.
+# Bug https://bugs.meego.com/show_bug.cgi?id=16394 was fixed but we don't have 
+# icons in our theme for some of the apps so we need following cp for that...
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
 XDG_ORIG=/etc/xdg/autostart/
 DELAY_DEST=/etc/xdg/autostart-dui/
