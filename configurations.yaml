@@ -18,8 +18,6 @@ Default:
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
     StartX: True
-    Repos:
-        - oss-1.2-daily
     Groups:
         - MeeGo Compliance
         - MeeGo Core
