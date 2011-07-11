@@ -1,7 +1,6 @@
 Name: MeeGo Handset N950 Community Edition (Testing)
 Platform: CEHANDSET
 FileName: handset-armv7nhl-n950-ce-testing
-PackageArgs: ignoremissing
 PartSize: 3500
 FileSystem: ext3
 Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7nhl --record-pkgs=name
@@ -10,6 +9,7 @@ Kernel: kernel-adaptation-n950
 Active: False
 Repos:
     - oss-1.2-daily-n950
+    - non-oss-1.2-daily-n950
     - devel-devices-n950
     - ce-testing-n950
 Groups:
