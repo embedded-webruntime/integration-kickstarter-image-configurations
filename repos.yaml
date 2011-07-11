@@ -10,7 +10,7 @@ Repositories:
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/
     -   Name: non-oss-1.2-daily-n950
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*
+        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 
     -   Name: ce-trunk
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/

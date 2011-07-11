@@ -16,7 +16,7 @@ desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcomposi
 user --name meego  --groups audio,video --password meego 
 
 repo --name=oss-1.2-daily-n950 --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,contextkit-meego-battery-upower,xorg-x11-server*
-repo --name=non-oss-1.2-daily-n950 --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*
+repo --name=non-oss-1.2-daily-n950 --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 repo --name=devel-devices-n950 --baseurl=http://download.meego.com/live/devel:/devices:/n900:/n950/MeeGo_1.2/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-trunk-n950 --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=xkeyboard-config
 
