@@ -144,13 +144,20 @@ fi
 # We have some daemons that we do not need so lets disable them for now.
 mv /usr/lib/applauncherd/libqtbooster.so /root/
 mv /etc/xdg/autostart/msyncd.desktop /root/
+# Set the default theme.
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t string /meego/ux/theme 1024-600-10
 
+# Show application view as default view.
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
   -s -t bool /meego/ux/ShowPanelsAsHome false
+
+# Use dynamic rendering to reduce memory consumption on apps when in background.
+gconftool-2 --direct \
+  --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t boolean /meego/ux/EnableDynamicRendering true
 # Bug https://bugs.meego.com/show_bug.cgi?id=16394 was fixed but we don't have 
 # icons in our theme for some of the apps so we need following cp for that...
 cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
