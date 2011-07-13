@@ -193,9 +193,6 @@ gconftool-2 --direct --config-source $Config_Src \
 
 # N950: Get all log messages to serial console
 sed -i 's!/sbin/redirect-console!#/sbin/redirect-console!' /etc/rc.d/rc
-# There are couple of device specific lines in usbmoded.ini that we need to remove
-# until proper packaging is done.
-head -n -3 /etc/usb-moded/usb-moded.ini | tee /etc/usb-moded/usb-moded.ini &> /dev/null
 
 %end
 
