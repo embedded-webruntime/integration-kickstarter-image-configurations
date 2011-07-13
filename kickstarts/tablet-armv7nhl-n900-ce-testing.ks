@@ -70,6 +70,7 @@ meego-handset-sms
 fennec-qt
 gst-nokia-camera
 perf-adaptation-n900
+usb-moded-config-n900
 -phonesim
 -corewatcher
 -meegotouch-qt-style

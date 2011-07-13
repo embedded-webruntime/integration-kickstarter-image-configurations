@@ -17,6 +17,7 @@ ExtraPackages:
     - gst-nokia-camera
     # Adding n900 specific perf
     - perf-adaptation-n900
+    - usb-moded-config-n900
 PostScripts:
     # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

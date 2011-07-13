@@ -18,7 +18,7 @@ user --name meego  --groups audio,video --password meego
 repo --name=oss-1.2-daily-n950 --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,contextkit-meego-battery-upower,xorg-x11-server*
 repo --name=non-oss-1.2-daily-n950 --baseurl=http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 repo --name=devel-devices-n950 --baseurl=http://download.meego.com/live/devel:/devices:/n900:/n950/MeeGo_1.2/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-trunk-n950 --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=xkeyboard-config
+repo --name=ce-testing-n950 --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=xkeyboard-config
 
 %packages
 
@@ -26,9 +26,7 @@ repo --name=ce-trunk-n950 --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk
 @MeeGo Core
 @MeeGo Base Development
 @Minimal MeeGo X Window System
-@X for Handsets
-@MeeGo Handset Desktop
-@MeeGo Handset Applications
+@MeeGo Tablet
 @MeeGo Tablet Applications
 @Nokia N950 Support
 @Nokia N950 Proprietary Support
@@ -60,31 +58,20 @@ lynx
 maemo-contacts-import
 f-irc
 qtflyingbus
-meego-pinquery
-usb-moded
-meego-handset-camera
-meegotouchcp-usb
-meegotouchcp-gprs
-meegotouchcp-profiles
-meegotouchcp-cellular
-profiled
-meego-ux-sharing-qml-ui
-orientation-contextkit-sensor
-meego-ux-appgrid
-appsclient-handset
+meego-handset-dialer
+meego-handset-sms
+fennec-qt
+usb-moded-config-n950-n9
 -phonesim
 -corewatcher
 -meegotouch-qt-style
 -meego-handset-icon-theme
 -meegotouch-applifed
 -sreadahead
--nokia-usb-networking
--meegocamera
--meegotouchcp-socialweb
--meego-handset-socialweb
--meego-handset-chat
--meegotouchcp-chat
--meegotouch-applauncherd
+-pulseaudio-modules-tablet-common
+-pulseaudio-modules-tablet-mainvolume
+-policy-settings-tablet
+-contextkit-meego-battery-upower
 %end
 
 %post
@@ -158,24 +145,6 @@ gconftool-2 --direct \
 gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t boolean /meego/ux/EnableDynamicRendering true
-# Bug https://bugs.meego.com/show_bug.cgi?id=16394 was fixed but we don't have 
-# icons in our theme for some of the apps so we need following cp for that...
-cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/
-XDG_ORIG=/etc/xdg/autostart/
-DELAY_DEST=/etc/xdg/autostart-dui/
-
-mkdir ${DELAY_DEST}
-mv ${XDG_ORIG}/meego-im-uiserver.desktop ${DELAY_DEST}/002_meego-im-uiserver.desktop
-mv ${XDG_ORIG}/dialer-prestart.desktop ${DELAY_DEST}/005_dialer-prestart.desktop
-mv ${XDG_ORIG}/smsinit.desktop ${DELAY_DEST}/007_smsinit.desktop
-mv ${XDG_ORIG}/messageserver.desktop ${DELAY_DEST}/011_messageserver.desktop
-mv ${XDG_ORIG}/sample-media-install.desktop ${DELAY_DEST}/020_sample-media-install.desktop
-mv ${XDG_ORIG}/peregrine-n900-force-ring-account.desktop ${DELAY_DEST}/025_peregrine-n900-force-ring-account.desktop
-mv ${XDG_ORIG}/syncevo-dbus-server.desktop ${DELAY_DEST}/030_syncevo-dbus-server.desktop
-mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.desktop
-mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
-mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
-mv ${XDG_ORIG}/applauncherd.desktop ${DELAY_DEST}/050_applauncherd.desktop
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
@@ -192,9 +161,10 @@ gconftool-2 --direct --config-source $Config_Src \
 
 # N950: Get all log messages to serial console
 sed -i 's!/sbin/redirect-console!#/sbin/redirect-console!' /etc/rc.d/rc
-# There are couple of device specific lines in usbmoded.ini that we need to remove
-# until proper packaging is done.
-head -n -3 /etc/usb-moded/usb-moded.ini | tee /etc/usb-moded/usb-moded.ini &> /dev/null
+# Set the homekey for N950 through the gconf.
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
+  -s -t string /meego/ux/HomeKey Control_R
+
 
 %end
 
