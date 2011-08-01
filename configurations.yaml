@@ -72,6 +72,9 @@ Default:
         - f-irc
         # Qt based game
         - qtflyingbus
+        # Qt/QML components and models
+        - qt-components
+        - qt-components-base-icons
     RemovePackages:
         # No need to install phonesim on N900 we have real modem.
         - phonesim

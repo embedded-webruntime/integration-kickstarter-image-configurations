@@ -65,6 +65,8 @@ lynx
 maemo-contacts-import
 f-irc
 qtflyingbus
+qt-components
+qt-components-base-icons
 meego-handset-dialer
 meego-handset-sms
 fennec-qt

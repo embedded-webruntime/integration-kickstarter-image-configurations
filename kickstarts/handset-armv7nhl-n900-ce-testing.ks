@@ -67,6 +67,8 @@ lynx
 maemo-contacts-import
 f-irc
 qtflyingbus
+qt-components
+qt-components-base-icons
 meego-pinquery
 usb-moded
 meego-handset-camera
