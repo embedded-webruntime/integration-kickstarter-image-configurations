@@ -17,11 +17,6 @@ Default:
     Desktop: DUI
     Session: "/usr/bin/mcompositor"
     StartX: True
-    Groups:
-        - MeeGo Compliance
-        - MeeGo Core
-        - MeeGo Base Development
-        - Minimal MeeGo X Window System
     ExtraPackages:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
@@ -115,6 +110,9 @@ CE-HANDSET-1.3:
         - mtf-trunk-testing
         - ce-1.3-testing
     Groups:
+        - Compliance
+        - Core
+        - Base Development
         - MTF Handset UX
     PostScripts:
         - uxlaunch-symlink-mtf
@@ -122,6 +120,10 @@ CE-HANDSET-1.3:
 CEHANDSET:
     Baseline: "1.2"
     Groups:
+        - MeeGo Compliance
+        - MeeGo Core
+        - MeeGo Base Development
+        - Minimal MeeGo X Window System
         - X for Handsets
         - MeeGo Handset Desktop
         - MeeGo Handset Applications
@@ -180,6 +182,10 @@ CEHANDSET:
 CETABLET:
     Baseline: "1.2"
     Groups:
+        - MeeGo Compliance
+        - MeeGo Core
+        - MeeGo Base Development
+        - Minimal MeeGo X Window System
         - MeeGo Tablet
         - MeeGo Tablet Applications
     ExtraPackages:

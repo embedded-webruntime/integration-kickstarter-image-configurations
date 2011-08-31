@@ -30,10 +30,9 @@ repo --name=ce-1.3-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trun
 
 %packages --ignoremissing
 
-@MeeGo Compliance
-@MeeGo Core
-@MeeGo Base Development
-@Minimal MeeGo X Window System
+@Compliance
+@Core
+@Base Development
 @MTF Handset UX
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
