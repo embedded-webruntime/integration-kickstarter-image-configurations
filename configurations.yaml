@@ -177,6 +177,7 @@ CEHANDSET:
         - meegotouch-home-delay-app-startup
 
 CETABLET:
+    Baseline: "1.2"
     Groups:
         - MeeGo Tablet
         - MeeGo Tablet Applications

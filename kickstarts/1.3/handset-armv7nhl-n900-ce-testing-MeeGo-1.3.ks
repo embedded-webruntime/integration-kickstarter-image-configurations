@@ -27,7 +27,7 @@ repo --name=oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshot
 repo --name=non-oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=mtf-trunk-testing --baseurl=http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
-%packages ----ignoremissing
+%packages --ignoremissing
 
 @MeeGo Compliance
 @MeeGo Core
