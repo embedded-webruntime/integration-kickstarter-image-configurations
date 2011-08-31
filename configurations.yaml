@@ -4,7 +4,6 @@ ExternalConfigs:
 
 Default:
     Active: True
-    Baseline: kickstarts
     Language: en_US.UTF-8
     Keyboard: us
     SaveRepos: True
@@ -109,6 +108,7 @@ Default:
         - buildname
 
 CE-HANDSET-1.3:
+    Baseline: "1.3"
     Repos:
         - oss-trunk-testing-daily
         - non-oss-trunk-testing-daily
@@ -119,6 +119,7 @@ CE-HANDSET-1.3:
         - uxlaunch-symlink-mtf
 
 CEHANDSET:
+    Baseline: "1.2"
     Groups:
         - X for Handsets
         - MeeGo Handset Desktop
