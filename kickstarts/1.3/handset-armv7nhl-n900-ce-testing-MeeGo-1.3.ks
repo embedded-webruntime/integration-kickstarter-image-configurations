@@ -149,7 +149,7 @@ gconftool-2 --direct \
   --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory \
   -s -t boolean /meego/ux/EnableDynamicRendering true
 # Create a session file for MTF.
-cat > /usr/share/xsessions/x-meego-mtf.desktop << EOF
+cat > /usr/share/xsessions/X-MEEGO-HS.desktop << EOF
 [Desktop Entry]
 Version=1.0
 Name=mtf compositor session
@@ -158,7 +158,7 @@ Type=Application
 EOF
 
 # Set symlink pointing to .desktop file 
-ln -sf x-meego-mtf.desktop /usr/share/xsessions/default.desktop
+ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
