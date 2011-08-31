@@ -33,6 +33,7 @@ repo --name=ce-1.3-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trun
 @Compliance
 @Core
 @Base Development
+@Common User Interface
 @MTF Handset UX
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
