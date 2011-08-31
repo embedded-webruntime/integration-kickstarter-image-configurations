@@ -18,9 +18,7 @@ part swap --size=8 --ondisk mmcblk0p --fstype=swap
 part /boot --size=32 --ondisk mmcblk0p --fstype=vfat
 
 rootpw meego 
-xconfig --startxonboot
 
-desktop --autologinuser=meego  --defaultdesktop=DUI --session="/usr/bin/mcompositor"
 user --name meego  --groups audio,video --password meego 
 
 repo --name=oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshots/latest-testing/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego

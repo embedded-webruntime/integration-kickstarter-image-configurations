@@ -14,9 +14,6 @@ Default:
     PartSize: 1900
     Schedule: "*"
     Active: True
-    Desktop: DUI
-    Session: "/usr/bin/mcompositor"
-    StartX: True
     ExtraPackages:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
@@ -124,6 +121,9 @@ CE-HANDSET-1.3:
 
 CEHANDSET:
     Baseline: "1.2"
+    Desktop: DUI
+    Session: "/usr/bin/mcompositor"
+    StartX: True
     Groups:
         - MeeGo Compliance
         - MeeGo Core
@@ -186,6 +186,9 @@ CEHANDSET:
 
 CETABLET:
     Baseline: "1.2"
+    Desktop: DUI
+    Session: "/usr/bin/mcompositor"
+    StartX: True
     Groups:
         - MeeGo Compliance
         - MeeGo Core
