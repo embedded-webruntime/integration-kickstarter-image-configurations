@@ -1,4 +1,12 @@
 Repositories:
+    -   Name: oss-trunk-testing-daily
+        Url:  http://download.meego.com/snapshots/latest-testing/repos/oss/armv7hl/packages/
+    -   Name: non-oss-trunk-testing-daily
+        Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/
+
+    -   Name: mtf-trunk-testing
+        Url:  http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/
+
     -   Name: oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/
         Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink

@@ -1,0 +1,26 @@
+Name: MeeGo Handset N900 Community Edition (Testing) with MeeGo 1.3 core
+Platform: CE-HANDSET-1.3
+FileName: handset-armv7nhl-n900-ce-testing-MeeGo-1.3
+Part: n900-ce
+Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name --pkgmgr=zypp
+Architecture: armv7nhl
+Kernel: kernel-adaptation-n900
+PackageArgs: --ignoremissing
+Groups:
+    - Nokia N900 Support
+    - Nokia N900 Proprietary Support
+ExtraPackages:
+    # Non-oss part of N900 camera for focus etc.
+    - gst-nokia-camera
+    # Adding n900 specific perf
+    - perf-adaptation-n900
+    - usb-moded-config-n900
+PostScripts:
+    # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+    # we can't use the armv7nhl here
+    - arch-armv7hl
+    - fstab-n900
+    - serial-n900
+    - meegotouch-n900
+    # Reduce the amount of memory given for GLESv2 apps
+    - n900-powervr-ini

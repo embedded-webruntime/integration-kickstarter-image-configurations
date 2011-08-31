@@ -108,6 +108,16 @@ Default:
     NoChrootScripts:
         - buildname
 
+CE-HANDSET-1.3:
+    Repos:
+        - oss-trunk-testing-daily
+        - non-oss-trunk-testing-daily
+        - mtf-trunk-testing
+    Groups:
+        - MTF Handset UX
+    PostScripts:
+        - uxlaunch-symlink-mtf
+
 CEHANDSET:
     Groups:
         - X for Handsets
