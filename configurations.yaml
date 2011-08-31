@@ -114,6 +114,10 @@ CE-HANDSET-1.3:
         - Core
         - Base Development
         - MTF Handset UX
+    RemovePackages:
+        # This package requires mesa-libGL* packages that conflict with our sgx drivers.
+        # Included in "Base Development" group.
+        - glx-utils
     PostScripts:
         - uxlaunch-symlink-mtf
 

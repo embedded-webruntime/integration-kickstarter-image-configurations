@@ -75,6 +75,7 @@ usb-moded-config-n900
 -meego-handset-icon-theme
 -meegotouch-applifed
 -sreadahead
+-glx-utils
 %end
 
 %post
