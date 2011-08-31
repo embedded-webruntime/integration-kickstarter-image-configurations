@@ -2,7 +2,7 @@ Name: MeeGo Handset N900 Community Edition (Testing) with MeeGo 1.3 core
 Platform: CE-HANDSET-1.3
 FileName: handset-armv7nhl-n900-ce-testing-MeeGo-1.3
 Part: n900-ce
-Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=zypp
+Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n900
 PackageArgs: ignoremissing
