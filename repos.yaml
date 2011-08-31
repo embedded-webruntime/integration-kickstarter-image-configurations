@@ -6,6 +6,8 @@ Repositories:
 
     -   Name: mtf-trunk-testing
         Url:  http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/
+    -   Name: ce-1.3-testing
+        Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing:/1.3/standard/
 
     -   Name: oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/
