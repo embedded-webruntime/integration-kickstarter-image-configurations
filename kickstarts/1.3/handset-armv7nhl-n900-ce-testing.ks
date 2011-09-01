@@ -65,6 +65,7 @@ f-irc
 qtflyingbus
 qt-components
 qt-components-base-icons
+screen
 gst-nokia-camera
 perf-adaptation-n900
 usb-moded-config-n900

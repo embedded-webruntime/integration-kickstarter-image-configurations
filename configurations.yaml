@@ -113,6 +113,9 @@ CE-HANDSET-1.3:
         - Base Development
         - Common User Interface
         - MTF Handset UX
+    ExtraPackages:
+        # Adding screen to devel purposes
+        - screen
     RemovePackages:
         # This package requires mesa-libGL* packages that conflict with our sgx drivers.
         # Included in "Base Development" group.
