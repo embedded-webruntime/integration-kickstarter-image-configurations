@@ -69,6 +69,7 @@ screen
 gst-nokia-camera
 perf-adaptation-n900
 usb-moded-config-n900
+xorg-x11-server-Xorg-setuid
 -phonesim
 -corewatcher
 -meegotouch-qt-style

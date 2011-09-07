@@ -14,7 +14,10 @@ ExtraPackages:
     - gst-nokia-camera
     # Adding n900 specific perf
     - perf-adaptation-n900
+    # CE related n900 specific config so isn't in Nokia N900 Support.
     - usb-moded-config-n900
+    # Because of the SGX drivers we need setuid version of Xorg
+    - xorg-x11-server-Xorg-setuid
 PostScripts:
     # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
