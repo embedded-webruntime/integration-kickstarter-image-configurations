@@ -41,7 +41,6 @@ ce-backgrounds
 plymouth-lite
 meegotouch-demos
 mce
-meego-ux-components
 mad-developer
 libqtwebkit4
 libqtwebkit-qmlwebkitplugin
@@ -74,11 +73,11 @@ meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
 appsclient-handset
+meego-ux-components
 usb-moded-config-n950-n9
 -phonesim
 -corewatcher
 -meegotouch-qt-style
--meego-handset-icon-theme
 -meegotouch-applifed
 -sreadahead
 -nokia-usb-networking
@@ -88,6 +87,7 @@ usb-moded-config-n950-n9
 -meego-handset-chat
 -meegotouchcp-chat
 -meegotouch-applauncherd
+-meego-handset-icon-theme
 %end
 
 %post

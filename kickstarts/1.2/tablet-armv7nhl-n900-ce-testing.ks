@@ -46,7 +46,6 @@ ce-backgrounds
 plymouth-lite
 meegotouch-demos
 mce
-meego-ux-components
 mad-developer
 libqtwebkit4
 libqtwebkit-qmlwebkitplugin
@@ -70,18 +69,19 @@ qt-components-base-icons
 meego-handset-dialer
 meego-handset-sms
 fennec-qt
+meego-ux-components
 gst-nokia-camera
 perf-adaptation-n900
 usb-moded-config-n900
 -phonesim
 -corewatcher
 -meegotouch-qt-style
--meego-handset-icon-theme
 -meegotouch-applifed
 -sreadahead
 -pulseaudio-modules-tablet-common
 -pulseaudio-modules-tablet-mainvolume
 -policy-settings-tablet
+-meego-handset-icon-theme
 %end
 
 %post

@@ -44,7 +44,6 @@ ce-backgrounds
 plymouth-lite
 meegotouch-demos
 mce
-meego-ux-components
 mad-developer
 libqtwebkit4
 libqtwebkit-qmlwebkitplugin
@@ -72,7 +71,6 @@ xorg-x11-server-Xorg-setuid
 -phonesim
 -corewatcher
 -meegotouch-qt-style
--meego-handset-icon-theme
 -meegotouch-applifed
 -sreadahead
 -glx-utils
@@ -171,9 +169,6 @@ echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 # Because of the 2nd partition is swap for the partition numbering
 # we can just change the current fstab entry to match the eMMC partition.
 sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
-
-# open serial line console for embedded system
-echo "s0:235:respawn:/sbin/agetty -L 115200 ttyO2 vt100" >> /etc/inittab
 
 # Set up proper target for libmeegotouch
 Config_Src=`gconftool-2 --get-default-source`

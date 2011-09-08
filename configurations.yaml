@@ -27,8 +27,6 @@ Default:
         - meegotouch-demos
         # Install mce to enable screen blanking
         - mce
-        # Make sure we have meego-ux-components in the images for developers
-        - meego-ux-components
         # Install mad-developer for SDK usage
         - mad-developer
         # Qt Webkit is missing from the images
@@ -76,9 +74,6 @@ Default:
         # Style causing a lot of crashes so removing for now.
         # https://bugs.meego.com/show_bug.cgi?id=16894
         - meegotouch-qt-style
-        # Just to make sure we don't have problems with 
-        # https://bugs.meego.com/show_bug.cgi?id=17695
-        - meego-handset-icon-theme
         # Save some more memory by removing applifed as well.
         - meegotouch-applifed
         # Sreadahead only slows us down as we don't have any spinning platters
@@ -168,6 +163,8 @@ CEHANDSET:
         - meego-ux-appgrid
         # MeeGo community Apps client
         - appsclient-handset
+        # Make sure we have meego-ux-components in the images for developers
+        - meego-ux-components
     RemovePackages:
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
@@ -181,6 +178,9 @@ CEHANDSET:
         - meegotouchcp-chat
         # Save some more memory by removing the applauncherd
         - meegotouch-applauncherd
+        # Just to make sure we don't have problems with 
+        # https://bugs.meego.com/show_bug.cgi?id=17695
+        - meego-handset-icon-theme
     PostScripts:
         # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
         - meego-ux-desktop-file-fix
@@ -206,9 +206,14 @@ CETABLET:
         - meego-handset-sms
         # Install fennec-qt because meego-app-browser doesn't work properly.
         - fennec-qt
+        # Make sure we have meego-ux-components in the images for developers
+        - meego-ux-components
     RemovePackages:
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18662
         - pulseaudio-modules-tablet-common
         - pulseaudio-modules-tablet-mainvolume
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18667
         - policy-settings-tablet
+        # Just to make sure we don't have problems with 
+        # https://bugs.meego.com/show_bug.cgi?id=17695
+        - meego-handset-icon-theme
