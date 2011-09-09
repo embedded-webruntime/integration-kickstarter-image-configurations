@@ -3,7 +3,7 @@ Platform: CE-HANDSET-1.3
 FileName: handset-armv7nhl-n950-ce-testing
 PartSize: 3500
 FileSystem: ext3
-Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7nhl --record-pkgs=name
+Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --record-pkgs=name
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n950
 PackageArgs: ignoremissing
