@@ -84,8 +84,8 @@ meego-ux-components
 gst-nokia-camera
 perf-adaptation-n900
 usb-moded-config-n900
--phonesim
 -corewatcher
+-phonesim
 -meegotouch-qt-style
 -meegotouch-applifed
 -sreadahead

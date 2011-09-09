@@ -66,18 +66,9 @@ Default:
         - qt-components
         - qt-components-base-icons
     RemovePackages:
-        # No need to install phonesim on N900 we have real modem.
-        - phonesim
         # Removing corewatcher because that is consuming way too much disk
         # space currently with unstable apps.
         - corewatcher
-        # Style causing a lot of crashes so removing for now.
-        # https://bugs.meego.com/show_bug.cgi?id=16894
-        - meegotouch-qt-style
-        # Save some more memory by removing applifed as well.
-        - meegotouch-applifed
-        # Sreadahead only slows us down as we don't have any spinning platters
-        - sreadahead
     PostScripts:
         - cleanup
         - nocursor
@@ -87,11 +78,6 @@ Default:
         - plymouth-lite-ce
         - meegotouch-translations
         - prelink
-        - disable-unused-daemons
-        # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
-        #- create-tracker-cache
-        # We in order to get MeeGo UX apps launch properly we need this
-        - meego-ux-ce-gconf
     NoChrootScripts:
         - buildname
 
@@ -111,10 +97,6 @@ CE-HANDSET-1.3:
     ExtraPackages:
         # Adding screen to devel purposes
         - screen
-    RemovePackages:
-        # This package requires mesa-libGL* packages that conflict with our sgx drivers.
-        # Included in "Base Development" group.
-        - glx-utils
     PostScripts:
         - uxlaunch-symlink-mtf
 
@@ -166,6 +148,15 @@ CEHANDSET:
         # Make sure we have meego-ux-components in the images for developers
         - meego-ux-components
     RemovePackages:
+        # No need to install phonesim on N900 we have real modem.
+        - phonesim
+        # Style causing a lot of crashes so removing for now.
+        # https://bugs.meego.com/show_bug.cgi?id=16894
+        - meegotouch-qt-style
+        # Save some more memory by removing applifed as well.
+        - meegotouch-applifed
+        # Sreadahead only slows us down as we don't have any spinning platters
+        - sreadahead
         # Remove nokia-usb-networking because it conflicts with usb-moded
         - nokia-usb-networking
         # Remove meegocamera replaced by meego-handset-camera
@@ -182,6 +173,11 @@ CEHANDSET:
         # https://bugs.meego.com/show_bug.cgi?id=17695
         - meego-handset-icon-theme
     PostScripts:
+        - disable-unused-daemons
+        # We in order to get MeeGo UX apps launch properly we need this
+        - meego-ux-ce-gconf
+        # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
+        #- create-tracker-cache
         # Rest of the workaround for dependencies of https://bugs.meego.com/show_bug.cgi?id=16394
         - meego-ux-desktop-file-fix
         # Lets delay some of the apps after the home so the home screen 
@@ -209,6 +205,15 @@ CETABLET:
         # Make sure we have meego-ux-components in the images for developers
         - meego-ux-components
     RemovePackages:
+        # No need to install phonesim on N900 we have real modem.
+        - phonesim
+        # Style causing a lot of crashes so removing for now.
+        # https://bugs.meego.com/show_bug.cgi?id=16894
+        - meegotouch-qt-style
+        # Save some more memory by removing applifed as well.
+        - meegotouch-applifed
+        # Sreadahead only slows us down as we don't have any spinning platters
+        - sreadahead
         # Workaround for https://bugs.meego.com/show_bug.cgi?id=18662
         - pulseaudio-modules-tablet-common
         - pulseaudio-modules-tablet-mainvolume
@@ -217,3 +222,9 @@ CETABLET:
         # Just to make sure we don't have problems with 
         # https://bugs.meego.com/show_bug.cgi?id=17695
         - meego-handset-icon-theme
+    PostScripts:
+        - disable-unused-daemons
+        # Disabled for now because of https://bugs.meego.com/show_bug.cgi?id=18759
+        #- create-tracker-cache
+        # We in order to get MeeGo UX apps launch properly we need this
+        - meego-ux-ce-gconf

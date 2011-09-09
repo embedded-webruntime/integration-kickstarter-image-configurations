@@ -64,8 +64,8 @@ meego-handset-sms
 fennec-qt
 meego-ux-components
 usb-moded-config-n950-n9
--phonesim
 -corewatcher
+-phonesim
 -meegotouch-qt-style
 -meegotouch-applifed
 -sreadahead
