@@ -1,0 +1,22 @@
+Name: MeeGo Handset N950 Community Edition (Testing)
+Platform: CE-HANDSET-1.3
+FileName: handset-armv7nhl-n950-ce-testing
+PartSize: 3500
+FileSystem: ext3
+Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7nhl --record-pkgs=name
+Architecture: armv7nhl
+Kernel: kernel-adaptation-n950
+PackageArgs: ignoremissing
+Groups:
+    - Nokia N950 Support
+    - Nokia N950 Proprietary Support
+#ExtraPackages:
+    # CE related n900 specific config so isn't in Nokia N900 Support.
+    # Not included because of https://bugs.meego.com/show_bug.cgi?id=22891
+#    - usb-moded-config-n950-n9
+PostScripts:
+    # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+    # we can't use the armv7nhl here
+    - arch-armv7hl
+    - meegotouch-n950
+    - console-n950
