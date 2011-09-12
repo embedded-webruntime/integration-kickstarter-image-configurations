@@ -7,6 +7,8 @@ Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n950
 PackageArgs: ignoremissing
+Repos:
+    - non-oss-trunk-testing-daily-n950
 Groups:
     - Nokia N950 Support
     - Nokia N950 Proprietary Support

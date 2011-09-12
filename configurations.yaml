@@ -15,6 +15,55 @@ Default:
     PartSize: 1900
     Schedule: "*"
     Active: True
+    PostScripts:
+        - cleanup
+        - nocursor
+        - rpm
+        - bootchart
+        - handset-app-theme-fixes
+        - plymouth-lite-ce
+        - meegotouch-translations
+        - prelink
+    NoChrootScripts:
+        - buildname
+
+CE-HANDSET-1.3:
+    Baseline: "1.3"
+    Repos:
+        - oss-trunk-testing-daily
+        - mtf-trunk-testing
+        - ce-1.3-testing
+    Groups:
+        - Compliance
+        - Core
+        - Base Development
+        - Common User Interface
+        - MTF Handset UX
+        - Community Edition Base
+    ExtraPackages:
+        # Until https://meego.gitorious.org/meego-os-base/package-groups/merge_requests/47
+        # is merged to the package groups.
+        - basesystem
+    PostScripts:
+        - uxlaunch-symlink-mtf
+        # Disable corewatcher on boot
+        - systemd-corewatcher-disable
+
+CEHANDSET:
+    Baseline: "1.2"
+    Desktop: DUI
+    Session: "/usr/bin/mcompositor"
+    StartX: True
+    Groups:
+        - MeeGo Compliance
+        - MeeGo Core
+        - MeeGo Base Development
+        - Minimal MeeGo X Window System
+        - X for Handsets
+        - MeeGo Handset Desktop
+        - MeeGo Handset Applications
+        # Adding the MeeGo UX applications.
+        - MeeGo Tablet Applications
     ExtraPackages:
         - xorg-x11-utils-xev
         # Add theme for N900 DE
@@ -65,58 +114,6 @@ Default:
         # Qt/QML components and models
         - qt-components
         - qt-components-base-icons
-    PostScripts:
-        - cleanup
-        - nocursor
-        - rpm
-        - bootchart
-        - handset-app-theme-fixes
-        - plymouth-lite-ce
-        - meegotouch-translations
-        - prelink
-    NoChrootScripts:
-        - buildname
-
-CE-HANDSET-1.3:
-    Baseline: "1.3"
-    Repos:
-        - oss-trunk-testing-daily
-        - non-oss-trunk-testing-daily
-        - mtf-trunk-testing
-        - ce-1.3-testing
-    Groups:
-        - Compliance
-        - Core
-        - Base Development
-        - Common User Interface
-        - MTF Handset UX
-    ExtraPackages:
-        # Adding screen to devel purposes
-        - screen
-        # Until https://meego.gitorious.org/meego-os-base/package-groups/merge_requests/47
-        # is merged to the package groups.
-        - basesystem
-    PostScripts:
-        - uxlaunch-symlink-mtf
-        # Disable corewatcher on boot
-        - systemd-corewatcher-disable
-
-CEHANDSET:
-    Baseline: "1.2"
-    Desktop: DUI
-    Session: "/usr/bin/mcompositor"
-    StartX: True
-    Groups:
-        - MeeGo Compliance
-        - MeeGo Core
-        - MeeGo Base Development
-        - Minimal MeeGo X Window System
-        - X for Handsets
-        - MeeGo Handset Desktop
-        - MeeGo Handset Applications
-        # Adding the MeeGo UX applications.
-        - MeeGo Tablet Applications
-    ExtraPackages:
         # Add meego-pinquery package to add support for SIM cards with PIN code.
         - meego-pinquery
         # Adding usb-moded to the images, this will give us possibility to
@@ -201,6 +198,55 @@ CETABLET:
         - MeeGo Tablet
         - MeeGo Tablet Applications
     ExtraPackages:
+        - xorg-x11-utils-xev
+        # Add theme for N900 DE
+        - meegotouch-theme-n900de
+        # Add splash screen images
+        - ce-backgrounds
+        # Splash screen are shown with this
+        - plymouth-lite
+        # Adding widgetsgallery
+        - meegotouch-demos
+        # Install mce to enable screen blanking
+        - mce
+        # Install mad-developer for SDK usage
+        - mad-developer
+        # Qt Webkit is missing from the images
+        - libqtwebkit4 
+        - libqtwebkit-qmlwebkitplugin
+        # Add resource policy client for debugging resource rules
+        - libresource-client
+        ### pyside ###
+        - python-qtmobility
+        - shiboken
+        ### Community apps ###
+        # IM application
+        - peregrine-plain-qml
+        # Cat related game
+        - info.vivainio.qatbowling
+        # Reddit reader
+        - info.vivainio.qmlreddit
+        # Facebook client
+        - com.substanceofcode.kasvopus
+        # Helium Mobile Browser
+        - mobilebrowser
+        # QML Based package manager
+        - mg-package-manager
+        # Include new terminal
+        - meego-terminal
+        # Adding iotop for testing purposes
+        - iotop
+        # Add text based browser
+        - lynx
+        # Add contact import package for retrieval of Maemo contacts.
+        - maemo-contacts-import
+        # IRC client
+        - f-irc
+        # Qt based game
+        - qtflyingbus
+        # Qt/QML components and models
+        - qt-components
+        - qt-components-base-icons
         # These apps are not in Tablet so we add them from handset
         - meego-handset-dialer
         - meego-handset-sms

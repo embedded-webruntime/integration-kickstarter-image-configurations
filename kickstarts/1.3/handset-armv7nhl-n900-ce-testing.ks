@@ -22,9 +22,9 @@ rootpw meego
 user --name meego  --groups audio,video --password meego 
 
 repo --name=oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshots/latest-testing/repos/oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=non-oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=mtf-trunk-testing --baseurl=http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-1.3-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing:/1.3/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=non-oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages --ignoremissing
 
@@ -33,38 +33,12 @@ repo --name=ce-1.3-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trun
 @Base Development
 @Common User Interface
 @MTF Handset UX
+@Community Edition Base
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
 
 kernel-adaptation-n900
 
-xorg-x11-utils-xev
-meegotouch-theme-n900de
-ce-backgrounds
-plymouth-lite
-meegotouch-demos
-mce
-mad-developer
-libqtwebkit4
-libqtwebkit-qmlwebkitplugin
-libresource-client
-python-qtmobility
-shiboken
-peregrine-plain-qml
-info.vivainio.qatbowling
-info.vivainio.qmlreddit
-com.substanceofcode.kasvopus
-mobilebrowser
-mg-package-manager
-meego-terminal
-iotop
-lynx
-maemo-contacts-import
-f-irc
-qtflyingbus
-qt-components
-qt-components-base-icons
-screen
 basesystem
 gst-nokia-camera
 perf-adaptation-n900

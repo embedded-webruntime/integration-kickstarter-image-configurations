@@ -6,6 +6,8 @@ Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n900
 PackageArgs: ignoremissing
+Repos:
+    - non-oss-trunk-testing-daily
 Groups:
     - Nokia N900 Support
     - Nokia N900 Proprietary Support
