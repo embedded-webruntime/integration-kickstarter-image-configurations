@@ -69,7 +69,6 @@ basesystem
 gst-nokia-camera
 perf-adaptation-n900
 xorg-x11-server-Xorg-setuid
--corewatcher
 %end
 
 %post
@@ -137,6 +136,9 @@ EOF
 
 # Set symlink pointing to .desktop file 
 ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
+# Mask corewatcher.service to disable it on boot.
+# Do "rm /etc/systemd/system/corewatcher.service" to re-enable it.
+ln -s /dev/null /etc/systemd/system/corewatcher.service
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
