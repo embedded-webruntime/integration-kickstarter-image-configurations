@@ -17,6 +17,7 @@ repo --name=oss-trunk-testing-daily --baseurl=http://download.meego.com/snapshot
 repo --name=mtf-trunk-testing --baseurl=http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-1.3-testing --baseurl=http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing:/1.3/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=non-oss-trunk-testing-daily-n950 --baseurl=http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
+repo --name=devel-devices-n950-trunk-testing --baseurl=http://download.meego.com/live/devel:/devices:/n900:/n950/Trunk_Testing/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
