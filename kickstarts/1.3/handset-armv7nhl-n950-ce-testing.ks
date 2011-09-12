@@ -57,6 +57,7 @@ qtflyingbus
 qt-components
 qt-components-base-icons
 screen
+basesystem
 -corewatcher
 %end
 

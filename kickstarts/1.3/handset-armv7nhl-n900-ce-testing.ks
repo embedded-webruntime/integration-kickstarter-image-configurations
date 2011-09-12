@@ -65,6 +65,7 @@ qtflyingbus
 qt-components
 qt-components-base-icons
 screen
+basesystem
 gst-nokia-camera
 perf-adaptation-n900
 xorg-x11-server-Xorg-setuid

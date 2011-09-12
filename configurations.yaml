@@ -97,6 +97,9 @@ CE-HANDSET-1.3:
     ExtraPackages:
         # Adding screen to devel purposes
         - screen
+        # Until https://meego.gitorious.org/meego-os-base/package-groups/merge_requests/47
+        # is merged to the package groups.
+        - basesystem
     PostScripts:
         - uxlaunch-symlink-mtf
 
