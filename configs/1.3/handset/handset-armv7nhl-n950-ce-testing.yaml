@@ -6,7 +6,6 @@ FileSystem: ext3
 Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --record-pkgs=name
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n950
-PackageArgs: ignoremissing
 Repos:
     - non-oss-trunk-testing-daily-n950
 Groups:
