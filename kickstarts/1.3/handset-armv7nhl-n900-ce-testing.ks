@@ -111,6 +111,9 @@ ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
 # Mask corewatcher.service to disable it on boot.
 # Do "rm /etc/systemd/system/corewatcher.service" to re-enable it.
 ln -s /dev/null /etc/systemd/system/corewatcher.service
+# ohm outputs "No protocol specified" message couple of times a second, because of videoep module.
+# See: https://bugs.meego.com/show_bug.cgi?id=22887
+sed -i 's!ModulesBanned=!ModulesBanned=videoep!g' /etc/ohm/modules.ini
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
