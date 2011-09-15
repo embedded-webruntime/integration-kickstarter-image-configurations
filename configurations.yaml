@@ -50,6 +50,8 @@ CE-HANDSET-1.3:
         - systemd-corewatcher-disable
         # ohmd spam fix.
         - ohm-modules-ban
+        # Temporary SSH Fix until the fix is released in repository.
+        - systemd-ssh-fix
 
 CEHANDSET:
     Baseline: "1.2"
