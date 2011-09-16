@@ -12,10 +12,9 @@ Repos:
 Groups:
     - Nokia N950 Support
     - Nokia N950 Proprietary Support
-#ExtraPackages:
+ExtraPackages:
     # CE related n900 specific config so isn't in Nokia N900 Support.
-    # Not included because of https://bugs.meego.com/show_bug.cgi?id=22891
-#    - usb-moded-config-n950-n9
+    - usb-moded-config-n950-n9
 PostScripts:
     # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

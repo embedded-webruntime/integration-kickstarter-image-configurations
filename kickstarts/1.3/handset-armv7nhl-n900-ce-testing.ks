@@ -41,6 +41,7 @@ kernel-adaptation-n900
 
 basesystem
 gst-nokia-camera
+usb-moded-config-n900
 xorg-x11-server-Xorg-setuid
 %end
 

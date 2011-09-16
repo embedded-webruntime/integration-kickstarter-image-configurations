@@ -33,6 +33,7 @@ repo --name=devel-devices-n950-trunk-testing --baseurl=http://download.meego.com
 kernel-adaptation-n950
 
 basesystem
+usb-moded-config-n950-n9
 %end
 
 %post
