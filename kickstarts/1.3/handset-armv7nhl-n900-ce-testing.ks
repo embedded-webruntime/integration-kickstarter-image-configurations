@@ -40,6 +40,7 @@ repo --name=non-oss-trunk-testing-daily --baseurl=http://download.meego.com/snap
 kernel-adaptation-n900
 
 basesystem
+gst-nokia-camera
 xorg-x11-server-Xorg-setuid
 %end
 

@@ -13,7 +13,7 @@ Groups:
 ExtraPackages:
     # Non-oss part of N900 camera for focus etc.
     # TODO: Not in the 1.3 based CE yet.
-    #- gst-nokia-camera
+    - gst-nokia-camera
     # Adding n900 specific perf
     # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
     #- perf-adaptation-n900
