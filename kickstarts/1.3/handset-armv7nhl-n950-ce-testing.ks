@@ -27,6 +27,7 @@ repo --name=devel-devices-n950-trunk-testing --baseurl=http://download.meego.com
 @Common User Interface
 @MTF Handset UX
 @Community Edition Base
+@Samples and Demos
 @Nokia N950 Support
 @Nokia N950 Proprietary Support
 

@@ -40,6 +40,7 @@ CE-HANDSET-1.3:
         - Common User Interface
         - MTF Handset UX
         - Community Edition Base
+        - Samples and Demos
     ExtraPackages:
         # Until https://meego.gitorious.org/meego-os-base/package-groups/merge_requests/47
         # is merged to the package groups.
