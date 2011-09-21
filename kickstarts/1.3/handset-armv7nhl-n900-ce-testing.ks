@@ -34,6 +34,7 @@ repo --name=non-oss-trunk-testing-daily --baseurl=http://download.meego.com/snap
 @Common User Interface
 @MTF Handset UX
 @Community Edition Base
+@Community Edition Libraries
 @Samples and Demos
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
