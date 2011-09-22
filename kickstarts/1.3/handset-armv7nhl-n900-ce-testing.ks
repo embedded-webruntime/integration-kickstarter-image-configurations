@@ -45,6 +45,8 @@ basesystem
 gst-nokia-camera
 usb-moded-config-n900
 xorg-x11-server-Xorg-setuid
+contextkit-maemo-battery-rx51-bin
+-contextkit-meego-battery-upower
 %end
 
 %post

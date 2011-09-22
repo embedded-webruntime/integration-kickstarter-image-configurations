@@ -20,6 +20,11 @@ ExtraPackages:
     - usb-moded-config-n900
     # Because of the SGX drivers we need setuid version of Xorg
     - xorg-x11-server-Xorg-setuid
+    # Battery management as upower doesn't work properly with 1.3 and N900
+    - contextkit-maemo-battery-rx51-bin
+RemovePackages:
+    # Conflicts with maemo battery.
+    - contextkit-meego-battery-upower
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
