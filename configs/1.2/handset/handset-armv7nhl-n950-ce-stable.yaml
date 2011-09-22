@@ -3,7 +3,7 @@ Platform: CEHANDSET
 FileName: handset-armv7nhl-n950-ce-stable
 PartSize: 3500
 FileSystem: ext3
-Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7nhl --record-pkgs=name
+Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7nhl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n950
 Active: False

@@ -2,7 +2,7 @@ Name: MeeGo Handset N900 Community Edition (Stable)
 Platform: CEHANDSET
 FileName: handset-armv7nhl-n900-ce-stable
 Part: n900-ce
-Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name
+Mic2Options: -f raw --save-kernel --arch=armv7nhl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7nhl
 Kernel: kernel-adaptation-n900
 Repos:
