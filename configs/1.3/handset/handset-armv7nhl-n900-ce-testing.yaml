@@ -33,3 +33,5 @@ PostScripts:
     - meegotouch-n900
     # Reduce the amount of memory given for GLESv2 apps
     - n900-powervr-ini
+    # bq module causes instability, so removing for now.
+    - n900-bq27x00_battery-removal

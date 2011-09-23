@@ -151,6 +151,8 @@ ExternalZBufferMode=2
 [GTF]
 ExternalZBufferMode=2
 EOF
+# This causes problems with the bme in N900 images so removing for now.
+rm -f /lib/modules/*/kernel/drivers/power/bq27x00_battery.ko
 
 %end
 
