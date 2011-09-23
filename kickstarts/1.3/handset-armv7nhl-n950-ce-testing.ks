@@ -36,6 +36,7 @@ kernel-adaptation-n950
 
 basesystem
 usb-moded-config-n950-n9
+omap-update-display
 -syncevolution
 %end
 

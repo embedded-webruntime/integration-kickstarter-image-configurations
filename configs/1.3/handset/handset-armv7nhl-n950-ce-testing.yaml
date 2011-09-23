@@ -15,6 +15,8 @@ Groups:
 ExtraPackages:
     # CE related n900 specific config so isn't in Nokia N900 Support.
     - usb-moded-config-n950-n9
+    # Need to update screen after splash for example.
+    - omap-update-display
 PostScripts:
     # Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
