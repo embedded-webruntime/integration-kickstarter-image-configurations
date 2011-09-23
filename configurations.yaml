@@ -46,6 +46,9 @@ CE-HANDSET-1.3:
         # Until https://meego.gitorious.org/meego-os-base/package-groups/merge_requests/47
         # is merged to the package groups.
         - basesystem
+    RemovePackages:
+        # Save some resources by removing syncevolution.
+        - syncevolution
     PostScripts:
         - uxlaunch-symlink-mtf
         # Disable corewatcher on boot

@@ -46,6 +46,7 @@ gst-nokia-camera
 usb-moded-config-n900
 xorg-x11-server-Xorg-setuid
 contextkit-maemo-battery-rx51-bin
+-syncevolution
 -contextkit-meego-battery-upower
 %end
 
