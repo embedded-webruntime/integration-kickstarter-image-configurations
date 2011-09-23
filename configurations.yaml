@@ -55,6 +55,7 @@ CE-HANDSET-1.3:
         - systemd-corewatcher-disable
         # ohmd spam fix.
         - ohm-modules-ban
+        - tracker-tuning
 
 CEHANDSET:
     Baseline: "1.2"

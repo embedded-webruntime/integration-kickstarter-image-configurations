@@ -121,6 +121,9 @@ ln -s /dev/null /etc/systemd/system/corewatcher.service
 # ohm outputs "No protocol specified" message couple of times a second, because of videoep module.
 # See: https://bugs.meego.com/show_bug.cgi?id=22887
 sed -i 's!ModulesBanned=!ModulesBanned=videoep!g' /etc/ohm/modules.ini
+# Tune tracker a bit.
+sed -i "s|Exec=|Exec=/usr/bin/ionice -c 3 -n 7 |g" /etc/xdg/autostart/tracker-miner-fs.desktop
+
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
