@@ -1,10 +1,10 @@
 Repositories:
     -   Name: oss-trunk-testing-daily
-        Url:  http://download.meego.com/snapshots/latest-testing/repos/oss/armv7hl/packages/
+        Url:  http://download.meego.com/snapshots/latest-testing/repos/oss/@ARCH@/packages/
     -   Name: non-oss-trunk-testing-daily
-        Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/
+        Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/@ARCH@/packages/
     -   Name: non-oss-trunk-testing-daily-n950
-        Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/armv7hl/packages/
+        Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/@ARCH@/packages/
         Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 
     -   Name: mtf-trunk-testing
@@ -15,16 +15,16 @@ Repositories:
         Url:  http://download.meego.com/live/devel:/devices:/n900:/n950/Trunk_Testing/
 
     -   Name: oss-1.2-daily
-        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/@ARCH@/packages/
         Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
     -   Name: oss-1.2-daily-n950
-        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/@ARCH@/packages/
         Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,contextkit-meego-battery-upower,xorg-x11-server*
 
     -   Name: non-oss-1.2-daily
-        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/@ARCH@/packages/
     -   Name: non-oss-1.2-daily-n950
-        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/armv7hl/packages/
+        Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/@ARCH@/packages/
         Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 
     -   Name: ce-trunk

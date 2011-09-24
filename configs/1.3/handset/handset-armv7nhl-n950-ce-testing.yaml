@@ -4,7 +4,7 @@ FileName: handset-armv7nhl-n950-ce-testing
 PartSize: 3500
 FileSystem: ext3
 Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
-Architecture: armv7nhl
+Architecture: armv7hl
 Kernel: kernel-adaptation-n950
 Repos:
     - non-oss-trunk-testing-daily-n950
