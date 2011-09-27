@@ -114,7 +114,8 @@ CEHANDSET:
         # Add text based browser
         - lynx
         # Add contact import package for retrieval of Maemo contacts.
-        - maemo-contacts-import
+        #- maemo-contacts-import
+        - vcard-tracker-import
         # IRC client
         - f-irc
         # Qt based game
@@ -150,7 +151,7 @@ CEHANDSET:
         # Copy the .desktop files from this to the right places as temp solution.
         - meego-ux-appgrid
         # MeeGo community Apps client
-        - appsclient-handset
+        #- appsclient-handset
         # Make sure we have meego-ux-components in the images for developers
         - meego-ux-components
     RemovePackages:
@@ -247,7 +248,8 @@ CETABLET:
         # Add text based browser
         - lynx
         # Add contact import package for retrieval of Maemo contacts.
-        - maemo-contacts-import
+        #- maemo-contacts-import
+        - vcard-tracker-import
         # IRC client
         - f-irc
         # Qt based game
