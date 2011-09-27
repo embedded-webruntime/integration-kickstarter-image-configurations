@@ -1,0 +1,26 @@
+Name: MeeGo Handset IA32 Community Edition (Testing)
+Platform: CE-HANDSET-1.3
+FileName: handset-ia32-testing
+PartSize: 3000
+FileSystem: ext3
+Bootloader: True
+BootloaderAppend: "quiet"
+BootloaderTimeout: 0
+BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+StartX: True
+Architecture: ia32
+Mic2Options: -f livecd --arch=i586 --record-pkgs=name --pkgmgr=yum
+Kernel: kernel-adaptation-pc
+Repos:
+    - non-oss-trunk-testing-daily
+Groups:
+    - Pinetrail Support
+ExtraPackages:
+    # Either this or emgd-bin, which one it should be?
+    - mesa-libGLESv2
+    # Plugin for battery
+    - contextkit-meego-battery-upower
+RemovePackages:
+    # No way on exo to wake up when screen is blanked.
+    - mce
+    - dsme
