@@ -156,6 +156,10 @@ ExternalZBufferMode=2
 EOF
 # This causes problems with the bme in N900 images so removing for now.
 rm -f /lib/modules/*/kernel/drivers/power/bq27x00_battery.ko
+# Wait a bit more than the default 5s when starting application.
+mkdir -p /etc/xdg/mcompositor/
+echo "close-timeout-ms 15000;" > /etc/xdg/mcompositor/new-mcompositor.conf
+
 
 %end
 

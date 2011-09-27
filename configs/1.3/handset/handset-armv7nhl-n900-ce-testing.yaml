@@ -35,3 +35,5 @@ PostScripts:
     - n900-powervr-ini
     # bq module causes instability, so removing for now.
     - n900-bq27x00_battery-removal
+    # We don't have so much power with N900 than others so we need to wait a bit longer
+    - mcompositor-app-wait-delay
