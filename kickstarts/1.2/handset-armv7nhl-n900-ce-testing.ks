@@ -63,7 +63,7 @@ mg-package-manager
 meego-terminal
 iotop
 lynx
-maemo-contacts-import
+vcard-tracker-import
 f-irc
 qtflyingbus
 qt-components
@@ -79,7 +79,6 @@ profiled
 meego-ux-sharing-qml-ui
 orientation-contextkit-sensor
 meego-ux-appgrid
-appsclient-handset
 meego-ux-components
 gst-nokia-camera
 perf-adaptation-n900
@@ -188,6 +187,7 @@ mv ${XDG_ORIG}/tracker-miner-fs.desktop ${DELAY_DEST}/040_tracker-miner-fs.deskt
 mv ${XDG_ORIG}/tracker-store.desktop ${DELAY_DEST}/040_tracker-store.desktop
 mv ${XDG_ORIG}/mdecorator.desktop ${DELAY_DEST}/040_mdecorator.desktop
 mv ${XDG_ORIG}/applauncherd.desktop ${DELAY_DEST}/050_applauncherd.desktop
+mv ${XDG_ORIG}/vcard-tracker-import.desktop ${DELAY_DEST}/055_vcard-tracker-import.desktop
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  
