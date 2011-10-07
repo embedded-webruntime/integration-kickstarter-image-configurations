@@ -1,8 +1,9 @@
 
-all: ks
+all: meego
 
-ks:
-	kickstarter -c configurations.yaml -r repos.yaml --outdir=kickstarts/
+meego:
+	@echo "Creating MeeGo based .ks files."
+	kickstarter -c configs/MeeGo/configurations.yaml -r configs/MeeGo/repos.yaml --outdir=kickstarts/
 
 clean:
 	rm -f */*~ */*/*~

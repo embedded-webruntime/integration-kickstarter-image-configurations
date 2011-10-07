@@ -1,7 +1,7 @@
 ExternalConfigs:
-    - configs/1.2/handset
-    - configs/1.2/tablet
-    - configs/1.3/handset
+    - configs/MeeGo/1.2/handset
+    - configs/MeeGo/1.2/tablet
+    - configs/MeeGo/1.3/handset
 
 Default:
     Active: True
