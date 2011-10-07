@@ -19,7 +19,7 @@ repo --name=mer-base-i586 --baseurl=http://repo.pub.meego.com//Mer:/Trunk:/Base/
 repo --name=mer-adaptation-x86 --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/adaptation:/x86/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=mer-utils-i586 --baseurl=http://repo.pub.meego.com//home:/sage:/Mer:/Utils/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=mer-mw-shared-i586 --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/MW:/Shared/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-ux-mtf-i586 --baseurl=http://repo.pub.meego.com//Project:/MTF/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=mer-ux-mtf-i586 --baseurl=http://repo.pub.meego.com//home:/sage:/Mer:/UX:/MTF/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=mer-ce-apps-i586 --baseurl=http://repo.pub.meego.com//Project:/DE:/Trunk:/Testing:/1.3/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages

@@ -12,7 +12,7 @@ Repositories:
         Url:  http://repo.pub.meego.com/home:/sage:/Mer:/MW:/Shared/Mer_i586/
 
     -   Name: mer-ux-mtf-i586
-        Url:  http://repo.pub.meego.com//Project:/MTF/Mer_i586/
+        Url:  http://repo.pub.meego.com//home:/sage:/Mer:/UX:/MTF/Mer_i586/
 
     -   Name: mer-ce-apps-i586
         Url:  http://repo.pub.meego.com//Project:/DE:/Trunk:/Testing:/1.3/Mer_i586/
