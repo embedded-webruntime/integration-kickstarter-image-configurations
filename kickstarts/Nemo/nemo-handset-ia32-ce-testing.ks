@@ -15,22 +15,21 @@ bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-s
 
 user --name meego  --groups audio,video --password meego 
 
-repo --name=mer-base-i586 --baseurl=http://repo.pub.meego.com//Mer:/Trunk:/Base/standard/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-adaptation-x86 --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/adaptation:/x86/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-utils-i586 --baseurl=http://repo.pub.meego.com//home:/sage:/Mer:/Utils/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-mw-shared-i586 --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/MW:/Shared/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-ux-mtf-i586 --baseurl=http://repo.pub.meego.com//home:/sage:/Mer:/UX:/MTF/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=mer-ce-apps-i586 --baseurl=http://repo.pub.meego.com//Project:/DE:/Trunk:/Testing:/1.3/Mer_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=mer-core-i586 --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/adaptation:/x86/CE_Adaptation_x86-generic --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-mw-shared-i586 --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf-i586 --baseurl=http://repo.pub.meego.com/Project:/MTF/CE_UX_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
+@Mer Core
+@Mer Graphics Common
+@Mer Connectivity
+@Mer Minimal Xorg
 @MTF Handset UX
-@Community Edition Base
-@Community Edition Libraries
 
 kernel-adaptation-pc
 
-basesystem
 acpid
 linux-firmware
 installer-shell
@@ -41,86 +40,9 @@ mesa-dri-i915-driver
 mesa-dri-i965-driver
 mesa-libGLESv2
 contextkit-meego-battery-upower
-zypper
 openssh-clients
-bash
-boardname
-coreutils
-crda
-deltarpm
-e2fsprogs
-file
-filesystem
-iproute
-iputils
-kbd
-lsb-release
-mailcap
-meego-release
-net-tools
-nss
-pam
-passwd
-prelink
-procps
-readline
-rootfiles
-rpm
-setup
-shadow-utils
-shared-mime-info
-systemd-sysv
-time
-udev
-usbutils
-util-linux
-wireless-tools
-wpa_supplicant
-xdg-user-dirs
-cjkuni-fonts
-droid-sans-fonts
-droid-sans-mono-fonts
-droid-serif-fonts
-fontpackages-filesystem
-liberation-fonts-common
-liberation-mono-fonts
-liberation-sans-fonts
-liberation-serif-fonts
-uxlaunch
-gzip
-xorg-x11-server-Xorg
-xorg-x11-drv-fbdev
-xorg-x11-xauth
-qt-qmlviewer
--syncevolution
--mce
--dsme
--meegotouch-inputmethodbridges
--meegotouchcp-about
--meegotouchcp-battery
--meegotouchcp-display
--meegotouchcp-gprs
--meegotouchcp-offline
--meegotouchcp-reset
--meegotouchcp-theme
--meegotouchcp-usb
--meegotouchcp-wallpaper
--meegotouchcp-warranty
--xorg-x11-utils-xev
--mad-developer
--peregrine-plain-qml
--org.pycage.musicshelf
--fennec-qt
--meego-handset-dialer
--meego-handset-sms
--meego-handset-people
--meego-handset-video
--meego-handset-photos
--libdeclarative-messaging
--libdeclarative-organizer
--libqtsparql-tracker-direct
--meego-handset-camera
--appsclient-handset
+openssh-server
+xterm
 %end
 
 %post

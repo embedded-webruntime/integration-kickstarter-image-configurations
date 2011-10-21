@@ -1,0 +1,34 @@
+Name: Mer Handset IA32 Community Edition (Testing)
+Platform: NEMO-HANDSET
+FileName: nemo-handset-ia32-ce-testing
+PartSize: 3000
+FileSystem: ext3
+Bootloader: True
+#BootloaderAppend: "quiet"
+BootloaderTimeout: 0
+BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+StartX: True
+Architecture: ia32
+Mic2Options: -f livecd --arch=i586 --record-pkgs=name --pkgmgr=yum
+Kernel: kernel-adaptation-pc
+Repos:
+    - mer-core-i586
+    - ce-adaptation-x86-generic
+#    - ce-utils-i586
+    - ce-mw-shared-i586
+    - ce-ux-mtf-i586
+#    - ce-apps-i586
+ExtraPackages:
+    - acpid
+    - linux-firmware
+    - installer-shell
+    - xorg-x11-drv-mtev
+    - xorg-x11-drv-synaptics
+    - xorg-x11-drv-intel
+    - mesa-dri-i915-driver
+    - mesa-dri-i965-driver
+    - mesa-libGLESv2
+    - contextkit-meego-battery-upower
+    - openssh-clients
+    - openssh-server
+    - xterm
