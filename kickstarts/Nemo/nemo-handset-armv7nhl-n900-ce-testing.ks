@@ -22,9 +22,11 @@ rootpw meego
 user --name meego  --groups audio,video --password meego 
 
 repo --name=mer-core-armv7hl --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-n900 --baseurl=http://repo.pub.meego.com//home:/stskeeps:/mer:/hw:/n900/CE_Mer_Core_armv7hl --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-n900 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N900/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-utils-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared-armv7hl --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf-armv7hl --baseurl=http://repo.pub.meego.com/Project:/MTF/CE_UX_MTF_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf-armv7hl --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-apps-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 

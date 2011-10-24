@@ -16,9 +16,11 @@ bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-s
 user --name meego  --groups audio,video --password meego 
 
 repo --name=mer-core-i586 --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/adaptation:/x86/CE_Adaptation_x86-generic --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586 --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-utils-i586 --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared-i586 --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf-i586 --baseurl=http://repo.pub.meego.com/Project:/MTF/CE_UX_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf-i586 --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-apps-i586 --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 

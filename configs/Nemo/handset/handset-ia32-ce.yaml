@@ -14,10 +14,10 @@ Kernel: kernel-adaptation-pc
 Repos:
     - mer-core-i586
     - ce-adaptation-x86-generic
-#    - ce-utils-i586
+    - ce-utils-i586
     - ce-mw-shared-i586
     - ce-ux-mtf-i586
-#    - ce-apps-i586
+    - ce-apps-i586
 ExtraPackages:
     - acpid
     - linux-firmware
