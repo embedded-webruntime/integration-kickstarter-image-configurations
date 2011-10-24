@@ -29,19 +29,10 @@ repo --name=ce-apps-i586 --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shar
 @Mer Connectivity
 @Mer Minimal Xorg
 @MTF Handset UX
+@Intel x86 Generic Support
 
 kernel-adaptation-pc
 
-acpid
-linux-firmware
-installer-shell
-xorg-x11-drv-mtev
-xorg-x11-drv-synaptics
-xorg-x11-drv-intel
-mesa-dri-i915-driver
-mesa-dri-i965-driver
-mesa-libGLESv2
-contextkit-meego-battery-upower
 openssh-clients
 openssh-server
 xterm

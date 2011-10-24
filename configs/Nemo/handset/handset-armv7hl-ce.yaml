@@ -13,8 +13,8 @@ Repos:
     - ce-ux-mtf-armv7hl
     - ce-apps-armv7hl
 Groups:
-    #- Nokia N900 Support
-    #- Nokia N900 Proprietary Support
+    - Nokia N900 Support
+    - Nokia N900 Proprietary Support
 ExtraPackages:
     # Non-oss part of N900 camera for focus etc.
     #- gst-nokia-camera
@@ -30,21 +30,6 @@ ExtraPackages:
     - bme-rx-51-bin
     - dsme
     - gst-omapfb
-    - libcal-rx-51-bin
-    - libsysinfo-rx51-bin
-    - n900-camera-firmware
-    - sysinfod-rx51-bin
-    - nokia-n900-configs
-    - nokia-usb-networking
-    - ti-omap3-sgx
-    - ti-omap3-sgx-libEGL
-    - ti-omap3-sgx-libGLESv1
-    - ti-omap3-sgx-libGLESv2
-    - ti-wl1251-firmware
-    - wl1251-cal-bin
-    - xorg-x11-drv-fbdev-sgx
-    - bcm-bt-firmware
-    - pulseaudio-settings-n900
     - openssh-server
     - openssh-clients
     - xterm

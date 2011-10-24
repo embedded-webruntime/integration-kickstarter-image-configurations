@@ -39,3 +39,7 @@ NEMO-HANDSET:
         - uxlaunch-symlink-mtf
         # ohmd spam fix.
         - ohm-modules-ban
+    ExtraPackages:
+        - openssh-clients
+        - openssh-server
+        - xterm

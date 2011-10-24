@@ -18,17 +18,5 @@ Repos:
     - ce-mw-shared-i586
     - ce-ux-mtf-i586
     - ce-apps-i586
-ExtraPackages:
-    - acpid
-    - linux-firmware
-    - installer-shell
-    - xorg-x11-drv-mtev
-    - xorg-x11-drv-synaptics
-    - xorg-x11-drv-intel
-    - mesa-dri-i915-driver
-    - mesa-dri-i965-driver
-    - mesa-libGLESv2
-    - contextkit-meego-battery-upower
-    - openssh-clients
-    - openssh-server
-    - xterm
+Groups:
+    - Intel x86 Generic Support

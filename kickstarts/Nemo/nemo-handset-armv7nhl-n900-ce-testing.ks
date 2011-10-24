@@ -35,30 +35,17 @@ repo --name=ce-apps-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_S
 @Mer Connectivity
 @Mer Minimal Xorg
 @MTF Handset UX
+@Nokia N900 Support
+@Nokia N900 Proprietary Support
 
 kernel-adaptation-n900
 
+openssh-clients
+openssh-server
+xterm
 bme-rx-51-bin
 dsme
 gst-omapfb
-libcal-rx-51-bin
-libsysinfo-rx51-bin
-n900-camera-firmware
-sysinfod-rx51-bin
-nokia-n900-configs
-nokia-usb-networking
-ti-omap3-sgx
-ti-omap3-sgx-libEGL
-ti-omap3-sgx-libGLESv1
-ti-omap3-sgx-libGLESv2
-ti-wl1251-firmware
-wl1251-cal-bin
-xorg-x11-drv-fbdev-sgx
-bcm-bt-firmware
-pulseaudio-settings-n900
-openssh-server
-openssh-clients
-xterm
 %end
 
 %post
