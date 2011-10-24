@@ -29,6 +29,8 @@ repo --name=ce-apps-i586 --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shar
 @Mer Connectivity
 @Mer Minimal Xorg
 @MTF Handset UX
+@Nemo Utils
+@Nemo Apps
 @Intel x86 Generic Support
 
 kernel-adaptation-pc

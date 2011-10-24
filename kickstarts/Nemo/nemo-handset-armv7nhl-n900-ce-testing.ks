@@ -35,6 +35,8 @@ repo --name=ce-apps-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_S
 @Mer Connectivity
 @Mer Minimal Xorg
 @MTF Handset UX
+@Nemo Utils
+@Nemo Apps
 @Nokia N900 Support
 @Nokia N900 Proprietary Support
 

@@ -33,8 +33,8 @@ NEMO-HANDSET:
         - Mer Connectivity
         - Mer Minimal Xorg
         - MTF Handset UX
-#         - Community Edition Base
-#         - Community Edition Libraries
+        - Nemo Utils
+        - Nemo Apps
     PostScripts:
         - uxlaunch-symlink-mtf
         # ohmd spam fix.
