@@ -18,7 +18,6 @@ Default:
         - nocursor
         - rpm
         - bootchart
-        - handset-app-theme-fixes
         - plymouth-lite-ce
         - meegotouch-translations
         - prelink
@@ -39,7 +38,10 @@ NEMO-HANDSET:
         - uxlaunch-symlink-mtf
         # ohmd spam fix.
         - ohm-modules-ban
+        #- handset-app-theme-fixes
     ExtraPackages:
         - openssh-clients
         - openssh-server
         - xterm
+        - ce-backgrounds
+        - plymouth-lite

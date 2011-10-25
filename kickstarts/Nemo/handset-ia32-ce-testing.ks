@@ -38,6 +38,8 @@ kernel-adaptation-pc
 openssh-clients
 openssh-server
 xterm
+ce-backgrounds
+plymouth-lite
 %end
 
 %post
@@ -62,14 +64,6 @@ exec /sbin/bootchartd -n 4000
 EOF
 chmod +x /sbin/bootchartd-long
 
-# Fix for https://bugs.meego.com/show_bug.cgi?id=15963
-mkdir -p /usr/share/themes/base/meegotouch/
-cp -rf /usr/share/themes/meego/meegotouch/dialer /usr/share/themes/base/meegotouch/
-
-# Also some other apps need fixes for other themes than meego
-cp -rf /usr/share/themes/meego/meegotouch/meegophotos /usr/share/themes/base/meegotouch/
-cp -rf /usr/share/themes/meego/meegotouch/meegomusic /usr/share/themes/base/meegotouch/
-cp -rf /usr/share/themes/meego/meegotouch/meegovideo /usr/share/themes/base/meegotouch/
 # Hack to fix the plymouth based splash screen on N900
 mv /usr/bin/ply-image /usr/bin/ply-image-real
 cat > /usr/bin/ply-image << EOF
