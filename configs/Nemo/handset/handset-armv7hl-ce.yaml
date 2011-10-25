@@ -1,6 +1,6 @@
 Name: Mer Handset N900 Community Edition (Testing)
 Platform: NEMO-HANDSET
-FileName: nemo-handset-armv7nhl-n900-ce-testing
+FileName: handset-armv7nhl-n900-ce-testing
 Part: n900-ce
 Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7hl
