@@ -1,0 +1,29 @@
+Name: Nemo Handset N950 (Testing)
+Platform: NEMO-HANDSET
+FileName: handset-armv7nhl-n950-testing
+PartSize: 3500
+FileSystem: ext3
+Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
+Architecture: armv7hl
+Kernel: kernel-adaptation-n950
+Repos:
+    - mer-core-armv7hl
+    - ce-adaptation-n9xx-common
+    - ce-adaptation-n950
+    - ce-utils-armv7hl
+    - ce-mw-shared-armv7hl
+    - ce-ux-mtf-armv7hl
+    - ce-apps-armv7hl
+Groups:
+    - Nokia N950 Support
+    - Nokia N950 Proprietary Support
+PostScripts:
+    # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
+    # we can't use the armv7nhl here
+    - arch-armv7hl
+    - fstab-n900
+    - meegotouch-n900
+    # bq module causes instability, so removing for now.
+    - n900-bq27x00_battery-removal
+    # We don't have so much power with N900 than others so we need to wait a bit longer
+    - mcompositor-app-wait-delay
