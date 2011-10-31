@@ -15,6 +15,7 @@ user --name nemo  --groups audio,video --password nemo
 
 repo --name=mer-core-armv7hl --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-adaptation-n9xx-common --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N9xx-common/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-n950-n9 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N950-N9/CE_Adaptation_N9xx-common_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-utils-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared-armv7hl --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-ux-mtf-armv7hl --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
@@ -40,6 +41,9 @@ openssh-server
 xterm
 ce-backgrounds
 plymouth-lite
+vim-enhanced
+usb-moded-config-n950-n9
+mce
 %end
 
 %post
@@ -102,6 +106,9 @@ ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
 # ohm outputs "No protocol specified" message couple of times a second, because of videoep module.
 # See: https://bugs.meego.com/show_bug.cgi?id=22887
 sed -i 's!ModulesBanned=!ModulesBanned=videoep!g' /etc/ohm/modules.ini
+# Temporary fix for the ssh server until the fix is released in the repository.
+sed -i 's!StandardInput=socket!StandardInput=socket\nStandardOutput=socket!g' /lib/systemd/system/sshd\@.service
+
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
  

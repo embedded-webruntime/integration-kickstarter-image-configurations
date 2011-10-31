@@ -9,7 +9,7 @@ Kernel: kernel-adaptation-n950
 Repos:
     - mer-core-armv7hl
     - ce-adaptation-n9xx-common
-    - ce-adaptation-n950
+    - ce-adaptation-n950-n9
     - ce-utils-armv7hl
     - ce-mw-shared-armv7hl
     - ce-ux-mtf-armv7hl
@@ -17,6 +17,9 @@ Repos:
 Groups:
     - Nokia N950 Support
     - Nokia N950 Proprietary Support
+ExtraPackages:
+    - usb-moded-config-n950-n9
+    - mce
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

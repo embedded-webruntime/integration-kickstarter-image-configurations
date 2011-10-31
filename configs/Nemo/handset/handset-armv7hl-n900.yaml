@@ -17,26 +17,12 @@ Groups:
     - Nokia N900 Support
     - Nokia N900 Proprietary Support
 ExtraPackages:
-    # Non-oss part of N900 camera for focus etc.
-    #- gst-nokia-camera
     # Adding n900 specific perf
     # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
     #- perf-adaptation-n900
     # CE related n900 specific config so isn't in Nokia N900 Support.
-    #- usb-moded-config-n900
-    # Because of the SGX drivers we need setuid version of Xorg
-    #- xorg-x11-server-Xorg-setuid
-    # Battery management as upower doesn't work properly with 1.3 and N900
-    #- contextkit-maemo-battery-rx51-bin
-    - bme-rx-51-bin
-    - dsme
-    - gst-omapfb
-    - openssh-server
-    - openssh-clients
-    - xterm
-RemovePackages:
-    # Conflicts with maemo battery.
-    #- contextkit-meego-battery-upower
+    - usb-moded-config-n900
+    - mce
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
