@@ -1,6 +1,6 @@
-Name: Mer Handset IA32 Community Edition (Testing)
+Name: Nemo Handset IA32 (Testing)
 Platform: NEMO-HANDSET
-FileName: handset-ia32-ce-testing
+FileName: handset-ia32-testing
 PartSize: 3000
 FileSystem: ext3
 Bootloader: True
