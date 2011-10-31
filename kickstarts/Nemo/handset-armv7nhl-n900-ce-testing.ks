@@ -17,9 +17,9 @@ part swap --size=8 --ondisk mmcblk0p --fstype=swap
 # This partition is made so that u-boot can find the kernel
 part /boot --size=32 --ondisk mmcblk0p --fstype=vfat
 
-rootpw meego 
+rootpw nemo 
 
-user --name meego  --groups audio,video --password meego 
+user --name nemo  --groups audio,video --password nemo 
 
 repo --name=mer-core-armv7hl --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-adaptation-n900 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N900/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego

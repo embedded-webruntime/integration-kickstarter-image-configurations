@@ -7,9 +7,9 @@ Default:
     Keyboard: us
     SaveRepos: True
     Timezone: America/Los_Angeles
-    RootPass: meego
-    DefaultUser: meego
-    DefaultUserPass: meego
+    RootPass: nemo
+    DefaultUser: nemo
+    DefaultUserPass: nemo
     PartSize: 1900
     Schedule: "*"
     Active: True
