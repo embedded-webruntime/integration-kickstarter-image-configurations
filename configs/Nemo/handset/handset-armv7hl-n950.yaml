@@ -20,6 +20,7 @@ Groups:
 ExtraPackages:
     - usb-moded-config-n950-n9
     - mce
+    - meego-handset-camera
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

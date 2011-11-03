@@ -44,6 +44,7 @@ plymouth-lite
 vim-enhanced
 usb-moded-config-n950-n9
 mce
+meego-handset-camera
 %end
 
 %post
