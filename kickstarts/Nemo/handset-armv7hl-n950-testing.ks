@@ -114,17 +114,10 @@ echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 # https://bugs.meego.com/show_bug.cgi?id=11484
 echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 
-# Use eMMC swap partition as MeeGo swap as well.
-# Because of the 2nd partition is swap for the partition numbering
-# we can just change the current fstab entry to match the eMMC partition.
-sed -i 's/mmcblk0p2/mmcblk1p3/g' /etc/fstab
-
 # Set up proper target for libmeegotouch
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
-  -s -t string /meegotouch/target/name N900
-# This causes problems with the bme in N900 images so removing for now.
-rm -f /lib/modules/*/kernel/drivers/power/bq27x00_battery.ko
+  -s -t string /meegotouch/target/name N950
 # Wait a bit more than the default 5s when starting application.
 mkdir -p /etc/xdg/mcompositor/
 echo "close-timeout-ms 15000;" > /etc/xdg/mcompositor/new-mcompositor.conf

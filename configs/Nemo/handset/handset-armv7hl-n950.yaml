@@ -25,9 +25,6 @@ PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
     - arch-armv7hl
-    - fstab-n900
-    - meegotouch-n900
-    # bq module causes instability, so removing for now.
-    - n900-bq27x00_battery-removal
+    - meegotouch-n950
     # We don't have so much power with N900 than others so we need to wait a bit longer
     - mcompositor-app-wait-delay

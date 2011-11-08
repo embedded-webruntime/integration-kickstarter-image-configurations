@@ -192,7 +192,6 @@ echo "s0:235:respawn:/sbin/agetty -L 115200 ttyS0 vt100" >> /etc/inittab
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N950
-
 # N950: Get all log messages to serial console
 sed -i 's!/sbin/redirect-console!#/sbin/redirect-console!' /etc/rc.d/rc
 

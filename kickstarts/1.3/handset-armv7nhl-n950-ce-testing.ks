@@ -125,7 +125,6 @@ echo 'arch = armv7hl' >> /etc/zypp/zypp.conf
 Config_Src=`gconftool-2 --get-default-source`
 gconftool-2 --direct --config-source $Config_Src \
   -s -t string /meegotouch/target/name N950
-
 # N950: Get all log messages to serial console
 sed -i 's!/sbin/redirect-console!#/sbin/redirect-console!' /etc/rc.d/rc
 
