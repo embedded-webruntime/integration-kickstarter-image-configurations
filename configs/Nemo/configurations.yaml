@@ -40,7 +40,6 @@ NEMO-HANDSET:
         # ohmd spam fix.
         - ohm-modules-ban
         #- handset-app-theme-fixes
-        - systemd-ssh-fix
     ExtraPackages:
         - openssh-clients
         - openssh-server

@@ -15,8 +15,8 @@ bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-s
 
 user --name meego  --groups audio,video --password meego 
 
-repo --name=mer-core-i586 --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111020.1/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586 --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=mer-core-i586 --baseurl=http://monster.tspre.org/~merreleases/releases/0.20111104.1/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-utils-i586 --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared-i586 --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-ux-mtf-i586 --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
@@ -104,9 +104,6 @@ ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
 # ohm outputs "No protocol specified" message couple of times a second, because of videoep module.
 # See: https://bugs.meego.com/show_bug.cgi?id=22887
 sed -i 's!ModulesBanned=!ModulesBanned=videoep!g' /etc/ohm/modules.ini
-# Temporary fix for the ssh server until the fix is released in the repository.
-sed -i 's!StandardInput=socket!StandardInput=socket\nStandardOutput=socket!g' /lib/systemd/system/sshd\@.service
-
 
 %end
 
