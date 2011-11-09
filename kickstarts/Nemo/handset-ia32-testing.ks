@@ -101,9 +101,6 @@ EOF
 
 # Set symlink pointing to .desktop file 
 ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
-# ohm outputs "No protocol specified" message couple of times a second, because of videoep module.
-# See: https://bugs.meego.com/show_bug.cgi?id=22887
-sed -i 's!ModulesBanned=!ModulesBanned=videoep!g' /etc/ohm/modules.ini
 
 %end
 

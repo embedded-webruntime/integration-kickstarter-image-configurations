@@ -37,9 +37,6 @@ NEMO-HANDSET:
         - Nemo Apps
     PostScripts:
         - uxlaunch-symlink-mtf
-        # ohmd spam fix.
-        - ohm-modules-ban
-        #- handset-app-theme-fixes
     ExtraPackages:
         - openssh-clients
         - openssh-server
