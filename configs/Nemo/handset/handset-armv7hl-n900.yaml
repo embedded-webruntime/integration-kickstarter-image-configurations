@@ -22,6 +22,7 @@ ExtraPackages:
     #- perf-adaptation-n900
     # CE related n900 specific config so isn't in Nokia N900 Support.
     - usb-moded-config-n900
+    - policy-settings-basic-n900
     - mce
     - meego-handset-camera
 PostScripts:

@@ -43,6 +43,7 @@ ce-backgrounds
 plymouth-lite
 vim-enhanced
 usb-moded-config-n950-n9
+policy-settings-basic-n950
 mce
 meego-handset-camera
 %end

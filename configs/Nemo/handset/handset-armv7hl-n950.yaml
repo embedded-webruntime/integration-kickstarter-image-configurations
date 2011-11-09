@@ -19,6 +19,7 @@ Groups:
     - Nokia N950 Proprietary Support
 ExtraPackages:
     - usb-moded-config-n950-n9
+    - policy-settings-basic-n950
     - mce
     - meego-handset-camera
 PostScripts:
