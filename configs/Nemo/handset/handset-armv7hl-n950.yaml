@@ -22,6 +22,7 @@ ExtraPackages:
     - policy-settings-basic-n950
     - mce
     - meego-handset-camera
+    - xorg-x11-xauth
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

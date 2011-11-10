@@ -30,7 +30,6 @@ NEMO-HANDSET:
         - Mer Core
         - Mer Graphics Common
         - Mer Connectivity
-        - Mer Minimal Xorg
         - MTF Handset UX
         - MTF Apps
         - Nemo Middleware Shared

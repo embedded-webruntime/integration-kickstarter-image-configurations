@@ -20,3 +20,4 @@ Repos:
     - ce-apps-i586
 Groups:
     - Intel x86 Generic Support
+    - Mer Minimal Xorg

@@ -26,7 +26,6 @@ repo --name=ce-apps-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_S
 @Mer Core
 @Mer Graphics Common
 @Mer Connectivity
-@Mer Minimal Xorg
 @MTF Handset UX
 @MTF Apps
 @Nemo Middleware Shared
@@ -47,6 +46,7 @@ usb-moded-config-n950-n9
 policy-settings-basic-n950
 mce
 meego-handset-camera
+xorg-x11-xauth
 %end
 
 %post
