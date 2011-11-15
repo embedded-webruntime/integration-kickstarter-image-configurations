@@ -26,7 +26,8 @@ repo --name=ce-adaptation-n9xx-common --baseurl=http://repo.pub.meego.com/CE:/Ad
 repo --name=ce-adaptation-n900 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N900/CE_Adaptation_N9xx-common_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-utils-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared-armv7hl --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf-armv7hl --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-mw-mtf-armv7hl --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf-armv7hl --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-apps-armv7hl --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages

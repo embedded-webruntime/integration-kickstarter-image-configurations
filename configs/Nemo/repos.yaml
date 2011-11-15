@@ -41,14 +41,23 @@ Repositories:
     -   Name: ce-mw-shared-armv7l
         Url:  http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/
 
+    -   Name: ce-mw-mtf-armv7l
+        Url:  http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_armv7l/
+
+    -   Name: ce-mw-mtf-armv7hl
+        Url:  http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_armv7hl/
+
+    -   Name: ce-mw-mtf-i586
+        Url:  http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/
+
     -   Name: ce-ux-mtf-i586
-        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_i586/
+        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/
 
     -   Name: ce-ux-mtf-armv7hl
-        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_armv7hl/
+        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_armv7hl/
 
     -   Name: ce-ux-mtf-armv7l
-        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_Shared_armv7l/
+        Url:  http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_armv7l/
 
     -   Name: ce-apps-i586
         Url:  http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/

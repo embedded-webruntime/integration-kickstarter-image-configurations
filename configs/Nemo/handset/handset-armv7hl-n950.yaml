@@ -12,6 +12,7 @@ Repos:
     - ce-adaptation-n950-n9
     - ce-utils-armv7hl
     - ce-mw-shared-armv7hl
+    - ce-mw-mtf-armv7hl
     - ce-ux-mtf-armv7hl
     - ce-apps-armv7hl
 Groups:
