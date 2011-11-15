@@ -15,13 +15,13 @@ bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-s
 
 user --name meego  --groups audio,video --password meego 
 
-repo --name=mer-core-i586 --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-utils-i586 --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-mw-shared-i586 --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-mw-mtf-i586 --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf-i586 --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-apps-i586 --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 

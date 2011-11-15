@@ -26,6 +26,13 @@ Default:
 
 NEMO-HANDSET:
     Baseline: "Nemo"
+    Repos:
+        - mer-core
+        - ce-utils
+        - ce-mw-shared
+        - ce-mw-mtf
+        - ce-ux-mtf
+        - ce-apps
     Groups:
         - Mer Core
         - Mer Graphics Common

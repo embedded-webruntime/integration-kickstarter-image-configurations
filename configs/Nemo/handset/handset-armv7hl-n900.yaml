@@ -6,14 +6,8 @@ Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7hl
 Kernel: kernel-adaptation-n900
 Repos:
-    - mer-core-armv7hl
     - ce-adaptation-n9xx-common
     - ce-adaptation-n900
-    - ce-utils-armv7hl
-    - ce-mw-shared-armv7hl
-    - ce-mw-mtf-armv7hl
-    - ce-ux-mtf-armv7hl
-    - ce-apps-armv7hl
 Groups:
     - Nokia N900 Support
     - Nokia N900 Proprietary Support

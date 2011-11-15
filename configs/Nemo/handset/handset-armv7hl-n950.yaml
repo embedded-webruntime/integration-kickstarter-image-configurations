@@ -7,14 +7,8 @@ Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --arch=armv7hl --
 Architecture: armv7hl
 Kernel: kernel-adaptation-n950
 Repos:
-    - mer-core-armv7hl
     - ce-adaptation-n9xx-common
     - ce-adaptation-n950-n9
-    - ce-utils-armv7hl
-    - ce-mw-shared-armv7hl
-    - ce-mw-mtf-armv7hl
-    - ce-ux-mtf-armv7hl
-    - ce-apps-armv7hl
 Groups:
     - Nokia N950 Support
     - Nokia N950 Proprietary Support
