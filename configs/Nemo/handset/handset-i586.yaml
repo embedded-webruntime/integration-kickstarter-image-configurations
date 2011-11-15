@@ -1,6 +1,6 @@
-Name: Nemo Handset IA32 (Testing)
+Name: Nemo Handset i586 (Testing)
 Platform: NEMO-HANDSET
-FileName: handset-ia32-testing
+FileName: handset-i586-testing
 PartSize: 3000
 FileSystem: ext3
 Bootloader: True
@@ -8,7 +8,7 @@ Bootloader: True
 BootloaderTimeout: 0
 BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
 StartX: True
-Architecture: ia32
+Architecture: i586
 Mic2Options: -f livecd --arch=i586 --record-pkgs=name --pkgmgr=yum
 Kernel: kernel-adaptation-pc
 Repos:
