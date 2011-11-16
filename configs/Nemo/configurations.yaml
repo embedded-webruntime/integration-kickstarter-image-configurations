@@ -24,24 +24,28 @@ Default:
     NoChrootScripts:
         - buildname
 
+MER:
+    Repos:
+        - mer-core
+    Groups:
+        - Mer Core
+        - Mer Graphics Common
+        - Mer Connectivity
+    
 NEMO-HANDSET:
     Baseline: "Nemo"
     Repos:
-        - mer-core
         - ce-utils
         - ce-mw-shared
         - ce-mw-mtf
         - ce-ux-mtf
         - ce-apps
     Groups:
-        - Mer Core
-        - Mer Graphics Common
-        - Mer Connectivity
         - MTF Handset UX
-        - MTF Apps
         - Nemo Middleware Shared
         - Nemo Utils
         - Nemo Apps
+        - Nemo Apps MTF
     PostScripts:
         - uxlaunch-symlink-mtf
     ExtraPackages:
@@ -51,3 +55,52 @@ NEMO-HANDSET:
         - ce-backgrounds
         - plymouth-lite
         - vim-enhanced
+
+NEMO-ADAPTATION-N900:
+    Part: n900-ce
+    Kernel: kernel-adaptation-n900
+    Mic2Options: -f raw --save-kernel --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ce-adaptation-n9xx-common
+        - ce-adaptation-n900
+    Groups:
+        - Nokia N900 Support
+        - Nokia N900 Proprietary Support
+    PostScripts:
+        - fstab-n900
+        # bq module causes instability, so removing for now.
+        - n900-bq27x00_battery-removal
+
+NEMO-ADAPTATION-N950-N9:
+    PartSize: 3500
+    FileSystem: ext3
+    Kernel: kernel-adaptation-n950
+    Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ce-adaptation-n9xx-common
+        - ce-adaptation-n950-n9
+    Groups:
+        - Nokia N950 Support
+        - Nokia N950 Proprietary Support
+    ExtraPackages:
+        - usb-moded-config-n950-n9
+        - policy-settings-basic-n950
+        - mce
+        - meego-handset-camera
+        - xorg-x11-xauth
+
+NEMO-ADAPTATION-x86-generic:
+    PartSize: 3000
+    FileSystem: ext3
+    Bootloader: True
+    BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
+    #BootloaderAppend: "quiet"
+    BootloaderTimeout: 0
+    StartX: True
+    Kernel: kernel-adaptation-pc
+    Mic2Options: -f livecd --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ce-adaptation-x86-generic
+    Groups:
+        - Intel x86 Generic Support
+        - Mer Minimal Xorg

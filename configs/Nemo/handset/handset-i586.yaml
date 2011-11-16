@@ -1,18 +1,8 @@
 Name: Nemo Handset i586 (Testing)
-Platform: NEMO-HANDSET
 FileName: handset-i586-testing
-PartSize: 3000
-FileSystem: ext3
-Bootloader: True
-#BootloaderAppend: "quiet"
-BootloaderTimeout: 0
-BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service"
-StartX: True
 Architecture: i586
-Mic2Options: -f livecd --arch=i586 --record-pkgs=name --pkgmgr=yum
-Kernel: kernel-adaptation-pc
-Repos:
-    - ce-adaptation-x86-generic
-Groups:
-    - Intel x86 Generic Support
-    - Mer Minimal Xorg
+Inherit:
+    - MER
+    - NEMO-HANDSET
+    - NEMO-ADAPTATION-x86-generic
+

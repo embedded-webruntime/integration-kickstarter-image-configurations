@@ -1,16 +1,10 @@
 Name: Nemo Handset N900 (Testing)
-Platform: NEMO-HANDSET
 FileName: handset-armv7hl-n900-testing
-Part: n900-ce
-Mic2Options: -f raw --save-kernel --arch=armv7hl --record-pkgs=name --pkgmgr=yum
 Architecture: armv7hl
-Kernel: kernel-adaptation-n900
-Repos:
-    - ce-adaptation-n9xx-common
-    - ce-adaptation-n900
-Groups:
-    - Nokia N900 Support
-    - Nokia N900 Proprietary Support
+Inherit:
+    - MER
+    - NEMO-HANDSET
+    - NEMO-ADAPTATION-N900
 ExtraPackages:
     # Adding n900 specific perf
     # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
@@ -25,9 +19,6 @@ PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here
     - arch-armv7hl
-    - fstab-n900
     - meegotouch-n900
-    # bq module causes instability, so removing for now.
-    - n900-bq27x00_battery-removal
     # We don't have so much power with N900 than others so we need to wait a bit longer
     - mcompositor-app-wait-delay
