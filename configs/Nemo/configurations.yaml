@@ -40,12 +40,14 @@ NEMO-HANDSET:
         - ce-mw-mtf
         - ce-ux-mtf
         - ce-apps
+        - ce-mtf-tracker-related-apps
     Groups:
         - MTF Handset UX
         - Nemo Middleware Shared
         - Nemo Utils
         - Nemo Apps
         - Nemo Apps MTF
+        - MTF Tracker Related Apps
     PostScripts:
         - uxlaunch-symlink-mtf
     ExtraPackages:
