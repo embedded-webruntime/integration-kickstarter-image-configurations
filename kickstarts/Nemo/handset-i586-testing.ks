@@ -18,8 +18,9 @@ repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/bu
 repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-apps-mtf --baseurl=http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mtf-tracker-related-apps --baseurl=http://repo.pub.meego.com/Project:/MTF:/Tracker/CE_UX_MTF_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
@@ -28,11 +29,11 @@ repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Ad
 @Mer Core
 @Mer Graphics Common
 @Mer Connectivity
-@MTF Handset UX
 @Nemo Middleware Shared
 @Nemo Utils
 @Nemo Apps
 @Nemo Apps MTF
+@MTF Handset UX
 @MTF Tracker Related Apps
 @Intel x86 Generic Support
 @Mer Minimal Xorg
