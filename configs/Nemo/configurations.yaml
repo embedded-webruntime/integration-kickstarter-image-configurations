@@ -62,7 +62,11 @@ NEMO-HANDSET:
 
 NEMO-UX-XBMC:
     Repos:
+        - ce-utils
+        - ce-mw-shared
         - ce-ux-xbmc
+    Group:
+        - Nemo Utils
     ExtraPackages:
         - xbmc
 

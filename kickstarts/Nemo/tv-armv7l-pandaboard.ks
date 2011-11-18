@@ -16,6 +16,8 @@ user --name meego  --groups audio,video --password meego
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-adaptation-pandaboard --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/Adaptation:/pandaboard/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-ux-xbmc --baseurl=http://repo.pub.meego.com/home:/sage:/xbmc/CE_Apps_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
