@@ -1,8 +1,10 @@
 ExternalConfigs:
     - configs/Nemo/handset/
+    - configs/Nemo/tv/
 
 Default:
     Active: True
+    Baseline: "Nemo"
     Language: en_US.UTF-8
     Keyboard: us
     SaveRepos: True
@@ -15,11 +17,9 @@ Default:
     Active: True
     PostScripts:
         - cleanup
-        - nocursor
         - rpm
         - bootchart
         - plymouth-lite-ce
-        - meegotouch-translations
         - prelink
     NoChrootScripts:
         - buildname
@@ -31,9 +31,8 @@ MER:
         - Mer Core
         - Mer Graphics Common
         - Mer Connectivity
-    
+
 NEMO-HANDSET:
-    Baseline: "Nemo"
     Repos:
         - ce-utils
         - ce-mw-shared
@@ -50,6 +49,8 @@ NEMO-HANDSET:
         - MTF Handset UX
         - MTF Tracker Related Apps
     PostScripts:
+        - nocursor
+        - meegotouch-translations
         - uxlaunch-symlink-mtf
     ExtraPackages:
         - openssh-clients
@@ -58,6 +59,12 @@ NEMO-HANDSET:
         - ce-backgrounds
         - plymouth-lite
         - vim-enhanced
+
+NEMO-UX-XBMC:
+    Repos:
+        - ce-ux-xbmc
+    ExtraPackages:
+        - xbmc
 
 NEMO-ADAPTATION-N900:
     Part: n900-ce
@@ -107,3 +114,17 @@ NEMO-ADAPTATION-x86-generic:
     Groups:
         - Intel x86 Generic Support
         - Mer Minimal Xorg
+
+NEMO-ADAPTATION-PANDABOARD:
+    Part: pandaboard-sd
+    Kernel: kernel-adaptation-pandaboard
+    Mic2Options: -f raw --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ce-adaptation-pandaboard
+    ExtraPackages:
+        - pvr-omap4
+        - pvr-omap4-kernel
+        - pvr-omap4-libEGL
+        - pvr-omap4-libGLESv1
+        - pvr-omap4-libGLESv2
+        - u-boot-omap4panda

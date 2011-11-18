@@ -60,9 +60,6 @@ rm -f /boot/initrd*
 # make sure there aren't core files lying around
 rm -f /core*
 
-# Remove cursor from showing during startup BMC#14991
-echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
-
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
@@ -82,8 +79,6 @@ echo 32 > /sys/class/graphics/fb0/bits_per_pixel
 exec /usr/bin/ply-image-real $@
 EOF
 chmod +x /usr/bin/ply-image
-# Remove some unwanted "engineering english" translations.
-rm -f /usr/share/l10n/meegotouch/recovery*
 # We can run the prelink only with qemu version 0.14 and newer.
 qemu-arm-static -version | grep "0\.14"
 
@@ -98,6 +93,11 @@ else
 fi
 
 
+# Remove cursor from showing during startup BMC#14991
+echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
+
+# Remove some unwanted "engineering english" translations.
+rm -f /usr/share/l10n/meegotouch/recovery*
 # Create a session file for MTF.
 cat > /usr/share/xsessions/X-MEEGO-HS.desktop << EOF
 [Desktop Entry]
