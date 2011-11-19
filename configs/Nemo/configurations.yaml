@@ -19,7 +19,6 @@ Default:
         - cleanup
         - rpm
         - bootchart
-        - plymouth-lite-ce
         - prelink
     NoChrootScripts:
         - buildname
@@ -49,6 +48,7 @@ NEMO-HANDSET:
         - MTF Handset UX
         - MTF Tracker Related Apps
     PostScripts:
+        - plymouth-lite-ce
         - nocursor
         - meegotouch-translations
         - uxlaunch-symlink-mtf
@@ -69,6 +69,13 @@ NEMO-UX-XBMC:
         - Nemo Utils
     ExtraPackages:
         - xbmc
+        - openssh-clients
+        - openssh-server
+        - ce-backgrounds
+        - plymouth-lite
+        - vim-enhanced
+    PostScripts:
+        - uxlaunch-symlink-xbmc
 
 NEMO-ADAPTATION-N900:
     Part: n900-ce
@@ -126,9 +133,13 @@ NEMO-ADAPTATION-PANDABOARD:
     Repos:
         - ce-adaptation-pandaboard
     ExtraPackages:
+        - xorg-x11-server-Xorg-setuid
+        - pulseaudio-module-x11 
+        - xorg-x11-xauth
         - pvr-omap4
         - pvr-omap4-kernel
         - pvr-omap4-libEGL
         - pvr-omap4-libGLESv1
         - pvr-omap4-libGLESv2
         - u-boot-omap4panda
+        - x-loader-omap4panda

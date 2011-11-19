@@ -8,17 +8,17 @@ lang en_US.UTF-8
 keyboard us
 timezone --utc America/Los_Angeles
 part /boot --size=32 --ondisk mmcblk0p --fstype=vfat --active
-part / --size=3600  --ondisk mmcblk0p --fstype=ext4
+part / --size=3600  --ondisk mmcblk0p --fstype=ext3
 
 rootpw meego 
 
 user --name meego  --groups audio,video --password meego 
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-pandaboard --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/Adaptation:/pandaboard/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-adaptation-pandaboard --baseurl=http://repo.pub.meego.com/home:/sage:/Mer:/Adaptation:/pandaboard/CE_Adaptation_PandaBoard_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-xbmc --baseurl=http://repo.pub.meego.com/home:/sage:/xbmc/CE_Apps_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=ce-ux-xbmc --baseurl=http://repo.pub.meego.com/home:/sage:/xbmc/CE_UX_XBMC_armv7l/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
 
 %packages
 
@@ -28,13 +28,22 @@ repo --name=ce-ux-xbmc --baseurl=http://repo.pub.meego.com/home:/sage:/xbmc/CE_A
 
 kernel-adaptation-pandaboard
 
+xorg-x11-server-Xorg-setuid
+pulseaudio-module-x11
+xorg-x11-xauth
 pvr-omap4
 pvr-omap4-kernel
 pvr-omap4-libEGL
 pvr-omap4-libGLESv1
 pvr-omap4-libGLESv2
 u-boot-omap4panda
+x-loader-omap4panda
 xbmc
+openssh-clients
+openssh-server
+ce-backgrounds
+plymouth-lite
+vim-enhanced
 xterm
 %end
 
@@ -57,14 +66,6 @@ exec /sbin/bootchartd -n 4000
 EOF
 chmod +x /sbin/bootchartd-long
 
-# Hack to fix the plymouth based splash screen on N900
-mv /usr/bin/ply-image /usr/bin/ply-image-real
-cat > /usr/bin/ply-image << EOF
-#!/bin/sh
-echo 32 > /sys/class/graphics/fb0/bits_per_pixel
-exec /usr/bin/ply-image-real $@
-EOF
-chmod +x /usr/bin/ply-image
 # We can run the prelink only with qemu version 0.14 and newer.
 qemu-arm-static -version | grep "0\.14"
 
@@ -78,6 +79,9 @@ else
     echo "QEMU version is not 0.14 so not running prelink."
 fi
 
+
+# Set symlink pointing to .desktop file 
+ln -sf XBMC.desktop /usr/share/xsessions/default.desktop
 
 
 %end

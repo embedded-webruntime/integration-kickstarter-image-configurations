@@ -71,14 +71,6 @@ exec /sbin/bootchartd -n 4000
 EOF
 chmod +x /sbin/bootchartd-long
 
-# Hack to fix the plymouth based splash screen on N900
-mv /usr/bin/ply-image /usr/bin/ply-image-real
-cat > /usr/bin/ply-image << EOF
-#!/bin/sh
-echo 32 > /sys/class/graphics/fb0/bits_per_pixel
-exec /usr/bin/ply-image-real $@
-EOF
-chmod +x /usr/bin/ply-image
 # We can run the prelink only with qemu version 0.14 and newer.
 qemu-arm-static -version | grep "0\.14"
 
@@ -93,6 +85,14 @@ else
 fi
 
 
+# Hack to fix the plymouth based splash screen on N900
+mv /usr/bin/ply-image /usr/bin/ply-image-real
+cat > /usr/bin/ply-image << EOF
+#!/bin/sh
+echo 32 > /sys/class/graphics/fb0/bits_per_pixel
+exec /usr/bin/ply-image-real $@
+EOF
+chmod +x /usr/bin/ply-image
 # Remove cursor from showing during startup BMC#14991
 echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
 
