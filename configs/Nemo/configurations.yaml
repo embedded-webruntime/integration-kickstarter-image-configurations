@@ -65,6 +65,7 @@ NEMO-UX-XBMC:
         - ce-utils
         - ce-mw-shared
         - ce-ux-xbmc
+        - ce-apps
     Group:
         - Nemo Utils
     ExtraPackages:

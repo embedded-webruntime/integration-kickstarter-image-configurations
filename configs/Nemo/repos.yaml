@@ -15,7 +15,7 @@ Repositories:
         Url:  http://repo.pub.meego.com/CE:/Adaptation:/N950-N9/CE_Adaptation_N9xx-common_@ARCH@/
 
     -   Name: ce-adaptation-pandaboard
-        Url:  http://repo.pub.meego.com/home:/sage:/Mer:/Adaptation:/pandaboard/CE_Adaptation_PandaBoard_@ARCH@/
+        Url:  http://repo.pub.meego.com/CE:/Adaptation:/PandaBoard/Mer_Core_@ARCH@/
 
     -   Name: ce-utils
         Url:  http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@/
