@@ -5,6 +5,10 @@ Inherit:
     - MER
     - NEMO-HANDSET
     - NEMO-ADAPTATION-N950-N9
+ExtraPackages:
+    - usb-moded-config-n950-n9
+    # Wifi indicator needs this.
+    - contextkit-maemo-mce
 PostScripts:
     # TODO: Because of https://bugs.meego.com/show_bug.cgi?id=20493#c1
     # we can't use the armv7nhl here

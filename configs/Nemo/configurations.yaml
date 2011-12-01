@@ -1,4 +1,5 @@
 ExternalConfigs:
+    - configs/Nemo/core/
     - configs/Nemo/handset/
     - configs/Nemo/tv/
 
@@ -105,7 +106,6 @@ NEMO-ADAPTATION-N950-N9:
         - Nokia N950 Support
         - Nokia N950 Proprietary Support
     ExtraPackages:
-        - usb-moded-config-n950-n9
         - policy-settings-basic-n950
         - mce
         - meego-handset-camera

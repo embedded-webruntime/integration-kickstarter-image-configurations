@@ -53,6 +53,7 @@ xterm
 ce-backgrounds
 plymouth-lite
 vim-enhanced
+contextkit-maemo-mce
 usb-moded-config-n900
 policy-settings-basic-n900
 mce

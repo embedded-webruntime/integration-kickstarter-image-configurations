@@ -6,6 +6,8 @@ Inherit:
     - NEMO-HANDSET
     - NEMO-ADAPTATION-N900
 ExtraPackages:
+    # Wifi indicator needs this.
+    - contextkit-maemo-mce
     # Adding n900 specific perf
     # TODO: Disabled atm. because of gcc 4.6.0 compile problems.
     #- perf-adaptation-n900
