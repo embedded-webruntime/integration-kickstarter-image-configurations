@@ -11,4 +11,4 @@ nemo:
 
 clean:
 	rm -f */*~ */*/*~
-	rm -rf kickstarts/
+
