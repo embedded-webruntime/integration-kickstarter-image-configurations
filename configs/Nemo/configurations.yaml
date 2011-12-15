@@ -120,7 +120,7 @@ NEMO-ADAPTATION-x86-generic:
     BootloaderTimeout: 0
     StartX: True
     Kernel: kernel-adaptation-pc
-    Mic2Options: -f livecd --record-pkgs=name --pkgmgr=yum
+    Mic2Options: -f liveusb --record-pkgs=name --pkgmgr=yum
     Repos:
         - ce-adaptation-x86-generic
     Groups:

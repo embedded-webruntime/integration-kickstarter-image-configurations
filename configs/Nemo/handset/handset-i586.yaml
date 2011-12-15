@@ -1,6 +1,7 @@
 Name: Nemo Handset i586 (Testing)
 FileName: handset-i586-testing
-Architecture: i586
+Architecture: i686
+RepositoryArchitecture: i586
 Inherit:
     - MER
     - NEMO-HANDSET
