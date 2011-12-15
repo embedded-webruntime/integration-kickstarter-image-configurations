@@ -81,17 +81,9 @@ EOF
 chmod +x /usr/bin/ply-image
 # Remove some unwanted "engineering english" translations.
 rm -f /usr/share/l10n/meegotouch/recovery*
-# We can run the prelink only with qemu version 0.14 and newer.
-qemu-arm-static -version | grep "0\.14"
-
-if [ "x$?" == "x0" ]; then
-    echo "QEMU version 0.14 running prelink."
-    # Prelink can reduce boot time
-    if [ -x /usr/sbin/prelink ]; then
-        /usr/sbin/prelink -aRqm
-    fi
-else
-    echo "QEMU version is not 0.14 so not running prelink."
+# Prelink can reduce boot time
+if [ -x /usr/sbin/prelink ]; then
+    /usr/sbin/prelink -aRqm
 fi
 
 
