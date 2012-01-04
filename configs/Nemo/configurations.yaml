@@ -51,7 +51,6 @@ NEMO-HANDSET:
     PostScripts:
         - plymouth-lite-ce
         - nocursor
-        - meegotouch-translations
         - uxlaunch-symlink-mtf
     ExtraPackages:
         - openssh-clients

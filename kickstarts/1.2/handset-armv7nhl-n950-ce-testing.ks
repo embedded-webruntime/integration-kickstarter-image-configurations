@@ -126,8 +126,6 @@ echo 32 > /sys/class/graphics/fb0/bits_per_pixel
 exec /usr/bin/ply-image-real $@
 EOF
 chmod +x /usr/bin/ply-image
-# Remove some unwanted "engineering english" translations.
-rm -f /usr/share/l10n/meegotouch/recovery*
 # Prelink can reduce boot time
 if [ -x /usr/sbin/prelink ]; then
     /usr/sbin/prelink -aRqm

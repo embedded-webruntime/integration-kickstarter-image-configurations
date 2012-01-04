@@ -97,8 +97,6 @@ chmod +x /usr/bin/ply-image
 # Remove cursor from showing during startup BMC#14991
 echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
 
-# Remove some unwanted "engineering english" translations.
-rm -f /usr/share/l10n/meegotouch/recovery*
 # Create a session file for MTF.
 cat > /usr/share/xsessions/X-MEEGO-HS.desktop << EOF
 [Desktop Entry]
