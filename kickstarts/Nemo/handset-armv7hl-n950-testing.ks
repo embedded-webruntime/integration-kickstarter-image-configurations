@@ -65,13 +65,6 @@ rm -f /core*
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
-# Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
-cat > /sbin/bootchartd-long << EOF
-#!/bin/sh
-exec /sbin/bootchartd -n 4000
-EOF
-chmod +x /sbin/bootchartd-long
-
 # Prelink can reduce boot time
 if [ -x /usr/sbin/prelink ]; then
     /usr/sbin/prelink -aRqm

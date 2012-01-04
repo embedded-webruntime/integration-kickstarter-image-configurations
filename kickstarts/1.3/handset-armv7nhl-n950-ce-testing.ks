@@ -54,13 +54,6 @@ echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb
 
-# Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
-cat > /sbin/bootchartd-long << EOF
-#!/bin/sh
-exec /sbin/bootchartd -n 4000
-EOF
-chmod +x /sbin/bootchartd-long
-
 # Fix for https://bugs.meego.com/show_bug.cgi?id=15963
 mkdir -p /usr/share/themes/base/meegotouch/
 cp -rf /usr/share/themes/meego/meegotouch/dialer /usr/share/themes/base/meegotouch/

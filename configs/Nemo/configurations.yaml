@@ -19,7 +19,6 @@ Default:
     PostScripts:
         - cleanup
         - rpm
-        - bootchart
         - prelink
     NoChrootScripts:
         - buildname

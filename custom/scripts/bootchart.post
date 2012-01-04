@@ -1,6 +1,0 @@
-# Normal bootchart is only 30 long so we use this to get longer bootchart during startup when needed.
-cat > /sbin/bootchartd-long << EOF
-#!/bin/sh
-exec /sbin/bootchartd -n 4000
-EOF
-chmod +x /sbin/bootchartd-long
