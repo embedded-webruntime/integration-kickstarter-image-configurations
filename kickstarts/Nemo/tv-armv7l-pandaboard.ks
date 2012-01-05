@@ -39,6 +39,7 @@ pvr-omap4-libGLESv1
 pvr-omap4-libGLESv2
 u-boot-omap4panda
 x-loader-omap4panda
+linux-firmware-ti-connectivity
 xbmc
 openssh-clients
 openssh-server

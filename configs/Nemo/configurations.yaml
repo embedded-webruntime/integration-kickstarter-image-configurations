@@ -142,3 +142,4 @@ NEMO-ADAPTATION-PANDABOARD:
         - pvr-omap4-libGLESv2
         - u-boot-omap4panda
         - x-loader-omap4panda
+        - linux-firmware-ti-connectivity
