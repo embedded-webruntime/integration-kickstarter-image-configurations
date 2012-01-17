@@ -5,7 +5,7 @@ Repositories:
         Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/@ARCH@/packages/
     -   Name: non-oss-trunk-testing-daily-n950
         Url:  http://download.meego.com/snapshots/latest-testing/repos/non-oss/@ARCH@/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
+        Options: --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 
     -   Name: mtf-trunk-testing
         Url:  http://repo.pub.meego.com/Project:/MTF/MeeGo_Trunk_Testing/
@@ -16,28 +16,28 @@ Repositories:
 
     -   Name: oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/@ARCH@/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
+        Options: --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink
     -   Name: oss-1.2-daily-n950
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/oss/@ARCH@/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,contextkit-meego-battery-upower,xorg-x11-server*
+        Options: --excludepkgs=pulseaudio-modules-n900,kernel-adaptation-n900,prelink,contextkit-meego-battery-upower,xorg-x11-server*
 
     -   Name: non-oss-1.2-daily
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/@ARCH@/packages/
     -   Name: non-oss-1.2-daily-n950
         Url:  http://repo.meego.com/MeeGo/snapshots/stable/1.2.0.90/latest/repos/non-oss/@ARCH@/packages/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
+        Options: --excludepkgs=ti-omap3-sgx*,xorg-x11-drv-fbdev-sgx*,bme*,libbmeipc*
 
     -   Name: ce-trunk
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/
     -   Name: ce-trunk-n950
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk/standard/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=xkeyboard-config
+        Options: --excludepkgs=xkeyboard-config
 
     -   Name: ce-testing
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/
     -   Name: ce-testing-n950
         Url:  http://repo.pub.meego.com/Project:/DE:/Trunk:/Testing/standard/
-        Options: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego --excludepkgs=xkeyboard-config
+        Options: --excludepkgs=xkeyboard-config
 
     -   Name: devel-devices-n950
         Url:  http://download.meego.com/live/devel:/devices:/n900:/n950/MeeGo_1.2/

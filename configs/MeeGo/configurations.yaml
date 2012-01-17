@@ -7,7 +7,7 @@ Default:
     Active: True
     Language: en_US.UTF-8
     Keyboard: us
-    SaveRepos: True
+    RepositoryOptions: --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
     Timezone: America/Los_Angeles
     RootPass: meego
     DefaultUser: meego

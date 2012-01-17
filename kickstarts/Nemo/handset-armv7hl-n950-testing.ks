@@ -12,16 +12,16 @@ rootpw meego
 
 user --name meego  --groups audio,video --password meego 
 
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-apps-mtf --baseurl=http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-mtf-tracker-related-apps --baseurl=http://repo.pub.meego.com/Project:/MTF:/Tracker/CE_UX_MTF_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-n9xx-common --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N9xx-common/Mer_Core_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
-repo --name=ce-adaptation-n950-n9 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N950-N9/CE_Adaptation_N9xx-common_armv7hl/ --save --debuginfo --source --gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-meego
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages/ --save --debuginfo --source
+repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source
+repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/ --save --debuginfo --source
+repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_armv7hl/ --save --debuginfo --source
+repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_armv7hl/ --save --debuginfo --source
+repo --name=ce-apps-mtf --baseurl=http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_armv7hl/ --save --debuginfo --source
+repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_armv7hl/ --save --debuginfo --source
+repo --name=ce-mtf-tracker-related-apps --baseurl=http://repo.pub.meego.com/Project:/MTF:/Tracker/CE_UX_MTF_armv7hl/ --save --debuginfo --source
+repo --name=ce-adaptation-n9xx-common --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N9xx-common/Mer_Core_armv7hl/ --save --debuginfo --source
+repo --name=ce-adaptation-n950-n9 --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/N950-N9/CE_Adaptation_N9xx-common_armv7hl/ --save --debuginfo --source
 
 %packages
 
