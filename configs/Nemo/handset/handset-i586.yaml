@@ -1,5 +1,5 @@
-Name: Nemo Handset i586 (Testing)
-FileName: handset-i586-testing
+Name: Nemo Handset i586
+FileName: handset-i586
 Architecture: i686
 RepositoryArchitecture: i586
 Inherit:

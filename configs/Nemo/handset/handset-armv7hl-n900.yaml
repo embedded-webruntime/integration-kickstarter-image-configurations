@@ -1,5 +1,5 @@
-Name: Nemo Handset N900 (Testing)
-FileName: handset-armv7hl-n900-testing
+Name: Nemo Handset N900
+FileName: handset-armv7hl-n900
 Architecture: armv7hl
 Inherit:
     - MER
