@@ -1,9 +1,5 @@
 
-all: meego nemo
-
-meego:
-	@echo "Creating MeeGo based .ks files."
-	kickstarter -c configs/MeeGo/configurations.yaml -r configs/MeeGo/repos.yaml --outdir=kickstarts/
+all: nemo
 
 nemo:
 	@echo "Creating Nemo .ks files."
