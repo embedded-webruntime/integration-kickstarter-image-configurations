@@ -74,9 +74,6 @@ echo 32 > /sys/class/graphics/fb0/bits_per_pixel
 exec /usr/bin/ply-image-real $@
 EOF
 chmod +x /usr/bin/ply-image
-# Remove cursor from showing during startup BMC#14991
-echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
-
 # Create a session file for MTF.
 cat > /usr/share/xsessions/X-MEEGO-HS.desktop << EOF
 [Desktop Entry]
@@ -88,6 +85,9 @@ EOF
 
 # Set symlink pointing to .desktop file 
 ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
+# Remove cursor from showing during startup BMC#14991
+echo "xopts=-nocursor" >> /etc/sysconfig/uxlaunch
+
 
 %end
 

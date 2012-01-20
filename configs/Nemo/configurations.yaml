@@ -49,7 +49,6 @@ NEMO-HANDSET:
         - MTF Tracker Related Apps
     PostScripts:
         - plymouth-lite-ce
-        - nocursor
         - uxlaunch-symlink-mtf
     ExtraPackages:
         - openssh-clients
@@ -80,7 +79,7 @@ NEMO-UX-XBMC:
 NEMO-ADAPTATION-N900:
     Part: n900-ce
     Kernel: kernel-adaptation-n900
-    Mic2Options: -f raw --save-kernel --record-pkgs=name --pkgmgr=yum
+    Mic2Options: -f raw --copy-kernel --record-pkgs=name --pkgmgr=yum
     Repos:
         - ce-adaptation-n9xx-common
         - ce-adaptation-n900
@@ -91,12 +90,13 @@ NEMO-ADAPTATION-N900:
         - fstab-n900
         # bq module causes instability, so removing for now.
         - n900-bq27x00_battery-removal
+        - nocursor
 
 NEMO-ADAPTATION-N950-N9:
     PartSize: 3500
     FileSystem: ext3
     Kernel: kernel-adaptation-n950
-    Mic2Options: -f fs --compress-disk-image=tar.bz2 --save-kernel --record-pkgs=name --pkgmgr=yum
+    Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum
     Repos:
         - ce-adaptation-n9xx-common
         - ce-adaptation-n950-n9
@@ -108,6 +108,8 @@ NEMO-ADAPTATION-N950-N9:
         - mce
         - meego-handset-camera
         - xorg-x11-xauth
+    PostScripts:
+        - nocursor
 
 NEMO-ADAPTATION-x86-generic:
     PartSize: 3000
@@ -124,6 +126,8 @@ NEMO-ADAPTATION-x86-generic:
     Groups:
         - Intel x86 Generic Support
         - Mer Minimal Xorg
+    PostScripts:
+        - nocursor
 
 NEMO-ADAPTATION-PANDABOARD:
     Part: pandaboard-sd
