@@ -1,2 +1,0 @@
-# N950: Get all log messages to serial console
-sed -i 's!/sbin/redirect-console!#/sbin/redirect-console!' /etc/rc.d/rc

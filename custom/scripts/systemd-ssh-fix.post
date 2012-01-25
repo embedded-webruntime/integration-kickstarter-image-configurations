@@ -1,2 +1,0 @@
-# Temporary fix for the ssh server until the fix is released in the repository.
-sed -i 's!StandardInput=socket!StandardInput=socket\nStandardOutput=socket!g' /lib/systemd/system/sshd\@.service

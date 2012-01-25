@@ -1,3 +1,0 @@
-# On tablet we need to set theme to meego.
-gconftool-2 --direct --config-source $Config_Src \
-  -s -t string /meegotouch/theme/name meego

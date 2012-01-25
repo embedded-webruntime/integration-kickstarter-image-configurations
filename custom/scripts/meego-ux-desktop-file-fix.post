@@ -1,3 +1,0 @@
-# Bug https://bugs.meego.com/show_bug.cgi?id=16394 was fixed but we don't have 
-# icons in our theme for some of the apps so we need following cp for that...
-cp -f /usr/share/themes/1024-600-10/icons/launchers/meego-app-* /usr/share/pixmaps/

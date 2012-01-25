@@ -1,3 +1,0 @@
-# Mask corewatcher.service to disable it on boot.
-# Do "rm /etc/systemd/system/corewatcher.service" to re-enable it.
-ln -s /dev/null /etc/systemd/system/corewatcher.service

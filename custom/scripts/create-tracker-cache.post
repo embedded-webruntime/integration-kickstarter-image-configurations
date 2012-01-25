@@ -1,3 +1,0 @@
-# Creating tracker cache to get the first boot a bit faster.
-su --command='mkdir -p /home/meego/.local/share/tracker/' - meego
-su --command='/usr/libexec/tracker-miner-fs --no-daemon' - meego
