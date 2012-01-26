@@ -16,9 +16,9 @@ part swap --size=8 --ondisk mmcblk0p --fstype=swap
 # This partition is made so that u-boot can find the kernel
 part /boot --size=32 --ondisk mmcblk0p --fstype=vfat
 
-rootpw meego 
+rootpw nemo 
 
-user --name meego  --groups audio,video --password meego 
+user --name nemo  --groups audio,video --password nemo 
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages/ --save --debuginfo --source
 repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source

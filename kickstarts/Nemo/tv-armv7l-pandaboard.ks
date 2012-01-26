@@ -10,9 +10,9 @@ timezone --utc America/Los_Angeles
 part /boot --size=32 --ondisk mmcblk0p --fstype=vfat --active
 part / --size=3600  --ondisk mmcblk0p --fstype=ext3
 
-rootpw meego 
+rootpw nemo 
 
-user --name meego  --groups audio,video --password meego 
+user --name nemo  --groups audio,video --password nemo 
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7l/packages/ --save --debuginfo --source
 repo --name=ce-adaptation-pandaboard --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/PandaBoard/Mer_Core_armv7l/ --save --debuginfo --source

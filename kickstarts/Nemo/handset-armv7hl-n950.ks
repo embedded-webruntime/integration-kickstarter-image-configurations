@@ -8,9 +8,9 @@ lang en_US.UTF-8
 keyboard us
 timezone --utc America/Los_Angeles
 part / --size 3500 --ondisk sda --fstype=ext3
-rootpw meego 
+rootpw nemo 
 
-user --name meego  --groups audio,video --password meego 
+user --name nemo  --groups audio,video --password nemo 
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages/ --save --debuginfo --source
 repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_armv7hl/ --save --debuginfo --source
