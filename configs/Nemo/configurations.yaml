@@ -8,7 +8,7 @@ Default:
     Baseline: "Nemo"
     Language: en_US.UTF-8
     Keyboard: us
-    RepositoryOptions: --save --debuginfo --source
+    RepositoryOptions: --save
     Timezone: America/Los_Angeles
     RootPass: nemo
     DefaultUser: nemo

@@ -14,15 +14,15 @@ bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-s
 
 user --name nemo  --groups audio,video --password nemo 
 
-repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo --source
-repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save --debuginfo --source
-repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save --debuginfo --source
-repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/ --save --debuginfo --source
-repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save --debuginfo --source
-repo --name=ce-apps-mtf --baseurl=http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source
-repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save --debuginfo --source
-repo --name=ce-mtf-tracker-related-apps --baseurl=http://repo.pub.meego.com/Project:/MTF:/Tracker/CE_UX_MTF_i586/ --save --debuginfo --source
-repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save --debuginfo --source
+repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo
+repo --name=ce-utils --baseurl=http://repo.pub.meego.com/CE:/Utils/Mer_Core_i586/ --save
+repo --name=ce-mw-shared --baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_i586/ --save
+repo --name=ce-mw-mtf --baseurl=http://repo.pub.meego.com/CE:/MW:/MTF/CE_MW_Shared_i586/ --save
+repo --name=ce-apps --baseurl=http://repo.pub.meego.com/CE:/Apps/CE_MW_Shared_i586/ --save
+repo --name=ce-apps-mtf --baseurl=http://repo.pub.meego.com/CE:/Apps:/MTF/CE_MW_MTF_i586/ --save
+repo --name=ce-ux-mtf --baseurl=http://repo.pub.meego.com/CE:/UX:/MTF/CE_MW_MTF_i586/ --save
+repo --name=ce-mtf-tracker-related-apps --baseurl=http://repo.pub.meego.com/Project:/MTF:/Tracker/CE_UX_MTF_i586/ --save
+repo --name=ce-adaptation-x86-generic --baseurl=http://repo.pub.meego.com/CE:/Adaptation:/x86-generic/Mer_Core_i586/ --save
 
 %packages
 
