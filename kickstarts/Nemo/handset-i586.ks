@@ -10,8 +10,7 @@ timezone --utc America/Los_Angeles
 part / --size 3000 --ondisk sda --fstype=ext3
 rootpw nemo 
 xconfig --startxonboot
-bootloader  --timeout=0   --menu="autoinst:Installation:systemd.unit=installer-shell.service"
-
+bootloader  --timeout=0  --append="quiet" 
 user --name nemo  --groups audio,video --password nemo 
 
 repo --name=mer-core --baseurl=http://releases.merproject.org/releases/latest/builds/i586/packages/ --save --debuginfo
