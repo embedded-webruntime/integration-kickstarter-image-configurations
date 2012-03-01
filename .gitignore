@@ -3,3 +3,5 @@
 meego-handset-*-*
 # Ignore images directory where the images are made by default
 images/
+# Ignore kate swap
+*.kate-swp
