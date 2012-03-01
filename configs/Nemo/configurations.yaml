@@ -1,5 +1,4 @@
 ExternalConfigs:
-    - configs/Nemo/core/
     - configs/Nemo/handset/
     - configs/Nemo/tv/
 
