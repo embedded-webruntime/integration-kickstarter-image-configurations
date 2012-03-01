@@ -1,11 +1,2 @@
-# Create a session file for MTF.
-cat > /usr/share/xsessions/X-MEEGO-HS.desktop << EOF
-[Desktop Entry]
-Version=1.0
-Name=mtf compositor session
-Exec=/usr/bin/mcompositor
-Type=Application
-EOF
-
 # Set symlink pointing to .desktop file 
 ln -sf X-MEEGO-HS.desktop /usr/share/xsessions/default.desktop
