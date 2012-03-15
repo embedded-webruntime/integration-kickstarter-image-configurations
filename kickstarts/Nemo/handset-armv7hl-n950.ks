@@ -54,13 +54,6 @@ contextkit-maemo-mce
 %end
 
 %post
-
-# save a little bit of space at least...
-rm -f /boot/initrd*
-
-# make sure there aren't core files lying around
-rm -f /core*
-
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
 rpm --rebuilddb

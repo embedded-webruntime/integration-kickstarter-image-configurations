@@ -16,7 +16,6 @@ Default:
     Schedule: "*"
     Active: True
     PostScripts:
-        - cleanup
         - rpm
         - prelink
     NoChrootScripts:
