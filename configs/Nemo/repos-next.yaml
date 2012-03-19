@@ -1,6 +1,6 @@
 Repositories:
     -   Name: mer-core
-        Url:  http://releases.merproject.org/releases/0.20120315.0.2/builds/@ARCH@/packages/
+        Url:  http://releases.merproject.org/releases/next-release/builds/@ARCH@/packages/
         Options: --debuginfo
 
     -   Name: ce-adaptation-x86-generic
