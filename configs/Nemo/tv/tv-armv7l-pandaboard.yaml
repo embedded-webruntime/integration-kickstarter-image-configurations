@@ -1,9 +1,0 @@
-Name: Nemo TV Pandaboard
-FileName: tv-armv7l-pandaboard
-Architecture: armv7l
-Inherit:
-    - MER
-    - NEMO-ADAPTATION-PANDABOARD
-    - NEMO-UX-XBMC
-ExtraPackages:
-    - xterm

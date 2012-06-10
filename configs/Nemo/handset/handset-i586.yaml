@@ -1,9 +1,0 @@
-Name: Nemo Handset i586
-FileName: handset-i586
-Architecture: i686
-RepositoryArchitecture: i586
-Inherit:
-    - MER
-    - NEMO-HANDSET
-    - NEMO-ADAPTATION-x86-generic
-

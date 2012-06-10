@@ -1,3 +1,7 @@
+
+// based on sages kickstarter configuration for NEMO
+// 
+
 Install kickstarter from https://meego.gitorious.org/meego-developer-tools/kickstarter
 
 NOTE: There are some patches needed to upstream kickstarter to update the .ks files properly
@@ -14,3 +18,8 @@ More information can be found from: https://meego.gitorious.org/meego-developer-
 Updating .ks files
 
 $ kickstarter -c configurations.yaml -r repos.yaml
+
+
+#i.e
+
+$ kickstarter -c configs/ewrt/configurations.yaml -r configs/ewrt/repos.yaml

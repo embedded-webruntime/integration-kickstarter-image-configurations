@@ -1,0 +1,19 @@
+Repositories:
+    -   Name: mer-core
+        Url:  http://releases.merproject.org/releases/latest/builds/@ARCH@/packages/
+        Options: --debuginfo
+
+    -   Name: ewrt-adaptation-n9xx-common
+        Url:  http://repo.jeremias-bosch.com/ewrt:/adaptation:/n9xx-common/MyUx_Mer_Core_@ARCH@/
+
+    -   Name: ewrt-adaptation-n950-n9
+        Url:  http://repo.jeremias-bosch.com/ewrt:/adaptation:/n950-n9/ewrt_adaptation_n9xx-common_@ARCH@/
+
+    -   Name: ce-utils
+        Url:  http://repo.pub.meego.com/CE:/Utils/Mer_Core_@ARCH@/
+
+    -   Name: ce-mw-shared
+        Url:  http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_@ARCH@/
+
+    -   Name: ewrt 
+        Url:  http://repo.jeremias-bosch.com/ewrt/MyUx_Mer_Core_@ARCH@/

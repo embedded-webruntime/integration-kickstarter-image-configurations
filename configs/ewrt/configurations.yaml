@@ -1,0 +1,70 @@
+ExternalConfigs:
+    - configs/ewrt/handset/
+
+Default:
+    Active: True
+    Baseline: "Embedded Webruntime"
+    Language: en_US.UTF-8
+    Keyboard: us
+    RepositoryOptions: --save
+    Timezone: America/Los_Angeles
+    RootPass: rootme
+    DefaultUser: ewrt
+    DefaultUserPass: ewrt
+    PartSize: 1900
+    Schedule: "*"
+    Active: True
+    PostScripts:
+        - rpm
+        - prelink
+    NoChrootScripts:
+        - buildname
+
+MER:
+    Repos:
+        - mer-core
+    Groups:
+        - Mer Core
+        - Mer Graphics Common
+        - Mer Connectivity
+
+EWRT-HANDSET:
+    Repos:
+        - ce-utils
+        - ce-mw-shared
+        - ewrt
+    Groups:
+        - Nemo Utils
+    PostScripts:
+        - plymouth-lite-ce
+    ExtraPackages:
+        - openssh-clients
+        - openssh-server
+        - xterm
+        - ewrt-backgrounds
+        - plymouth-lite-osf
+        - vim-enhanced
+        - dejavu
+        - gaia
+        - ewrt-startup
+        - connman-test
+        - ewrt-honk-x11
+
+EWRT-ADAPTATION-N950-N9:
+    PartSize: 3500
+    FileSystem: ext3
+    Kernel: kernel-adaptation-n950
+    Mic2Options: -f fs --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ewrt-adaptation-n9xx-common
+        - ewrt-adaptation-n950-n9
+    Groups:
+        - Nokia N950 Support
+        - Nokia N950 Proprietary Support
+    ExtraPackages:
+        - policy-settings-basic-n950
+ #       - mce
+ #       - meego-handset-camera
+        - xorg-x11-xauth
+    PostScripts:
+        - nocursor
