@@ -1,6 +1,6 @@
 ExternalConfigs:
     - configs/ewrt/handset/
-
+    - configs/ewrt/tablet/
 Default:
     Active: True
     Baseline: "Embedded Webruntime"
@@ -66,5 +66,23 @@ EWRT-ADAPTATION-N950-N9:
  #       - mce
  #       - meego-handset-camera
         - xorg-x11-xauth
+    PostScripts:
+        - nocursor
+
+EWRT-ADAPTATION-ARCHOS-GEN9:
+    PartSize: 3500
+    FileSystem: ext3
+    Kernel: kernel-adaptation-archos-gen9-new
+    Mic2Options: -f loop --compress-disk-image=tar.bz2 --copy-kernel --record-pkgs=name --pkgmgr=yum
+    Repos:
+        - ewrt-adaptation-archos-gen9
+    ExtraPackages:
+        - alsa-mixer-asound-state-archos-gen9
+        - xorg-conf-archos-gen9
+        - pm-utils-config-wlan-archos
+        - libwl1271-bin
+        - linux-firmware
+        - archos-udev-rules
+        - pvr-archos-gen9-kernel
     PostScripts:
         - nocursor
