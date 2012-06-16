@@ -42,13 +42,13 @@ EWRT-HANDSET:
         - openssh-server
         - xterm
         - ewrt-backgrounds
-        - plymouth-lite-osf
+        - plymouth-lite
         - vim-enhanced
         - dejavu
         - gaia
         - ewrt-startup
         - connman-test
-        - ewrt-honk-x11
+        - embedded-webruntime-honk-x11
 
 EWRT-ADAPTATION-N950-N9:
     PartSize: 3500
